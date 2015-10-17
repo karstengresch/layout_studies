@@ -12,6 +12,10 @@ class StartScreenViewController: UIViewController {
   @IBOutlet weak var upperStartScreenBackgroundView: BackgroundView!
   @IBOutlet weak var lowerStartScreenBackgroundView: BackgroundView!
   
+  @IBAction func upperStartScreenButtonPressed(sender: ShapeButton) {
+  }
+  @IBAction func lowerStartScreenButtonPressed(sender: ShapeButton) {
+  }
   
   
   override func viewDidLoad() {

@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ShapeButton: UIView {
+class ShapeButton: UIControl {
   
   // source: http://stackoverflow.com/questions/27432736/how-to-create-an-ibinspectable-of-type-enum?rq=1
   enum CornerType: String {
