@@ -18,6 +18,7 @@
 		3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E51BCFD7100028E2EE /* ShapeButton.swift */; settings = {ASSET_TAGS = (); }; };
 		3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E71BD02F780028E2EE /* BackgroundView.swift */; settings = {ASSET_TAGS = (); }; };
+		3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC41D81BD27BB900297F01 /* CounterViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		3D7177E51BCFD7100028E2EE /* ShapeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeButton.swift; sourceTree = "<group>"; };
 		3D7177E71BD02F780028E2EE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		3DDC41D81BD27BB900297F01 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */,
 				3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */,
+				3DDC41D81BD27BB900297F01 /* CounterViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */,
 				3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */,
+				3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */,
 				3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */,
 				3D45B7EF1BCF9DAC00B6D391 /* countidon.xcdatamodeld in Sources */,
 				3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */,
