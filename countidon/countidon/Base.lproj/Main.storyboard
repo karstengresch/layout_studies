@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="1241" y="337"/>
         </scene>
-        <!--View Controller-->
+        <!--Counter View Controller-->
         <scene sceneID="h8X-gp-L1u">
             <objects>
-                <viewController id="4nt-ZA-GKb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CounterViewController" id="4nt-ZA-GKb" customClass="CounterViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EiZ-HW-tdM"/>
                         <viewControllerLayoutGuide type="bottom" id="I7D-Yx-qqC"/>
