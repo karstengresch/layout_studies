@@ -11,6 +11,7 @@ import UIKit
 class StartScreenViewController: UIViewController {
   @IBOutlet weak var upperStartScreenBackgroundView: BackgroundView!
   @IBOutlet weak var lowerStartScreenBackgroundView: BackgroundView!
+  @IBOutlet weak var startScreenNavigationItem: UINavigationItem!
   
 
   @IBAction func lowerStartScreenButtonPressed(sender: ShapeButton) {
@@ -20,6 +21,9 @@ class StartScreenViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.navigationController?.navigationBar.hidden = true
+
+    
   }
 
 }
