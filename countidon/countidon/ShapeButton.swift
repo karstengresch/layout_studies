@@ -29,9 +29,13 @@ class ShapeButton: UIControl {
     }
   }
   
+ 
+
+  
 
   @IBInspectable var radiusWidth: CGFloat = 30
   @IBInspectable var radiusHeight: CGFloat = 30
+  @IBInspectable let shapeButtonLabel: UILabel = UILabel(frame: CGRectMake(20.0, 30.0, 300.0, 30.0))
   
   
   override func layoutSubviews() {
@@ -45,9 +49,32 @@ class ShapeButton: UIControl {
       shapeLayer.path = UIBezierPath(ovalInRect: self.bounds).CGPath
     }
     layer.mask = shapeLayer
-   
+    
+
     
   }
+  
+  
+  func label() {
+    shapeButtonLabel.frame = self.frame
+    shapeButtonLabel.backgroundColor = UIColor.clearColor()
+    shapeButtonLabel.text = "This is text"
+    shapeButtonLabel.textColor = UIColor.whiteColor()
+    // shapeButtonLabel.center = CGPoint(x: self.bounds.x / 2.0, y: self.bounds.y / 2.0)
+    shapeButtonLabel.font = UIFont.systemFontOfSize(10.0)
+    shapeButtonLabel.drawTextInRect(self.bounds)
+    
+    shapeButtonLabel.numberOfLines = 1;
+    shapeButtonLabel.baselineAdjustment = UIBaselineAdjustment.AlignBaselines
+    //     shapeButtonLabel.adjustsFontSizeToFitWidth = true
+    shapeButtonLabel.minimumScaleFactor = CGFloat(8.0/10.0)
+    
+    self.addSubview(shapeButtonLabel)
+    self.setNeedsDisplay()
+    
+  }
+  
+  
   
   
   
