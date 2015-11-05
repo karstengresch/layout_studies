@@ -15,10 +15,11 @@
 		3D45B7F41BCF9DAC00B6D391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7F21BCF9DAC00B6D391 /* LaunchScreen.storyboard */; };
 		3D45B7FF1BCF9DAC00B6D391 /* countidonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7FE1BCF9DAC00B6D391 /* countidonTests.swift */; };
 		3D45B80A1BCF9DAC00B6D391 /* countidonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B8091BCF9DAC00B6D391 /* countidonUITests.swift */; };
-		3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E51BCFD7100028E2EE /* ShapeButton.swift */; settings = {ASSET_TAGS = (); }; };
-		3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E71BD02F780028E2EE /* BackgroundView.swift */; settings = {ASSET_TAGS = (); }; };
-		3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC41D81BD27BB900297F01 /* CounterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */; };
+		3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E51BCFD7100028E2EE /* ShapeButton.swift */; };
+		3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E71BD02F780028E2EE /* BackgroundView.swift */; };
+		3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */; };
+		3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC41D81BD27BB900297F01 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		3D7177E51BCFD7100028E2EE /* ShapeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeButton.swift; sourceTree = "<group>"; };
 		3D7177E71BD02F780028E2EE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3DDC41D81BD27BB900297F01 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 				3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */,
 				3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */,
 				3DDC41D81BD27BB900297F01 /* CounterViewController.swift */,
+				3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				3D45B7EF1BCF9DAC00B6D391 /* countidon.xcdatamodeld in Sources */,
 				3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */,
 				3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */,
+				3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
