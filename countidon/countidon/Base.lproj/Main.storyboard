@@ -114,8 +114,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="RvA-wL-oEH"/>
                     <connections>
+                        <outlet property="lowerShapeButton" destination="Zkb-Ku-KfI" id="VSL-rb-etz"/>
                         <outlet property="lowerStartScreenBackgroundView" destination="cO4-09-Nhp" id="m7b-Wg-VoP"/>
                         <outlet property="navigationItem" destination="RvA-wL-oEH" id="ApF-0V-lUw"/>
+                        <outlet property="upperShapeButton" destination="Dop-Cm-cGV" id="WnS-EN-bGc"/>
                         <outlet property="upperStartScreenBackgroundView" destination="YI5-X4-A5f" id="oMx-Lf-rR8"/>
                     </connections>
                 </viewController>

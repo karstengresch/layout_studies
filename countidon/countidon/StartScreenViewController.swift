@@ -9,10 +9,12 @@
 import UIKit
 
 class StartScreenViewController: UIViewController {
-  @IBOutlet weak var upperStartScreenBackgroundView: BackgroundView!
-  @IBOutlet weak var lowerStartScreenBackgroundView: BackgroundView!
-  @IBOutlet weak var startScreenNavigationItem: UINavigationItem!
+  @IBOutlet weak var upperStartScreenBackgroundView: BackgroundView?
+  @IBOutlet weak var lowerStartScreenBackgroundView: BackgroundView?
+  @IBOutlet weak var startScreenNavigationItem: UINavigationItem?
   
+  @IBOutlet weak var upperShapeButton: ShapeButton?
+  @IBOutlet weak var lowerShapeButton: ShapeButton?
 
   @IBAction func lowerStartScreenButtonPressed(sender: ShapeButton) {
     
