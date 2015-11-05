@@ -44,6 +44,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="upperStartScreenButtonPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="sde-ab-BwC"/>
+                                                    <action selector="upperStartScreenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJK-Pc-TUd"/>
                                                 </connections>
                                             </view>
                                         </subviews>
@@ -76,7 +77,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="lowerStartScreenButtonPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="gRX-XI-S9j"/>
+                                                    <action selector="lowerStartScreenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2d-TK-OeK"/>
                                                 </connections>
                                             </view>
                                         </subviews>

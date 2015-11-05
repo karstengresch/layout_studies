@@ -17,9 +17,13 @@ class StartScreenViewController: UIViewController {
   @IBOutlet weak var lowerShapeButton: ShapeButton?
 
   @IBAction func lowerStartScreenButtonPressed(sender: ShapeButton) {
+    print("Lower start screen button pressed!")
     
   }
   
+  @IBAction func upperStartScreenButtonPressed(sender: ShapeButton) {
+        print("Upper start screen button pressed!")
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
