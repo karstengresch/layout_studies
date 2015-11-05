@@ -15,14 +15,19 @@ class StartScreenViewController: UIViewController {
   
   @IBOutlet weak var upperShapeButton: ShapeButton?
   @IBOutlet weak var lowerShapeButton: ShapeButton?
+  
+  let counterViewController = CounterViewController()
+  let settingsViewController = SettingsViewController()
 
   @IBAction func lowerStartScreenButtonPressed(sender: ShapeButton) {
     print("Lower start screen button pressed!")
+    self.navigationController?.pushViewController(settingsViewController, animated: true)
     
   }
   
   @IBAction func upperStartScreenButtonPressed(sender: ShapeButton) {
         print("Upper start screen button pressed!")
+    self.navigationController?.pushViewController(counterViewController, animated: true)
   }
   
   override func viewDidLoad() {

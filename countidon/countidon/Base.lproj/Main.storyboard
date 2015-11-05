@@ -10,7 +10,7 @@
         <!--Start Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartScreenViewController" id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -120,8 +120,8 @@
                         <outlet property="navigationItem" destination="RvA-wL-oEH" id="ApF-0V-lUw"/>
                         <outlet property="upperShapeButton" destination="Dop-Cm-cGV" id="WnS-EN-bGc"/>
                         <outlet property="upperStartScreenBackgroundView" destination="YI5-X4-A5f" id="oMx-Lf-rR8"/>
-                        <segue destination="4nt-ZA-GKb" kind="show" id="GmX-9Y-fhA"/>
-                        <segue destination="nb3-gY-OAW" kind="show" id="ZKp-YQ-Lbp"/>
+                        <segue destination="4nt-ZA-GKb" kind="show" identifier="CounterViewControllerSegue" id="GmX-9Y-fhA"/>
+                        <segue destination="nb3-gY-OAW" kind="show" identifier="SettingsViewControllerSegue" id="ZKp-YQ-Lbp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -157,6 +157,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6H-p0-ubY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,7 +167,7 @@
         <!--Settings View Controller-->
         <scene sceneID="7xD-Oe-6DW">
             <objects>
-                <viewController id="nb3-gY-OAW" customClass="SettingsViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" id="nb3-gY-OAW" customClass="SettingsViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HOl-yb-oek"/>
                         <viewControllerLayoutGuide type="bottom" id="UTj-UQ-Kcl"/>
