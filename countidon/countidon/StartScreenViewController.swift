@@ -21,13 +21,13 @@ class StartScreenViewController: UIViewController {
 
   @IBAction func lowerStartScreenButtonPressed(sender: ShapeButton) {
     print("Lower start screen button pressed!")
-    self.navigationController?.pushViewController(settingsViewController, animated: true)
+    // self.navigationController?.pushViewController(settingsViewController, animated: true)
     
   }
   
   @IBAction func upperStartScreenButtonPressed(sender: ShapeButton) {
         print("Upper start screen button pressed!")
-    self.navigationController?.pushViewController(counterViewController, animated: true)
+    // self.navigationController?.pushViewController(counterViewController, animated: true)
   }
   
   override func viewDidLoad() {
