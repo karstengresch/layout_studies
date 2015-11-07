@@ -120,6 +120,8 @@
                         <outlet property="navigationItem" destination="RvA-wL-oEH" id="ApF-0V-lUw"/>
                         <outlet property="upperShapeButton" destination="Dop-Cm-cGV" id="WnS-EN-bGc"/>
                         <outlet property="upperStartScreenBackgroundView" destination="YI5-X4-A5f" id="oMx-Lf-rR8"/>
+                        <segue destination="4nt-ZA-GKb" kind="show" identifier="showCounterViewSegue" id="OWm-82-DR9"/>
+                        <segue destination="nb3-gY-OAW" kind="show" identifier="showSettingsViewSegue" id="x2R-lz-NqR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
