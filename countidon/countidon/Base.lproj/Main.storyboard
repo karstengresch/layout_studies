@@ -21,76 +21,6 @@
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eBB-im-NTZ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" horizontalCompressionResistancePriority="749" restorationIdentifier="StartScreenUpperView" translatesAutoresizingMaskIntoConstraints="NO" id="YI5-X4-A5f" customClass="BackgroundView" customModule="countidon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
-                                        <subviews>
-                                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
-                                                <rect key="frame" x="225" y="75" width="150" height="150"/>
-                                                <color key="backgroundColor" red="0.10002728551626205" green="0.51329320669174194" blue="0.73696428537368774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Dop-Cm-cGV" secondAttribute="height" multiplier="1:1" id="kph-sA-TdT"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="cornerTypeName" value="circle"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="radiusWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="radiusHeight">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="upperStartScreenButtonPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="sde-ab-BwC"/>
-                                                    <action selector="upperStartScreenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJK-Pc-TUd"/>
-                                                </connections>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.19215686274509805" green="0.45098039215686275" blue="0.67843137254901964" alpha="0.77005347593582885" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerY" secondItem="YI5-X4-A5f" secondAttribute="centerY" id="XYl-4p-hoq"/>
-                                            <constraint firstItem="Dop-Cm-cGV" firstAttribute="height" secondItem="YI5-X4-A5f" secondAttribute="height" multiplier="0.5" id="gLJ-ht-KcP"/>
-                                            <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerX" secondItem="YI5-X4-A5f" secondAttribute="centerX" id="jPl-wl-6Ao"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cO4-09-Nhp" customClass="BackgroundView" customModule="countidon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="300" width="600" height="300"/>
-                                        <subviews>
-                                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkb-Ku-KfI" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
-                                                <rect key="frame" x="225" y="75" width="150" height="150"/>
-                                                <color key="backgroundColor" red="0.37050002813339233" green="0.58010196685791016" blue="0.74876773357391357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Zkb-Ku-KfI" secondAttribute="height" multiplier="1:1" id="NyF-cT-6k5"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="cornerTypeName" value="circle"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="radiusWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="radiusHeight">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="lowerStartScreenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2d-TK-OeK"/>
-                                                </connections>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.090196078431372548" green="0.43137254901960786" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="Zkb-Ku-KfI" firstAttribute="centerY" secondItem="cO4-09-Nhp" secondAttribute="centerY" id="Gqe-bY-eGR"/>
-                                            <constraint firstItem="Zkb-Ku-KfI" firstAttribute="centerX" secondItem="cO4-09-Nhp" secondAttribute="centerX" id="HJ4-eD-9B2"/>
-                                            <constraint firstItem="Zkb-Ku-KfI" firstAttribute="height" secondItem="cO4-09-Nhp" secondAttribute="height" multiplier="0.5" id="qkp-f0-qSx"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="YI5-X4-A5f" firstAttribute="top" secondItem="eBB-im-NTZ" secondAttribute="topMargin" id="0Vu-uR-jEM"/>
-                                    <constraint firstItem="YI5-X4-A5f" firstAttribute="height" secondItem="eBB-im-NTZ" secondAttribute="height" multiplier="0.5" id="58G-ZP-BGd"/>
-                                    <constraint firstItem="cO4-09-Nhp" firstAttribute="height" secondItem="eBB-im-NTZ" secondAttribute="height" multiplier="0.5" id="DId-Ce-TZM"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -109,11 +39,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="RvA-wL-oEH"/>
                     <connections>
-                        <outlet property="lowerShapeButton" destination="Zkb-Ku-KfI" id="VSL-rb-etz"/>
-                        <outlet property="lowerStartScreenBackgroundView" destination="cO4-09-Nhp" id="m7b-Wg-VoP"/>
                         <outlet property="navigationItem" destination="RvA-wL-oEH" id="ApF-0V-lUw"/>
-                        <outlet property="upperShapeButton" destination="Dop-Cm-cGV" id="WnS-EN-bGc"/>
-                        <outlet property="upperStartScreenBackgroundView" destination="YI5-X4-A5f" id="oMx-Lf-rR8"/>
                         <segue destination="4nt-ZA-GKb" kind="show" identifier="showCounterViewSegue" id="OWm-82-DR9"/>
                         <segue destination="nb3-gY-OAW" kind="show" identifier="showSettingsViewSegue" id="x2R-lz-NqR"/>
                     </connections>
@@ -155,17 +81,97 @@
         <scene sceneID="izW-3E-lo5">
             <objects>
                 <tableViewController id="Dep-pl-3SH" customClass="StartScreenViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0BD-B8-7cr">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0BD-B8-7cr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XLX-0z-qWq">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StartScreenCellTop" rowHeight="269" id="XLX-0z-qWq">
+                                <rect key="frame" x="0.0" y="92" width="600" height="269"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XLX-0z-qWq" id="ZPE-tn-CPc">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="269"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" horizontalCompressionResistancePriority="749" restorationIdentifier="StartScreenUpperView" translatesAutoresizingMaskIntoConstraints="NO" id="YI5-X4-A5f" customClass="BackgroundView" customModule="countidon" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="-15" width="600" height="300"/>
+                                            <subviews>
+                                                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
+                                                    <rect key="frame" x="225" y="75" width="150" height="150"/>
+                                                    <color key="backgroundColor" red="0.10002728551626205" green="0.51329320669174194" blue="0.73696428537368774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Dop-Cm-cGV" secondAttribute="height" multiplier="1:1" id="kph-sA-TdT"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="cornerTypeName" value="circle"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="radiusWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="radiusHeight">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.19215686274509805" green="0.45098039215686275" blue="0.67843137254901964" alpha="0.77005347593582885" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerY" secondItem="YI5-X4-A5f" secondAttribute="centerY" id="XYl-4p-hoq"/>
+                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="height" secondItem="YI5-X4-A5f" secondAttribute="height" multiplier="0.5" id="gLJ-ht-KcP"/>
+                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerX" secondItem="YI5-X4-A5f" secondAttribute="centerX" id="jPl-wl-6Ao"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="leading" secondItem="ZPE-tn-CPc" secondAttribute="leading" id="IZv-7O-6Cj"/>
+                                        <constraint firstAttribute="trailing" secondItem="YI5-X4-A5f" secondAttribute="trailing" id="j6K-jf-hj9"/>
+                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="top" secondItem="ZPE-tn-CPc" secondAttribute="topMargin" constant="-23" id="k7z-AM-HOr"/>
+                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="centerY" secondItem="ZPE-tn-CPc" secondAttribute="centerY" id="lYS-97-grY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StartScreenCellBottom" rowHeight="318" id="aQx-ki-ji7">
+                                <rect key="frame" x="0.0" y="361" width="600" height="318"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aQx-ki-ji7" id="0zo-fO-xre">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="318"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cO4-09-Nhp" customClass="BackgroundView" customModule="countidon" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="-141" width="600" height="600"/>
+                                            <subviews>
+                                                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkb-Ku-KfI" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
+                                                    <rect key="frame" x="225" y="75" width="150" height="150"/>
+                                                    <color key="backgroundColor" red="0.37050002813339233" green="0.58010196685791016" blue="0.74876773357391357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Zkb-Ku-KfI" secondAttribute="height" multiplier="1:1" id="NyF-cT-6k5"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="cornerTypeName" value="circle"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="radiusWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="radiusHeight">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.090196078431372548" green="0.43137254901960786" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Zkb-Ku-KfI" firstAttribute="centerY" secondItem="cO4-09-Nhp" secondAttribute="centerY" constant="-150" id="Gqe-bY-eGR"/>
+                                                <constraint firstItem="Zkb-Ku-KfI" firstAttribute="centerX" secondItem="cO4-09-Nhp" secondAttribute="centerX" id="HJ4-eD-9B2"/>
+                                                <constraint firstItem="Zkb-Ku-KfI" firstAttribute="height" secondItem="cO4-09-Nhp" secondAttribute="height" multiplier="0.5" constant="-150" id="qkp-f0-qSx"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="centerY" secondItem="0zo-fO-xre" secondAttribute="centerY" id="BQT-zt-K0c"/>
+                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="leading" secondItem="0zo-fO-xre" secondAttribute="leading" id="CWf-xo-CLo"/>
+                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="top" secondItem="0zo-fO-xre" secondAttribute="top" constant="-141" id="DVy-wz-EWc"/>
+                                        <constraint firstAttribute="trailing" secondItem="cO4-09-Nhp" secondAttribute="trailing" id="tGW-Es-vDz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
