@@ -36,6 +36,11 @@ class StartScreenViewController: UITableViewController {
 
   }
   
+  func setupTableViewDimensions() {
+    tableView.rowHeight = UITableViewAutomaticDimension
+//     tableView.estimatedRowHeight = tableView.
+  }
+  
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
@@ -51,6 +56,7 @@ class StartScreenViewController: UITableViewController {
   
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
+    
     return 2
   }
   
