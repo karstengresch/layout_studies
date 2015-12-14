@@ -38,6 +38,7 @@ class StartScreenViewController: UITableViewController {
   
   func setupTableViewDimensions() {
     tableView.rowHeight = UITableViewAutomaticDimension
+    
 //     tableView.estimatedRowHeight = tableView.
   }
   
@@ -62,6 +63,7 @@ class StartScreenViewController: UITableViewController {
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("StartScreenCell", forIndexPath: indexPath)
+    tableView.rowHeight = tableView.frame.height / 2
     
     return cell
   }
