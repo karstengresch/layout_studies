@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartScreenViewController: UIViewController {
+class StartScreenViewController: UITableViewController {
   @IBOutlet weak var upperStartScreenBackgroundView: BackgroundView?
   @IBOutlet weak var lowerStartScreenBackgroundView: BackgroundView?
   @IBOutlet weak var startScreenNavigationItem: UINavigationItem?
@@ -34,7 +34,6 @@ class StartScreenViewController: UIViewController {
     super.viewDidLoad()
     self.navigationController?.navigationBar.hidden = true
 
-    
   }
 
 }
