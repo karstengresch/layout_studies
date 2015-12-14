@@ -33,11 +33,14 @@ class StartScreenViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationController?.navigationBar.hidden = true
+    setupTableViewDimensions()
 
   }
   
   func setupTableViewDimensions() {
-    tableView.rowHeight = UITableViewAutomaticDimension
+    // tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.rowHeight = tableView.frame.height / 2
+//     tableView.frame.height = super.screem
     
 //     tableView.estimatedRowHeight = tableView.
   }
@@ -63,7 +66,7 @@ class StartScreenViewController: UITableViewController {
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("StartScreenCell", forIndexPath: indexPath)
-    tableView.rowHeight = tableView.frame.height / 2
+    
     
     return cell
   }
