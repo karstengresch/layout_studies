@@ -3,51 +3,9 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Start Screen View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="StartScreenViewController" id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eBB-im-NTZ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="eBB-im-NTZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Maf-iP-UdV"/>
-                            <constraint firstItem="eBB-im-NTZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-64" id="NcA-IT-m5h"/>
-                            <constraint firstItem="eBB-im-NTZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="RR4-gd-TYF"/>
-                            <constraint firstItem="eBB-im-NTZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="n58-bX-LXH"/>
-                            <constraint firstItem="eBB-im-NTZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xJh-lS-xqe"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="NcA-IT-m5h"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" id="RvA-wL-oEH"/>
-                    <connections>
-                        <outlet property="navigationItem" destination="RvA-wL-oEH" id="ApF-0V-lUw"/>
-                        <segue destination="4nt-ZA-GKb" kind="show" identifier="showCounterViewSegue" id="OWm-82-DR9"/>
-                        <segue destination="nb3-gY-OAW" kind="show" identifier="showSettingsViewSegue" id="x2R-lz-NqR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1165" y="337"/>
-        </scene>
         <!--Counter View Controller-->
         <scene sceneID="h8X-gp-L1u">
             <objects>
@@ -86,18 +44,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StartScreenCellTop" rowHeight="269" id="XLX-0z-qWq">
-                                <rect key="frame" x="0.0" y="92" width="600" height="269"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="StartScreenCell" rowHeight="257" id="XLX-0z-qWq">
+                                <rect key="frame" x="0.0" y="92" width="600" height="257"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XLX-0z-qWq" id="ZPE-tn-CPc">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="269"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="256.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" horizontalCompressionResistancePriority="749" restorationIdentifier="StartScreenUpperView" translatesAutoresizingMaskIntoConstraints="NO" id="YI5-X4-A5f" customClass="BackgroundView" customModule="countidon" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="-15" width="600" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="256.5"/>
                                             <subviews>
                                                 <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
-                                                    <rect key="frame" x="225" y="75" width="150" height="150"/>
+                                                    <rect key="frame" x="119" y="75" width="362.5" height="362.5"/>
                                                     <color key="backgroundColor" red="0.10002728551626205" green="0.51329320669174194" blue="0.73696428537368774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -116,32 +74,32 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.19215686274509805" green="0.45098039215686275" blue="0.67843137254901964" alpha="0.77005347593582885" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerY" secondItem="YI5-X4-A5f" secondAttribute="centerY" id="XYl-4p-hoq"/>
-                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="height" secondItem="YI5-X4-A5f" secondAttribute="height" multiplier="0.5" id="gLJ-ht-KcP"/>
-                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerX" secondItem="YI5-X4-A5f" secondAttribute="centerX" id="jPl-wl-6Ao"/>
+                                                <constraint firstAttribute="bottom" secondItem="Dop-Cm-cGV" secondAttribute="bottom" constant="-181" id="4R7-Bw-ks4"/>
+                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerX" secondItem="YI5-X4-A5f" secondAttribute="centerX" id="Q9V-PW-fyX"/>
+                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="top" secondItem="YI5-X4-A5f" secondAttribute="top" constant="75" id="Qco-YP-twg"/>
                                             </constraints>
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="leading" secondItem="ZPE-tn-CPc" secondAttribute="leading" id="IZv-7O-6Cj"/>
-                                        <constraint firstAttribute="trailing" secondItem="YI5-X4-A5f" secondAttribute="trailing" id="j6K-jf-hj9"/>
-                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="top" secondItem="ZPE-tn-CPc" secondAttribute="topMargin" constant="-23" id="k7z-AM-HOr"/>
-                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="centerY" secondItem="ZPE-tn-CPc" secondAttribute="centerY" id="lYS-97-grY"/>
+                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="centerX" secondItem="ZPE-tn-CPc" secondAttribute="centerX" id="fz9-PG-b57"/>
+                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="width" secondItem="ZPE-tn-CPc" secondAttribute="width" id="gWG-J1-mYg"/>
+                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="height" secondItem="ZPE-tn-CPc" secondAttribute="height" id="hDe-RT-zWZ"/>
+                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="centerY" secondItem="ZPE-tn-CPc" secondAttribute="centerY" id="lOO-Fc-mNL"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StartScreenCellBottom" rowHeight="318" id="aQx-ki-ji7">
-                                <rect key="frame" x="0.0" y="361" width="600" height="318"/>
+                                <rect key="frame" x="0.0" y="349" width="600" height="318"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aQx-ki-ji7" id="0zo-fO-xre">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="318"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="317.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cO4-09-Nhp" customClass="BackgroundView" customModule="countidon" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="-141" width="600" height="600"/>
+                                            <rect key="frame" x="0.0" y="0.5" width="600" height="317.5"/>
                                             <subviews>
                                                 <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkb-Ku-KfI" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
-                                                    <rect key="frame" x="225" y="75" width="150" height="150"/>
+                                                    <rect key="frame" x="295.5" y="4" width="9" height="9"/>
                                                     <color key="backgroundColor" red="0.37050002813339233" green="0.58010196685791016" blue="0.74876773357391357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -167,10 +125,10 @@
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="centerY" secondItem="0zo-fO-xre" secondAttribute="centerY" id="BQT-zt-K0c"/>
-                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="leading" secondItem="0zo-fO-xre" secondAttribute="leading" id="CWf-xo-CLo"/>
-                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="top" secondItem="0zo-fO-xre" secondAttribute="top" constant="-141" id="DVy-wz-EWc"/>
-                                        <constraint firstAttribute="trailing" secondItem="cO4-09-Nhp" secondAttribute="trailing" id="tGW-Es-vDz"/>
+                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="centerX" secondItem="0zo-fO-xre" secondAttribute="centerX" id="Fct-hA-5gx"/>
+                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="height" secondItem="0zo-fO-xre" secondAttribute="height" id="IZP-At-lsZ"/>
+                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="width" secondItem="0zo-fO-xre" secondAttribute="width" id="YUY-45-TDG"/>
+                                        <constraint firstItem="cO4-09-Nhp" firstAttribute="centerY" secondItem="0zo-fO-xre" secondAttribute="centerY" id="pKe-Hk-syd"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
