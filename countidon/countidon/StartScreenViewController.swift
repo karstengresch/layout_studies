@@ -73,8 +73,19 @@ class StartScreenViewController: UITableViewController {
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("StartScreenCell", forIndexPath: indexPath)
     
-    let background = cell.viewWithTag(755) as? BackgroundView
+    let background = cell.viewWithTag(650) as! BackgroundView
     let circle = cell.viewWithTag(755) as? ShapeButton
+    
+    switch indexPath {
+      case 0:
+      background.backgroundColor = UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)
+      circle?.backgroundColor =  UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
+      
+    case 1:
+      background.backgroundColor = UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
+       circle?.backgroundColor =  UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)    default:
+      break
+    }
     
     
     return cell

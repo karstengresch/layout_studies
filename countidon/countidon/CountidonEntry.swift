@@ -11,12 +11,19 @@ import UIKit
 class CountidonEntry: NSObject {
   
   var name = "Counter"
+  var counterType: CounterType = .circle
   
-//   enum CounterType = {}
+  enum CounterType: String {
+    case digital = "Digital Clock"
+    case circle = "Circle"
+    case burning = "Burning"
+    case analog = "Analog Clock"
+    case multi = "Multi Circle"
+  }
   
-  init(name: String) {
+  init(name: String, counterType: CounterType) {
     self.name = name
-    
+    self.counterType = counterType
   }
   
 
