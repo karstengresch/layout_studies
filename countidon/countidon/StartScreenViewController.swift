@@ -73,6 +73,9 @@ class StartScreenViewController: UITableViewController {
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("StartScreenCell", forIndexPath: indexPath)
     
+    let background = cell.viewWithTag(755) as? BackgroundView
+    let circle = cell.viewWithTag(755) as? ShapeButton
+    
     
     return cell
   }

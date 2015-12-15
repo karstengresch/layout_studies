@@ -51,10 +51,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="247.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" horizontalCompressionResistancePriority="749" restorationIdentifier="StartScreenUpperView" translatesAutoresizingMaskIntoConstraints="NO" id="YI5-X4-A5f" customClass="BackgroundView" customModule="countidon" customModuleProvider="target">
+                                        <view tag="650" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" restorationIdentifier="StartScreenUpperView" translatesAutoresizingMaskIntoConstraints="NO" id="YI5-X4-A5f" customClass="BackgroundView" customModule="countidon" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="247.5"/>
                                             <subviews>
-                                                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
+                                                <view tag="755" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
                                                     <rect key="frame" x="207.5" y="31" width="185.5" height="185.5"/>
                                                     <color key="backgroundColor" red="0.10002728551626205" green="0.51329320669174194" blue="0.73696428537368774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
