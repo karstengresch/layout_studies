@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Counter View Controller-->
@@ -54,7 +55,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="247.5"/>
                                             <subviews>
                                                 <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
-                                                    <rect key="frame" x="176.5" y="0.0" width="247.5" height="247.5"/>
+                                                    <rect key="frame" x="207.5" y="31" width="185.5" height="185.5"/>
                                                     <color key="backgroundColor" red="0.10002728551626205" green="0.51329320669174194" blue="0.73696428537368774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -75,7 +76,7 @@
                                             <constraints>
                                                 <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerY" secondItem="YI5-X4-A5f" secondAttribute="centerY" id="0or-WX-xh2"/>
                                                 <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerX" secondItem="YI5-X4-A5f" secondAttribute="centerX" id="Eze-D0-czl"/>
-                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="height" secondItem="YI5-X4-A5f" secondAttribute="height" id="eNN-nM-2Zk"/>
+                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="height" secondItem="YI5-X4-A5f" secondAttribute="height" multiplier="0.75" id="eNN-nM-2Zk"/>
                                             </constraints>
                                         </view>
                                     </subviews>

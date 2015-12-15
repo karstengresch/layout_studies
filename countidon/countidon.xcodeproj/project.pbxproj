@@ -19,6 +19,7 @@
 		3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E51BCFD7100028E2EE /* ShapeButton.swift */; };
 		3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E71BD02F780028E2EE /* BackgroundView.swift */; };
 		3D7D91EA1C1F710500150709 /* DummyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D91E91C1F710500150709 /* DummyTableViewController.swift */; };
+		3D7D91EC1C20A88600150709 /* CountidonEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D91EB1C20A88600150709 /* CountidonEntry.swift */; };
 		3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */; };
 		3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC41D81BD27BB900297F01 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		3D7177E51BCFD7100028E2EE /* ShapeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeButton.swift; sourceTree = "<group>"; };
 		3D7177E71BD02F780028E2EE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		3D7D91E91C1F710500150709 /* DummyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyTableViewController.swift; sourceTree = "<group>"; };
+		3D7D91EB1C20A88600150709 /* CountidonEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonEntry.swift; sourceTree = "<group>"; };
 		3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3DDC41D81BD27BB900297F01 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 				3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */,
 				3D45B7F51BCF9DAC00B6D391 /* Info.plist */,
 				3D45B7ED1BCF9DAC00B6D391 /* countidon.xcdatamodeld */,
+				3D7D91EB1C20A88600150709 /* CountidonEntry.swift */,
 			);
 			path = countidon;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				3D45B7EF1BCF9DAC00B6D391 /* countidon.xcdatamodeld in Sources */,
 				3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */,
 				3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */,
+				3D7D91EC1C20A88600150709 /* CountidonEntry.swift in Sources */,
 				3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,7 +39,13 @@ class StartScreenViewController: UITableViewController {
   
   func setupTableViewDimensions() {
     // tableView.rowHeight = UITableViewAutomaticDimension
-    tableView.rowHeight = tableView.frame.height / 2
+    
+    let screenRect: CGRect = UIScreen.mainScreen().bounds
+    
+    let screenHeight: CGFloat = screenRect.size.height
+    print("Screen height: \(screenHeight)" )
+    
+    tableView.rowHeight = screenHeight / 2
 //     tableView.frame.height = super.screem
     
 //     tableView.estimatedRowHeight = tableView.
