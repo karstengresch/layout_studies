@@ -52,12 +52,6 @@ class StartScreenViewController: UITableViewController {
   }
   
   // MARK: Navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    if segue.identifier == "CounterViewSegue" {
-      
-    }
-    
-  }
   
   
   override func didReceiveMemoryWarning() {
@@ -86,10 +80,13 @@ class StartScreenViewController: UITableViewController {
     
     switch indexPath {
       case 0:
+      print("cellForRowAtIndexPath selected: \(indexPath.row)" )
       background.backgroundColor = UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)
       circle?.backgroundColor =  UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
+      break
       
     case 1:
+      print("cellForRowAtIndexPath selected: \(indexPath.row)" )
       background.backgroundColor = UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
        circle?.backgroundColor =  UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)    default:
       break
@@ -100,7 +97,19 @@ class StartScreenViewController: UITableViewController {
   }
   
   // MARK: TableView delegates
-  
+  override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    switch indexPath.row {
+    case 0:
+      print("didDeselectRowAtIndexPath selected: \(indexPath.row)" )
+      performSegueWithIdentifier("CounterViewSegue", sender: nil)
+      
+    case 1:
+      print("didDeselectRowAtIndexPath selected: \(indexPath.row)" )
+      performSegueWithIdentifier("SettingsViewSegue", sender: nil)
+    
+    default: break // ignore
+    }
+  }
   
 
 }
