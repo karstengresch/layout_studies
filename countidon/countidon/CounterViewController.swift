@@ -8,8 +8,13 @@
 
 import UIKit
 
+protocol CounterViewControllerDelegate: class {
+  
+}
+
 class CounterViewController: UIViewController {
 
+    weak var delegate: CounterViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
 

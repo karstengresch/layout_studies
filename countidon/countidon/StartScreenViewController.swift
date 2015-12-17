@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartScreenViewController: UITableViewController {
+class StartScreenViewController: UITableViewController, CounterViewControllerDelegate, SettingsViewControllerDelegate {
   @IBOutlet weak var upperStartScreenBackgroundView: BackgroundView?
   @IBOutlet weak var lowerStartScreenBackgroundView: BackgroundView?
   @IBOutlet weak var startScreenNavigationItem: UINavigationItem?
@@ -33,7 +33,7 @@ class StartScreenViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationController?.navigationBar.hidden = true
-    setupTableViewDimensions()
+    // setupTableViewDimensions()
 
   }
   
@@ -51,13 +51,33 @@ class StartScreenViewController: UITableViewController {
 //     tableView.estimatedRowHeight = tableView.
   }
   
-  // MARK: Navigation
+
   
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+  
+  // MARK: Navigation
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+    if segue.identifier == "CounterViewSegue" {
+      let navigationController = segue.destinationViewController as? UINavigationController
+      let controller = navigationController?.topViewController as? CounterViewController
+      
+      controller?.delegate = self
+
+    }
+    
+    if segue.identifier == "SettingsViewSegue" {
+      let navigationController = segue.destinationViewController as? UINavigationController
+      let controller = navigationController?.topViewController as? SettingsViewController
+      
+      controller?.delegate = self
+
+    }
+  }
+  
   
   // MARK: - Table view data source
   
@@ -109,6 +129,20 @@ class StartScreenViewController: UITableViewController {
     
     default: break // ignore
     }
+  }
+  
+  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    var rowHeight: CGFloat = 0.0
+    
+    let screenRect: CGRect = UIScreen.mainScreen().bounds
+    
+    let screenHeight: CGFloat = screenRect.size.height
+    print("Screen height: \(screenHeight)" )
+    
+    rowHeight = screenHeight / 2
+    
+    return rowHeight
+
   }
   
 

@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol SettingsViewControllerDelegate: class {
+  
+}
+
 class SettingsViewController: UIViewController {
+  
+    weak var delegate: SettingsViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
