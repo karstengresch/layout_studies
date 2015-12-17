@@ -51,6 +51,14 @@ class StartScreenViewController: UITableViewController {
 //     tableView.estimatedRowHeight = tableView.
   }
   
+  // MARK: Navigation
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "CounterViewSegue" {
+      
+    }
+    
+  }
+  
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
@@ -90,6 +98,9 @@ class StartScreenViewController: UITableViewController {
     
     return cell
   }
+  
+  // MARK: TableView delegates
+  
   
 
 }

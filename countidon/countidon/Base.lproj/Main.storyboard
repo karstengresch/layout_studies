@@ -33,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6H-p0-ubY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="377"/>
+            <point key="canvasLocation" x="2039" y="-143"/>
         </scene>
         <!--Start Screen View Controller-->
         <scene sceneID="izW-3E-lo5">
@@ -88,9 +88,6 @@
                                         <constraint firstItem="YI5-X4-A5f" firstAttribute="height" secondItem="ZPE-tn-CPc" secondAttribute="height" id="zqa-bC-rH9"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="nb3-gY-OAW" kind="show" identifier="ShowSettings" id="4BH-Ng-3hc"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -99,10 +96,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="XfW-qM-GqI"/>
+                    <connections>
+                        <segue destination="4nt-ZA-GKb" kind="show" identifier="CounterViewSegue" id="bVJ-57-igc"/>
+                        <segue destination="nb3-gY-OAW" kind="show" identifier="SettingsViewSegue" id="PQU-J4-Mw4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ef6-Bg-KWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1163" y="1110"/>
+            <point key="canvasLocation" x="1159" y="337"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="7xD-Oe-6DW">
@@ -128,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih9-LG-z7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1882" y="1154"/>
+            <point key="canvasLocation" x="2039" y="690"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i0x-az-XBf">
