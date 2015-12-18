@@ -100,8 +100,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="XfW-qM-GqI"/>
                     <connections>
-                        <segue destination="grk-kw-zCF" kind="show" identifier="CounterViewSegue" id="bVJ-57-igc"/>
-                        <segue destination="Zgv-3x-H6L" kind="show" identifier="SettingsViewSegue" id="PQU-J4-Mw4"/>
+                        <segue destination="grk-kw-zCF" kind="presentation" identifier="CounterViewSegue" id="bVJ-57-igc"/>
+                        <segue destination="Zgv-3x-H6L" kind="presentation" identifier="SettingsViewSegue" id="PQU-J4-Mw4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ef6-Bg-KWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
