@@ -30,7 +30,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="6Vb-JB-7C0">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="d0b-4k-deK"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="d0b-4k-deK"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -130,7 +130,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DAC-R1-1Qr">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="mUH-k7-xEe"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mUH-k7-xEe"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih9-LG-z7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
