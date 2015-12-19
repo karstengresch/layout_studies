@@ -30,21 +30,20 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     // self.navigationController?.pushViewController(counterViewController, animated: true)
   }
   
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationController?.navigationBar.hidden = true
-    // setupTableViewDimensions()
+    setupTableViewDimensions()
 
   }
   
   func setupTableViewDimensions() {
     // tableView.rowHeight = UITableViewAutomaticDimension
-    
     let screenRect: CGRect = UIScreen.mainScreen().bounds
-    
     let screenHeight: CGFloat = screenRect.size.height
     print("Screen height: \(screenHeight)" )
-    
     tableView.rowHeight = screenHeight / 2
 //     tableView.frame.height = super.screem
     
@@ -64,17 +63,13 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     if segue.identifier == "CounterViewSegue" {
       let navigationController = segue.destinationViewController as? UINavigationController
       let controller = navigationController?.topViewController as? CounterViewController
-      
       controller?.delegate = self
-
     }
     
     if segue.identifier == "SettingsViewSegue" {
       let navigationController = segue.destinationViewController as? UINavigationController
       let controller = navigationController?.topViewController as? SettingsViewController
-      
       controller?.delegate = self
-
     }
   }
   
@@ -88,7 +83,6 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
-    
     return 2
   }
   
@@ -96,19 +90,22 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     let cell = tableView.dequeueReusableCellWithIdentifier("StartScreenCell", forIndexPath: indexPath)
     
     let background = cell.viewWithTag(650) as! BackgroundView
-    let circle = cell.viewWithTag(755) as? ShapeButton
+    let circle = cell.viewWithTag(755) as! ShapeButton
     
     switch indexPath {
       case 0:
       print("cellForRowAtIndexPath selected: \(indexPath.row)" )
       background.backgroundColor = UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)
-      circle?.backgroundColor =  UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
+      circle.backgroundColor =  UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
       break
       
     case 1:
       print("cellForRowAtIndexPath selected: \(indexPath.row)" )
       background.backgroundColor = UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
-       circle?.backgroundColor =  UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)    default:
+       circle.backgroundColor =  UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)
+      break
+    
+    default:
       break
     }
     
@@ -127,23 +124,22 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
       print("didDeselectRowAtIndexPath selected: \(indexPath.row)" )
       performSegueWithIdentifier("SettingsViewSegue", sender: nil)
     
-    default: break // ignore
+    default:
+      break // ignore
     }
   }
   
-  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    var rowHeight: CGFloat = 0.0
-    
-    let screenRect: CGRect = UIScreen.mainScreen().bounds
-    
-    let screenHeight: CGFloat = screenRect.size.height
-    print("Screen height: \(screenHeight)" )
-    
-    rowHeight = screenHeight / 2
-    
-    return rowHeight
-
-  }
+//  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//    var rowHeight: CGFloat = 0.0
+//    
+//    let screenRect: CGRect = UIScreen.mainScreen().bounds
+//    let screenHeight: CGFloat = screenRect.size.height
+//    print("Screen height: \(screenHeight) for indexPath.row: \(indexPath.row)" )
+//    rowHeight = screenHeight / 2
+//    
+//    return rowHeight
+//
+//  }
   
 
 }
