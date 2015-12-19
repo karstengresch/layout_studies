@@ -37,5 +37,10 @@ class SettingsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  
+  @IBAction func cancel() {
+    dismissViewControllerAnimated(true, completion: nil)
+  }
+
 
 }
