@@ -18,18 +18,29 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationController?.navigationBar.hidden = true
-    setupTableViewDimensions()
+    setupTableViewDimensions(false)
 
   }
   
-  func setupTableViewDimensions() {
+  func setupTableViewDimensions(forLandscape: Bool) {
     let screenRect: CGRect = UIScreen.mainScreen().bounds
-    let screenHeight: CGFloat = screenRect.size.height
+    let screenHeight: CGFloat = !forLandscape ? screenRect.size.height : screenRect.size.width
     print("Screen height: \(screenHeight)" )
     tableView.rowHeight = screenHeight / 2
   }
   
-
+  
+  
+  override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    if UIDevice.currentDevice().orientation.isLandscape.boolValue {
+      print("landscape")
+      setupTableViewDimensions(false)
+    } else {
+      print("not landscape")
+      setupTableViewDimensions(true)
+    }
+  }
+  
   
   
   override func didReceiveMemoryWarning() {
