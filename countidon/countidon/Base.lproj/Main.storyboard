@@ -58,43 +58,32 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="247.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view tag="650" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" restorationIdentifier="StartScreenUpperView" translatesAutoresizingMaskIntoConstraints="NO" id="YI5-X4-A5f" customClass="BackgroundView" customModule="countidon" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="247.5"/>
-                                            <subviews>
-                                                <view tag="755" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
-                                                    <rect key="frame" x="207.5" y="31" width="185.5" height="185.5"/>
-                                                    <color key="backgroundColor" red="0.10002728551626205" green="0.51329320669174194" blue="0.73696428537368774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Dop-Cm-cGV" secondAttribute="height" multiplier="1:1" id="kph-sA-TdT"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="cornerTypeName" value="circle"/>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="radiusWidth">
-                                                            <real key="value" value="1"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="radiusHeight">
-                                                            <real key="value" value="1"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.24344974756240845" green="0.53208225965499878" blue="0.73372584581375122" alpha="0.77000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <view tag="755" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
+                                            <rect key="frame" x="207" y="31" width="185.5" height="185.5"/>
+                                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerY" secondItem="YI5-X4-A5f" secondAttribute="centerY" id="0or-WX-xh2"/>
-                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerX" secondItem="YI5-X4-A5f" secondAttribute="centerX" id="Eze-D0-czl"/>
-                                                <constraint firstItem="Dop-Cm-cGV" firstAttribute="height" secondItem="YI5-X4-A5f" secondAttribute="height" multiplier="0.75" id="eNN-nM-2Zk"/>
+                                                <constraint firstAttribute="width" secondItem="Dop-Cm-cGV" secondAttribute="height" multiplier="1:1" id="9H4-7T-p20"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="cornerTypeName" value="circle"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="radiusWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="radiusHeight">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="centerY" secondItem="ZPE-tn-CPc" secondAttribute="centerY" id="1F3-wf-PKx"/>
-                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="centerX" secondItem="ZPE-tn-CPc" secondAttribute="centerX" id="Cpd-v5-ufh"/>
-                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="width" secondItem="ZPE-tn-CPc" secondAttribute="width" id="IZw-C8-3NH"/>
-                                        <constraint firstItem="YI5-X4-A5f" firstAttribute="height" secondItem="ZPE-tn-CPc" secondAttribute="height" id="zqa-bC-rH9"/>
-                                    </constraints>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerX" secondItem="XLX-0z-qWq" secondAttribute="centerX" id="0pF-Ad-dim"/>
+                                    <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerY" secondItem="XLX-0z-qWq" secondAttribute="centerY" id="A6Q-WE-8P3"/>
+                                    <constraint firstItem="Dop-Cm-cGV" firstAttribute="height" secondItem="XLX-0z-qWq" secondAttribute="height" multiplier="0.75" id="qYU-Uj-JUO"/>
+                                </constraints>
                             </tableViewCell>
                         </prototypes>
                         <connections>
