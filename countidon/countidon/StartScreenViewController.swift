@@ -13,35 +13,44 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   
   let counterViewController = CounterViewController()
   let settingsViewController = SettingsViewController()
+  let screenRect: CGRect = UIScreen.mainScreen().bounds
 
 
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationController?.navigationBar.hidden = true
-    setupTableViewDimensions(false)
+    let screenHeight: CGFloat = screenRect.size.height
+    tableView.rowHeight = screenHeight / 2
 
   }
   
-  func setupTableViewDimensions(forLandscape: Bool) {
-    let screenRect: CGRect = UIScreen.mainScreen().bounds
-    let screenHeight: CGFloat = !forLandscape ? screenRect.size.height : screenRect.size.width
+  func changeTableViewDimensions(fromLandscape: Bool) {
+    let screenHeight: CGFloat = fromLandscape ? screenRect.size.height : screenRect.size.width
     print("Screen height: \(screenHeight)" )
     tableView.rowHeight = screenHeight / 2
   }
   
   
-  
-  override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-    if UIDevice.currentDevice().orientation.isLandscape.boolValue {
-      print("landscape")
-      setupTableViewDimensions(false)
-    } else {
-      print("not landscape")
-      setupTableViewDimensions(true)
+  override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
+    switch UIDevice.currentDevice().orientation{
+    case .Portrait:
+      print("Portrait")
+     changeTableViewDimensions(true)
+    case .PortraitUpsideDown:
+            print("Portrait Upside Down")
+     changeTableViewDimensions(true)
+    case .LandscapeLeft:
+            print("Landscape left")
+           changeTableViewDimensions(false)
+    case .LandscapeRight:
+                  print("Landscape right")
+           changeTableViewDimensions(false)
+    default:
+      print("Unknown orientation")
+     changeTableViewDimensions(false)
     }
+    tableView.reloadData()
   }
-  
-  
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
