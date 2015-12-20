@@ -30,9 +30,6 @@ class ShapeButton: UIControl {
   }
   
  
-
-  
-
   @IBInspectable var radiusWidth: CGFloat = 30
   @IBInspectable var radiusHeight: CGFloat = 30
   @IBInspectable let shapeButtonLabel: UILabel = UILabel(frame: CGRectMake(20.0, 30.0, 300.0, 30.0))
@@ -73,12 +70,19 @@ class ShapeButton: UIControl {
     self.setNeedsDisplay()
     
   }
-  
-  
-  
-  
-  
 
+}
 
+import UIKit.UIGestureRecognizerSubclass
 
+private class TapRecognizer: UITapGestureRecognizer {
+  
+  
+  func handleTap(sender: UITapGestureRecognizer) {
+   print("Tapped!")
+   if sender.state == .Ended {
+    // handling code
+   }
+  }
+  
 }
