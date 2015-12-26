@@ -14,6 +14,24 @@ import UIKit
 
 */
 class CountidonSettings: NSObject, NSCoding {
+  var theme = Theme.Default
   
+  required init?(coder aDecoder: NSCoder) {
+    // ??? TODO: Check later if this works: theme = aDecoder.decodeObjectForKey("CountidonSettingTheme") as! Theme
+    self.theme = Theme(rawValue: aDecoder.decodeIntegerForKey("CountidonSettingTheme")) ?? .Default
+    super.init()
+  }
   
+  func encodeWithCoder(aCoder: NSCoder) {
+    aCoder.encodeObject(self.theme.rawValue, forKey: "CountidonSettingTheme")
+  }
+  
+  override init() {
+    super.init()
+  }
+  
+}
+
+enum Theme: NSInteger {
+  case Dark = 1, Light, Mixed, Custom, Default
 }
