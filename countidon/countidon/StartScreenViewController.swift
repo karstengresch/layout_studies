@@ -144,5 +144,9 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     }
   }
   
+  @IBAction func logTap(sender: ShapeButton) {
+    print("ShapeButton tapped")
+  }
+  
 
 }
