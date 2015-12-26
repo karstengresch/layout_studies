@@ -51,7 +51,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="StartScreenCell" rowHeight="248" id="XLX-0z-qWq">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="StartScreenCell" rowHeight="248" id="XLX-0z-qWq" customClass="StartScreenTableViewCell" customModule="countidon" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="248"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" contentMode="center" tableViewCell="XLX-0z-qWq" id="ZPE-tn-CPc">
@@ -84,6 +84,9 @@
                                     <constraint firstItem="Dop-Cm-cGV" firstAttribute="centerY" secondItem="XLX-0z-qWq" secondAttribute="centerY" id="A6Q-WE-8P3"/>
                                     <constraint firstItem="Dop-Cm-cGV" firstAttribute="height" secondItem="XLX-0z-qWq" secondAttribute="height" multiplier="0.75" id="qYU-Uj-JUO"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="shapeButton" destination="Dop-Cm-cGV" id="RSW-ya-gJu"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

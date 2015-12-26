@@ -127,14 +127,14 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   
   
   // MARK: TableView delegates
-  override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     switch indexPath.row {
     case 0:
-      print("didDeselectRowAtIndexPath selected: \(indexPath.row)" )
+      print("didSelectRowAtIndexPath selected: \(indexPath.row)" )
       performSegueWithIdentifier("CounterViewSegue", sender: nil)
       
     case 1:
-      print("didDeselectRowAtIndexPath selected: \(indexPath.row)" )
+      print("didSelectRowAtIndexPath selected: \(indexPath.row)" )
       performSegueWithIdentifier("SettingsViewSegue", sender: nil)
     
     default:
