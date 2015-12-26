@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2694691C2EAD2E00A01402 /* CountidonSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2694681C2EAD2E00A01402 /* CountidonSettings.swift */; };
+		3D26946B1C2EADCF00A01402 /* CountidonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26946A1C2EADCF00A01402 /* CountidonItem.swift */; };
+		3D26946D1C2EAE6300A01402 /* CountidonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26946C1C2EAE6300A01402 /* CountidonGroup.swift */; };
 		3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */; };
 		3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */; };
 		3D45B7EC1BCF9DAC00B6D391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7EA1BCF9DAC00B6D391 /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2694681C2EAD2E00A01402 /* CountidonSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonSettings.swift; sourceTree = "<group>"; };
+		3D26946A1C2EADCF00A01402 /* CountidonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonItem.swift; sourceTree = "<group>"; };
+		3D26946C1C2EAE6300A01402 /* CountidonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonGroup.swift; sourceTree = "<group>"; };
 		3D45B7E31BCF9DAB00B6D391 /* countidon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = countidon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2694671C2EAD1500A01402 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D2694681C2EAD2E00A01402 /* CountidonSettings.swift */,
+				3D26946A1C2EADCF00A01402 /* CountidonItem.swift */,
+				3D26946C1C2EAE6300A01402 /* CountidonGroup.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3D45B7DA1BCF9DAB00B6D391 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +129,7 @@
 		3D45B7E51BCF9DAB00B6D391 /* countidon */ = {
 			isa = PBXGroup;
 			children = (
+				3D2694671C2EAD1500A01402 /* Model */,
 				3D45B8191BCFA34E00B6D391 /* Layout */,
 				3D45B8181BCFA34400B6D391 /* Views */,
 				3D45B8171BCFA33500B6D391 /* Controllers */,
@@ -305,11 +322,14 @@
 			files = (
 				3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */,
 				3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */,
+				3D26946D1C2EAE6300A01402 /* CountidonGroup.swift in Sources */,
 				3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */,
 				3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */,
 				3D7D91EA1C1F710500150709 /* DummyTableViewController.swift in Sources */,
 				3D45B7EF1BCF9DAC00B6D391 /* countidon.xcdatamodeld in Sources */,
+				3D2694691C2EAD2E00A01402 /* CountidonSettings.swift in Sources */,
 				3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */,
+				3D26946B1C2EADCF00A01402 /* CountidonItem.swift in Sources */,
 				3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */,
 				3D7D91EC1C20A88600150709 /* CountidonEntry.swift in Sources */,
 				3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */,
