@@ -86,21 +86,23 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("StartScreenCell", forIndexPath: indexPath)
+    let cell = tableView.dequeueReusableCellWithIdentifier("StartScreenCell", forIndexPath: indexPath) as! StartScreenTableViewCell
     
-    let circle = cell.viewWithTag(755) as! ShapeButton
+    cell.shapeButton.addTarget(self, action: "logTap:", forControlEvents: .TouchUpInside)
+    
+    // let circle = cell.viewWithTag(755) as! ShapeButton
     
     switch indexPath {
       case 0:
       print("cellForRowAtIndexPath selected: \(indexPath.row)" )
       cell.backgroundView = cellBackground(UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77))
-      circle.backgroundColor =  UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
+      cell.shapeButton.backgroundColor =  UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
       break
       
     case 1:
       print("cellForRowAtIndexPath selected: \(indexPath.row)" )
       cell.backgroundView = cellBackground(UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1))
-      circle.backgroundColor =  UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)
+      cell.shapeButton.backgroundColor =  UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)
       break
     
     default:

@@ -82,6 +82,7 @@ private class TapRecognizer: UITapGestureRecognizer {
    print("Tapped!")
    if sender.state == .Ended {
     // handling code
+       print("Tap ended!")
    }
   }
   

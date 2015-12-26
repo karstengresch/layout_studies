@@ -21,4 +21,9 @@ class StartScreenTableViewCell: UITableViewCell {
   }
   
 
+  @IBAction func logTap(sender: ShapeButton) {
+    print("ShapeButton tapped")
+  }
+  
+
 }
