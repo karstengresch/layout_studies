@@ -18,7 +18,7 @@ class ShapeButton: UIControl {
   }
   
   var cornerType = CornerType.Rounded
-  var labelText = ""
+  var labelText = "ShapeButton"
   var segueIdentifier = ""
   
   
@@ -48,25 +48,23 @@ class ShapeButton: UIControl {
       shapeLayer.path = UIBezierPath(ovalInRect: self.bounds).CGPath
     }
     layer.mask = shapeLayer
-    
-
-    
+    label()
   }
   
   
   func label() {
-    shapeButtonLabel.frame = self.frame
+    shapeButtonLabel.numberOfLines = 1;
+    shapeButtonLabel.baselineAdjustment = UIBaselineAdjustment.AlignBaselines
+    shapeButtonLabel.adjustsFontSizeToFitWidth = true
+    shapeButtonLabel.frame = self.bounds
     shapeButtonLabel.backgroundColor = UIColor.clearColor()
     shapeButtonLabel.text = self.labelText
     shapeButtonLabel.textColor = UIColor.whiteColor()
     // shapeButtonLabel.center = CGPoint(x: self.bounds.x / 2.0, y: self.bounds.y / 2.0)
-    shapeButtonLabel.font = UIFont.systemFontOfSize(8.0)
-    shapeButtonLabel.drawTextInRect(self.frame)
-    
-    shapeButtonLabel.numberOfLines = 1;
-    shapeButtonLabel.baselineAdjustment = UIBaselineAdjustment.AlignBaselines
-    shapeButtonLabel.adjustsFontSizeToFitWidth = false
-    shapeButtonLabel.minimumScaleFactor = CGFloat(8.0/10.0)
+    shapeButtonLabel.font = UIFont.systemFontOfSize(28.0)
+    shapeButtonLabel.textAlignment = .Center
+    shapeButtonLabel.drawTextInRect(self.bounds)
+//     shapeButtonLabel.minimumScaleFactor = CGFloat(18.0/20.0)
     
     self.addSubview(shapeButtonLabel)
     self.setNeedsDisplay()
