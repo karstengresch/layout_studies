@@ -18,6 +18,8 @@ class ShapeButton: UIControl {
   }
   
   var cornerType = CornerType.Rounded
+  var labelText = ""
+  var segueIdentifier = ""
   
   
   @available(*, unavailable, message="This property is reserved for Interface Builder. Use 'cornerType' instead.")
@@ -55,15 +57,15 @@ class ShapeButton: UIControl {
   func label() {
     shapeButtonLabel.frame = self.frame
     shapeButtonLabel.backgroundColor = UIColor.clearColor()
-    shapeButtonLabel.text = "This is text"
+    shapeButtonLabel.text = self.labelText
     shapeButtonLabel.textColor = UIColor.whiteColor()
     // shapeButtonLabel.center = CGPoint(x: self.bounds.x / 2.0, y: self.bounds.y / 2.0)
-    shapeButtonLabel.font = UIFont.systemFontOfSize(10.0)
-    shapeButtonLabel.drawTextInRect(self.bounds)
+    shapeButtonLabel.font = UIFont.systemFontOfSize(8.0)
+    shapeButtonLabel.drawTextInRect(self.frame)
     
     shapeButtonLabel.numberOfLines = 1;
     shapeButtonLabel.baselineAdjustment = UIBaselineAdjustment.AlignBaselines
-    //     shapeButtonLabel.adjustsFontSizeToFitWidth = true
+    shapeButtonLabel.adjustsFontSizeToFitWidth = false
     shapeButtonLabel.minimumScaleFactor = CGFloat(8.0/10.0)
     
     self.addSubview(shapeButtonLabel)
