@@ -16,11 +16,16 @@ class CountidonItem: NSObject, NSCoding {
   let created: NSDate
   var name = ""
   var timeToCountdown: NSInteger = 0
+  var circleForegroundColor = UIColor(hue:1, saturation:1, brightness:0, alpha:1)
+  var circleBackgroundColor = UIColor(hue:0, saturation:0, brightness:1, alpha:1)
+  var circleViewBackgroundColor = UIColor.clearColor()
   
   required init?(coder aDecoder: NSCoder) {
     created = aDecoder.decodeObjectForKey("CountidonItemCreated") as! NSDate
     name = aDecoder.decodeObjectForKey("CountidonItemName") as! String
     timeToCountdown = aDecoder.decodeIntegerForKey("CountidonItemTimeToCountdown")
+    circleViewBackgroundColor = aDecoder.decodeObjectForKey("CircleViewBackgroundColor") as! UIColor
+    
     super.init()
   }
   
@@ -28,6 +33,7 @@ class CountidonItem: NSObject, NSCoding {
     aCoder.encodeObject(created, forKey: "CountidonItemCreated")
     aCoder.encodeObject(name, forKey: "CountidonItemName")
     aCoder.encodeObject(timeToCountdown, forKey: "CountidonItemTimeToCountdown")
+    aCoder.encodeObject(circleViewBackgroundColor, forKey: "CircleViewBackgroundColor")
   }
   
   init(name: String) {
