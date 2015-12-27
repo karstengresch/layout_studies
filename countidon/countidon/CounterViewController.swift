@@ -16,7 +16,8 @@ class CounterViewController: UIViewController {
 
     weak var delegate: CounterViewControllerDelegate?
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
+    
 
         // Do any additional setup after loading the view.
     }

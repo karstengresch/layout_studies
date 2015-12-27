@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -18,15 +19,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bit-RG-yXi">
-                                <rect key="frame" x="259" y="172" width="62" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-he-jJ9" customClass="CircleGraphView" customModule="countidon" customModuleProvider="target">
+                                <rect key="frame" x="165" y="165" width="270" height="270"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bLy-he-jJ9" secondAttribute="height" multiplier="1:1" id="clO-Vd-Yy2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endArc">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bLy-he-jJ9" firstAttribute="centerX" secondItem="QM1-a4-tjc" secondAttribute="centerX" id="G6u-ad-cCH"/>
+                            <constraint firstItem="bLy-he-jJ9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QM1-a4-tjc" secondAttribute="leadingMargin" constant="8" id="mtz-Bx-mgQ"/>
+                            <constraint firstItem="bLy-he-jJ9" firstAttribute="width" secondItem="QM1-a4-tjc" secondAttribute="height" multiplier="9:20" id="oF3-kW-4Cg"/>
+                            <constraint firstItem="bLy-he-jJ9" firstAttribute="centerY" secondItem="QM1-a4-tjc" secondAttribute="centerY" id="yPm-wd-QDO"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="6Vb-JB-7C0">

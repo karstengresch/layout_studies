@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartScreenViewController: UITableViewController, CounterViewControllerDelegate, SettingsViewControllerDelegate {
+class StartScreenViewController: UITableViewController, CounterViewControllerDelegate, SettingsViewControllerDelegate, CircleGraphViewControllerDelegate {
   @IBOutlet weak var startScreenNavigationItem: UINavigationItem?
   
   let counterViewController = CounterViewController()
@@ -61,7 +61,7 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
     if segue.identifier == "CounterViewSegue" {
       let navigationController = segue.destinationViewController as? UINavigationController
-      let controller = navigationController?.topViewController as? CounterViewController
+      let controller = navigationController?.topViewController as? CircleGraphViewController
       controller?.delegate = self
     }
     
