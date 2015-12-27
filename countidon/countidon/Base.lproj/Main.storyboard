@@ -75,8 +75,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
-                                                <action selector="logTap:" destination="XLX-0z-qWq" eventType="valueChanged" id="QCI-wv-gg4"/>
-                                                <action selector="logTap:" destination="Dep-pl-3SH" eventType="valueChanged" id="xnY-0Z-cJ6"/>
+                                                <action selector="logTap:" destination="Dep-pl-3SH" eventType="valueChanged" id="Icq-Z9-9Ll"/>
                                             </connections>
                                         </view>
                                     </subviews>

@@ -92,7 +92,7 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     
     // let circle = cell.viewWithTag(755) as! ShapeButton
     
-    switch indexPath {
+    switch indexPath.row {
       case 0:
       print("cellForRowAtIndexPath selected: \(indexPath.row)" )
       cell.backgroundColor = UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)
@@ -103,7 +103,7 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
       
     case 1:
       print("cellForRowAtIndexPath selected: \(indexPath.row)" )
-      cell.backgroundView = cellBackground(UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1))
+      cell.backgroundColor = UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
       cell.shapeButton.backgroundColor =  UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)
       cell.shapeButton.labelText = "Settings"
       cell.shapeButton.segueIdentifier = "SettingsViewSegue"
@@ -137,11 +137,11 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     switch indexPath.row {
     case 0:
       print("didSelectRowAtIndexPath selected: \(indexPath.row)" )
-      performSegueWithIdentifier("CounterViewSegue", sender: nil)
+      // performSegueWithIdentifier("CounterViewSegue", sender: nil)
       
     case 1:
       print("didSelectRowAtIndexPath selected: \(indexPath.row)" )
-      performSegueWithIdentifier("SettingsViewSegue", sender: nil)
+      
     
     default:
       break // ignore
@@ -149,7 +149,11 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   }
   
   @IBAction func logTap(sender: ShapeButton) {
-    print("ShapeButton tapped:")
+    
+    let currentButton = sender
+    
+    print("ShapeButton tapped: \(currentButton.segueIdentifier)")
+    performSegueWithIdentifier(currentButton.segueIdentifier, sender: sender)
   }
   
 
