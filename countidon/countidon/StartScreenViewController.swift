@@ -105,7 +105,7 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
       print("cellForRowAtIndexPath selected: \(indexPath.row)" )
       cell.backgroundColor = UIColor(hue:0.574, saturation:0.744, brightness:0.486, alpha:1)
       cell.shapeButton.backgroundColor =  UIColor(hue:0.568, saturation:0.673, brightness:0.734, alpha:0.77)
-      cell.shapeButton.labelText = "New"
+      cell.shapeButton.labelText = "New/Select"
       cell.shapeButton.segueIdentifier = "SettingsViewSegue"
       break
     
