@@ -7,10 +7,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Counter View Controller-->
+        <!--Circle Graph View Controller-->
         <scene sceneID="h8X-gp-L1u">
             <objects>
-                <viewController storyboardIdentifier="CounterViewController" id="4nt-ZA-GKb" customClass="CounterViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CounterViewController" id="4nt-ZA-GKb" customClass="CircleGraphViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EiZ-HW-tdM"/>
                         <viewControllerLayoutGuide type="bottom" id="I7D-Yx-qqC"/>
@@ -53,6 +53,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="circleGraphView" destination="bLy-he-jJ9" id="PEG-iA-u7B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6H-p0-ubY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -117,21 +117,6 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     return cell
   }
   
-  func cellBackground(color: UIColor?) -> UIView {
-    let backgroundView: UIView = UIView()
-    if let customColor = backgroundView.backgroundColor {
-      backgroundView.backgroundColor = customColor
-    }
-    
-    backgroundView.layer.masksToBounds = true
-    
-    return backgroundView
-    
-  }
-  
-  
-  
-  
   // MARK: TableView delegates
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     switch indexPath.row {

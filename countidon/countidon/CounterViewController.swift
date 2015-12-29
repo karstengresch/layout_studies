@@ -15,29 +15,21 @@ protocol CounterViewControllerDelegate: class {
 class CounterViewController: UIViewController {
 
     weak var delegate: CounterViewControllerDelegate?
-    override func viewDidLoad() {
-    super.viewDidLoad()
-    
 
-        // Do any additional setup after loading the view.
+  @IBOutlet weak var circleGraphView: CircleGraphView?
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
   
+  
+  // MARK: IB related
   @IBAction func cancel() {
     dismissViewControllerAnimated(true, completion: nil)
   }
