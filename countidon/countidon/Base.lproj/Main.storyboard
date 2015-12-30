@@ -40,13 +40,21 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mve-VM-ZD2">
+                                <rect key="frame" x="393" y="289.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.039215686274509803" green="0.21568627450980393" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mve-VM-ZD2" firstAttribute="trailing" secondItem="bLy-he-jJ9" secondAttribute="trailing" id="826-F2-0Q9"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="centerX" secondItem="QM1-a4-tjc" secondAttribute="centerX" id="G6u-ad-cCH"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QM1-a4-tjc" secondAttribute="leadingMargin" constant="8" id="mtz-Bx-mgQ"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="width" secondItem="QM1-a4-tjc" secondAttribute="height" multiplier="9:20" id="oF3-kW-4Cg"/>
+                            <constraint firstItem="mve-VM-ZD2" firstAttribute="centerY" secondItem="bLy-he-jJ9" secondAttribute="centerY" id="p7r-Bk-Cbw"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="centerY" secondItem="QM1-a4-tjc" secondAttribute="centerY" id="yPm-wd-QDO"/>
                         </constraints>
                     </view>
