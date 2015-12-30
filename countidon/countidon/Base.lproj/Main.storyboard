@@ -21,9 +21,46 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-he-jJ9" customClass="CircleGraphView" customModule="countidon" customModuleProvider="target">
                                 <rect key="frame" x="165" y="165" width="270" height="270"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwo-Px-s6H">
+                                        <rect key="frame" x="0.0" y="101" width="270" height="67.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNR-Sz-jKo">
+                                                <rect key="frame" x="47" y="24" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mve-VM-ZD2">
+                                                <rect key="frame" x="93" y="23.5" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6J-SA-p6i">
+                                                <rect key="frame" x="114" y="24" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="mve-VM-ZD2" firstAttribute="height" secondItem="V6J-SA-p6i" secondAttribute="height" id="bW3-yA-agX"/>
+                                            <constraint firstItem="mve-VM-ZD2" firstAttribute="centerX" secondItem="bwo-Px-s6H" secondAttribute="centerX" id="cX2-xY-LYr"/>
+                                            <constraint firstItem="zNR-Sz-jKo" firstAttribute="centerY" secondItem="mve-VM-ZD2" secondAttribute="centerY" id="mjM-gp-J6u"/>
+                                            <constraint firstItem="zNR-Sz-jKo" firstAttribute="height" secondItem="mve-VM-ZD2" secondAttribute="height" id="tLq-iP-632"/>
+                                            <constraint firstItem="mve-VM-ZD2" firstAttribute="centerY" secondItem="bwo-Px-s6H" secondAttribute="centerY" id="y7j-cJ-3vo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.039215686274509803" green="0.21176470588235294" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="bwo-Px-s6H" firstAttribute="centerX" secondItem="bLy-he-jJ9" secondAttribute="centerX" id="1aV-Ly-pyb"/>
+                                    <constraint firstItem="bwo-Px-s6H" firstAttribute="width" secondItem="bLy-he-jJ9" secondAttribute="width" id="YjT-oG-2Dn"/>
                                     <constraint firstAttribute="width" secondItem="bLy-he-jJ9" secondAttribute="height" multiplier="1:1" id="clO-Vd-Yy2"/>
+                                    <constraint firstItem="bwo-Px-s6H" firstAttribute="height" secondItem="bLy-he-jJ9" secondAttribute="height" multiplier="0.25" id="d1J-dC-eDa"/>
+                                    <constraint firstItem="bwo-Px-s6H" firstAttribute="centerY" secondItem="bLy-he-jJ9" secondAttribute="centerY" id="kRC-P3-Wwd"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
@@ -40,21 +77,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mve-VM-ZD2">
-                                <rect key="frame" x="393" y="289.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.039215686274509803" green="0.21568627450980393" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mve-VM-ZD2" firstAttribute="trailing" secondItem="bLy-he-jJ9" secondAttribute="trailing" id="826-F2-0Q9"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="centerX" secondItem="QM1-a4-tjc" secondAttribute="centerX" id="G6u-ad-cCH"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QM1-a4-tjc" secondAttribute="leadingMargin" constant="8" id="mtz-Bx-mgQ"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="width" secondItem="QM1-a4-tjc" secondAttribute="height" multiplier="9:20" id="oF3-kW-4Cg"/>
-                            <constraint firstItem="mve-VM-ZD2" firstAttribute="centerY" secondItem="bLy-he-jJ9" secondAttribute="centerY" id="p7r-Bk-Cbw"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="centerY" secondItem="QM1-a4-tjc" secondAttribute="centerY" id="yPm-wd-QDO"/>
                         </constraints>
                     </view>
