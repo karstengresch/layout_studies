@@ -27,6 +27,9 @@ class CircleGraphViewController: UIViewController {
   
   @IBOutlet weak var circleGraphView: CircleGraphView?
   
+    @IBOutlet weak var millisecondsLabel: UILabel!
+    @IBOutlet weak var secondsLabel: UILabel!
+    @IBOutlet weak var minLabel: UILabel!
   
   
     override func viewDidLoad() {
