@@ -11,9 +11,9 @@
 		3D26946B1C2EADCF00A01402 /* CountidonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26946A1C2EADCF00A01402 /* CountidonItem.swift */; };
 		3D26946D1C2EAE6300A01402 /* CountidonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26946C1C2EAE6300A01402 /* CountidonGroup.swift */; };
 		3D26946F1C2EC23700A01402 /* StartScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26946E1C2EC23700A01402 /* StartScreenTableViewCell.swift */; };
-		3D2694721C305B2A00A01402 /* CircleGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2694701C305B2A00A01402 /* CircleGraphViewController.swift */; };
-		3D2694731C305B2A00A01402 /* CircleGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2694711C305B2A00A01402 /* CircleGraphView.swift */; };
 		3D2694771C305EBA00A01402 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2694761C305EBA00A01402 /* GlobalConstants.swift */; };
+		3D26947C1C35CD2C00A01402 /* CircleGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26947A1C35CD2C00A01402 /* CircleGraphView.swift */; };
+		3D26947D1C35CD2C00A01402 /* CircleGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26947B1C35CD2C00A01402 /* CircleGraphViewController.swift */; };
 		3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */; };
 		3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */; };
 		3D45B7EC1BCF9DAC00B6D391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7EA1BCF9DAC00B6D391 /* Main.storyboard */; };
@@ -53,9 +53,9 @@
 		3D26946A1C2EADCF00A01402 /* CountidonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonItem.swift; sourceTree = "<group>"; };
 		3D26946C1C2EAE6300A01402 /* CountidonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonGroup.swift; sourceTree = "<group>"; };
 		3D26946E1C2EC23700A01402 /* StartScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenTableViewCell.swift; sourceTree = "<group>"; };
-		3D2694701C305B2A00A01402 /* CircleGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleGraphViewController.swift; path = ../../../../general_tryouts/CounterAnimations/CounterAnimations/CircleGraphViewController.swift; sourceTree = "<group>"; };
-		3D2694711C305B2A00A01402 /* CircleGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleGraphView.swift; path = ../../../../general_tryouts/CounterAnimations/CounterAnimations/CircleGraphView.swift; sourceTree = "<group>"; };
 		3D2694761C305EBA00A01402 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		3D26947A1C35CD2C00A01402 /* CircleGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphView.swift; sourceTree = "<group>"; };
+		3D26947B1C35CD2C00A01402 /* CircleGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphViewController.swift; sourceTree = "<group>"; };
 		3D45B7E31BCF9DAB00B6D391 /* countidon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = countidon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 		3D2694751C305E3A00A01402 /* CounterScreens */ = {
 			isa = PBXGroup;
 			children = (
+				3D26947A1C35CD2C00A01402 /* CircleGraphView.swift */,
 				3D2694761C305EBA00A01402 /* GlobalConstants.swift */,
-				3D2694711C305B2A00A01402 /* CircleGraphView.swift */,
 			);
 			name = CounterScreens;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 		3D45B8171BCFA33500B6D391 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3D2694701C305B2A00A01402 /* CircleGraphViewController.swift */,
+				3D26947B1C35CD2C00A01402 /* CircleGraphViewController.swift */,
 				3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */,
 				3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */,
 				3DDC41D81BD27BB900297F01 /* CounterViewController.swift */,
@@ -350,6 +350,7 @@
 			files = (
 				3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */,
 				3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */,
+				3D26947D1C35CD2C00A01402 /* CircleGraphViewController.swift in Sources */,
 				3D26946D1C2EAE6300A01402 /* CountidonGroup.swift in Sources */,
 				3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */,
 				3D2694771C305EBA00A01402 /* GlobalConstants.swift in Sources */,
@@ -357,14 +358,13 @@
 				3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */,
 				3D7D91EA1C1F710500150709 /* DummyTableViewController.swift in Sources */,
 				3D45B7EF1BCF9DAC00B6D391 /* countidon.xcdatamodeld in Sources */,
-				3D2694721C305B2A00A01402 /* CircleGraphViewController.swift in Sources */,
 				3D2694691C2EAD2E00A01402 /* CountidonSettings.swift in Sources */,
 				3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */,
 				3D26946B1C2EADCF00A01402 /* CountidonItem.swift in Sources */,
 				3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */,
 				3D7D91EC1C20A88600150709 /* CountidonEntry.swift in Sources */,
 				3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */,
-				3D2694731C305B2A00A01402 /* CircleGraphView.swift in Sources */,
+				3D26947C1C35CD2C00A01402 /* CircleGraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
