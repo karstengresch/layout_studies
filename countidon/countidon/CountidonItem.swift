@@ -20,6 +20,12 @@ class CountidonItem: NSObject, NSCoding {
   var circleBackgroundColor = UIColor(hue:0, saturation:0, brightness:1, alpha:1)
   var circleViewBackgroundColor = UIColor.clearColor()
   
+  var lastInterval = NSTimeInterval()
+  var timer = NSTimer()
+  var totalTime = NSTimeInterval()
+  let maxTime: Double = 12.0
+
+  
   required init?(coder aDecoder: NSCoder) {
     created = aDecoder.decodeObjectForKey("CountidonItemCreated") as! NSDate
     name = aDecoder.decodeObjectForKey("CountidonItemName") as! String
@@ -41,5 +47,32 @@ class CountidonItem: NSObject, NSCoding {
     self.name = name
     super.init()
   }
+  
+  // MARK: Counting Related Algorithms
+  func getCounterTimeValues() -> (minutes: String, seconds: String, milliseconds: String) {
+    
+    let now = NSDate.timeIntervalSinceReferenceDate()
+    // 10-8 = 2
+    totalTime += now - lastInterval
+    // 12-10 = 2
+    lastInterval = now
+    
+    var counterTime = totalTime
+    let minutes = Int(counterTime / 60)
+    
+    counterTime -= (NSTimeInterval(minutes) * 60)
+    let minutesValue = String(format: "%02d", minutes)
+    
+    let seconds = Int(counterTime)
+    counterTime -= (NSTimeInterval(seconds))
+    let secondsValue = String(format: "%02d", seconds)
+    
+    let milliseconds = Int(counterTime * 100)
+    let millisecondsValue = String(format: "%02d", milliseconds)
+    
+    return (minutesValue, secondsValue, millisecondsValue)
+  }
+  
+  
 
 }

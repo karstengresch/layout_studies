@@ -150,6 +150,28 @@ class CircleGraphView: UIView {
     
   }
   
-  
+  func getCounterTimeValues() -> (minutes: String, seconds: String, milliseconds: String) {
+    
+    let now = NSDate.timeIntervalSinceReferenceDate()
+    // 10-8 = 2
+    totalTime += now - lastInterval
+    // 12-10 = 2
+    lastInterval = now
+    
+    var counterTime = totalTime
+    let minutes = Int(counterTime / 60)
+    
+    counterTime -= (NSTimeInterval(minutes) * 60)
+    let minutesValue = String(format: "%02d", minutes)
+    
+    let seconds = Int(counterTime)
+    counterTime -= (NSTimeInterval(seconds))
+    let secondsValue = String(format: "%02d", seconds)
+    
+    let milliseconds = Int(counterTime * 100)
+    let millisecondsValue = String(format: "%02d", milliseconds)
+    
+    return (minutesValue, secondsValue, millisecondsValue)
+  }
 
 }

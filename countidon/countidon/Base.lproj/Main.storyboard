@@ -99,7 +99,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="circleGraphView" destination="bLy-he-jJ9" id="PEG-iA-u7B"/>
+                        <outlet property="circleGraphView" destination="bLy-he-jJ9" id="2jy-RO-2jH"/>
                         <outlet property="millisecondsLabel" destination="TIL-hF-tYH" id="3CT-P1-61q"/>
                         <outlet property="minLabel" destination="zNR-Sz-jKo" id="0Rf-q5-7WS"/>
                         <outlet property="secondsLabel" destination="V6J-SA-p6i" id="Xbd-60-gJk"/>

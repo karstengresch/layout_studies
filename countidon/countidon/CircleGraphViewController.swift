@@ -16,21 +16,16 @@ class CircleGraphViewController: UIViewController {
   
   weak var delegate: CircleGraphViewControllerDelegate?
   
-  var lastInterval = NSTimeInterval()
-  var timer = NSTimer()
-  var totalTime = NSTimeInterval()
+//   var lastInterval = NSTimeInterval()
+//  var timer = NSTimer()
+//   var totalTime = NSTimeInterval()
   let maxTime: Double = 12.0
 
   @IBOutlet weak var percentLabel: UILabel?
-
-  @IBOutlet weak var timeLabel: UILabel?
-  
   @IBOutlet weak var circleGraphView: CircleGraphView?
-  
-    @IBOutlet weak var millisecondsLabel: UILabel!
-    @IBOutlet weak var secondsLabel: UILabel!
-    @IBOutlet weak var minLabel: UILabel!
-  
+  @IBOutlet weak var millisecondsLabel: UILabel?
+  @IBOutlet weak var secondsLabel: UILabel?
+  @IBOutlet weak var minLabel: UILabel?
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,46 +60,20 @@ class CircleGraphViewController: UIViewController {
     
     circleGraphView?.endArc = 0
     
-    if !timer.valid {
+    if circleGraphView?.timer.valid != true {
       let selector: Selector = "updateCounter"
-      timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
+      circleGraphView?.timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
         target: self,
         selector: selector,
         userInfo: nil,
         repeats: true)
-      lastInterval = NSDate.timeIntervalSinceReferenceDate()
+      circleGraphView?.lastInterval = NSDate.timeIntervalSinceReferenceDate()
     } else {
       circleGraphView?.endArc = 1.0
-      timer.invalidate()
+      circleGraphView?.timer.invalidate()
     }
   }
   
-  
-  
-  
-  func getCounterTimeValues() -> (minutes: String, seconds: String, milliseconds: String) {
-    
-    let now = NSDate.timeIntervalSinceReferenceDate()
-    // 10-8 = 2
-    totalTime += now - lastInterval
-    // 12-10 = 2
-    lastInterval = now
-    
-    var counterTime = totalTime
-    let minutes = Int(counterTime / 60)
-    
-    counterTime -= (NSTimeInterval(minutes) * 60)
-    let minutesValue = String(format: "%02d", minutes)
-    
-    let seconds = Int(counterTime)
-    counterTime -= (NSTimeInterval(seconds))
-    let secondsValue = String(format: "%02d", seconds)
-    
-    let milliseconds = Int(counterTime * 100)
-    let millisecondsValue = String(format: "%02d", milliseconds)
-    
-    return (minutesValue, secondsValue, millisecondsValue)
-  }
   
   // MARK: IB related
   @IBAction func cancel() {
