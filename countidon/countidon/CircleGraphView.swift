@@ -11,7 +11,7 @@ import UIKit
 
 
 @IBDesignable
-class CircleGraphView: UIView {
+class CircleGraphView: UIControl {
 
   @IBInspectable var endArc: CGFloat = 0.5 { // up to 1.0
     didSet {
@@ -63,12 +63,12 @@ class CircleGraphView: UIView {
 
       
     }
-  
+ /*
   override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
     print("Circle Graph View: Touches ended")
     buttonPressed(self)
   }
-  
+  */
   @IBAction func buttonPressed(sender: AnyObject) {
     print("Circle Graph View: Button pressed")
     printStatus()

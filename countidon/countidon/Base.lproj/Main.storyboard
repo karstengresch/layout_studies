@@ -60,7 +60,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="circleGraphView" destination="bLy-he-jJ9" id="2jy-RO-2jH"/>
+                        <outlet property="circleGraphView" destination="bLy-he-jJ9" id="QgD-Mk-1hI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6H-p0-ubY" userLabel="First Responder" sceneMemberID="firstResponder"/>
