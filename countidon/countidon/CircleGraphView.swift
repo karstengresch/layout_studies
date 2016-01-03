@@ -32,6 +32,7 @@ class CircleGraphView: UIView {
   let maxTime: Double = 12.0
   var isRunning = false
   var wasStopped = false
+  var counterTimeValues = (minutes: "00", seconds: "00", milliseconds: "00")
 
 
   
@@ -64,9 +65,8 @@ class CircleGraphView: UIView {
     }
   
   override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-      print("Circle Graph View: Touches ended")
+    print("Circle Graph View: Touches ended")
     buttonPressed(self)
-
   }
   
   @IBAction func buttonPressed(sender: AnyObject) {
@@ -86,10 +86,10 @@ class CircleGraphView: UIView {
       if !timer.valid {
         print("Circle Graph View: Timer was NOT valid and was NOT running")
         printStatus()
-        let selector: Selector = "updateCounter"
+        // let selector: Selector = "updateCounter"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
           target: self,
-          selector: selector,
+          selector: "updateCounter",
           userInfo: nil,
           repeats: true)
           lastInterval = NSDate.timeIntervalSinceReferenceDate()
@@ -107,10 +107,10 @@ class CircleGraphView: UIView {
       if !timer.valid {
         print("Circle Graph View: Timer was NOT valid and >>was<< running")
         printStatus()
-        let selector: Selector = "updateCounter"
+        // let selector: Selector = "updateCounter"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
           target: self,
-          selector: selector,
+          selector: "updateCounter",
           userInfo: nil,
           repeats: true)
         lastInterval = NSDate.timeIntervalSinceReferenceDate()
@@ -145,7 +145,7 @@ class CircleGraphView: UIView {
       // percentLabel?.text = String(format: " %5.2f %%", timeGone * 100)
       // print("\(timeGone)")
       
-      // let counterTimeValues = getCounterTimeValues()
+      counterTimeValues = getCounterTimeValues()
       // timeLabel?.text = "\(counterTimeValues.minutes):\(counterTimeValues.seconds):\(counterTimeValues.milliseconds)"
       
     }
@@ -153,7 +153,7 @@ class CircleGraphView: UIView {
       endArc = 1.0
       // percentLabel?.text = "100%"
       // timeLabel?.text = String(format: "%2.2f", maxTime)
-      // let counterTimeValues = getCounterTimeValues()
+      counterTimeValues = getCounterTimeValues()
       // timeLabel?.text = "\(counterTimeValues.minutes):\(counterTimeValues.seconds):00"
       totalTime = 0
       timer.invalidate()

@@ -56,7 +56,7 @@ class CircleGraphViewController: UIViewController {
     
   }
   @IBAction func startButtonPressed(sender: AnyObject) {
-    // print("Start button pressed")
+    print("Start button from VC pressed")
     
     circleGraphView?.endArc = 0
     

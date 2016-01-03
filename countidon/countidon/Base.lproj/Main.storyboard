@@ -21,48 +21,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-he-jJ9" customClass="CircleGraphView" customModule="countidon" customModuleProvider="target">
                                 <rect key="frame" x="165" y="165" width="270" height="270"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalCentering" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-m3-hsS">
-                                        <rect key="frame" x="94.5" y="125.5" width="81" height="20.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNR-Sz-jKo">
-                                                <rect key="frame" x="0.0" y="0.0" width="21" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mve-VM-ZD2">
-                                                <rect key="frame" x="23" y="0.0" width="5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6J-SA-p6i">
-                                                <rect key="frame" x="30" y="0.0" width="21" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sys-eq-MYQ">
-                                                <rect key="frame" x="53" y="0.0" width="5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIL-hF-tYH">
-                                                <rect key="frame" x="60" y="0.0" width="21" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
                                 <color key="backgroundColor" red="0.039215686274509803" green="0.21176470588235294" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bLy-he-jJ9" secondAttribute="height" multiplier="1:1" id="clO-Vd-Yy2"/>
-                                    <constraint firstItem="h1t-m3-hsS" firstAttribute="centerX" secondItem="bLy-he-jJ9" secondAttribute="centerX" id="eo5-C4-LD3"/>
-                                    <constraint firstItem="h1t-m3-hsS" firstAttribute="centerY" secondItem="bLy-he-jJ9" secondAttribute="centerY" id="g7a-AT-rDH"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
@@ -100,9 +61,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="circleGraphView" destination="bLy-he-jJ9" id="2jy-RO-2jH"/>
-                        <outlet property="millisecondsLabel" destination="TIL-hF-tYH" id="3CT-P1-61q"/>
-                        <outlet property="minLabel" destination="zNR-Sz-jKo" id="0Rf-q5-7WS"/>
-                        <outlet property="secondsLabel" destination="V6J-SA-p6i" id="Xbd-60-gJk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6H-p0-ubY" userLabel="First Responder" sceneMemberID="firstResponder"/>
