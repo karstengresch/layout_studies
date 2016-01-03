@@ -71,11 +71,12 @@ class CircleGraphView: UIView {
   
   @IBAction func buttonPressed(sender: AnyObject) {
     print("Circle Graph View: Button pressed")
-    
+    printStatus()
     
     if ( !isRunning )
     {
       print("Circle Graph View: was NOT running")
+      printStatus()
       if !wasStopped {
        endArc = 0
       } else {
@@ -84,6 +85,7 @@ class CircleGraphView: UIView {
       
       if !timer.valid {
         print("Circle Graph View: Timer was NOT valid and was NOT running")
+        printStatus()
         let selector: Selector = "updateCounter"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
           target: self,
@@ -93,15 +95,18 @@ class CircleGraphView: UIView {
           lastInterval = NSDate.timeIntervalSinceReferenceDate()
       } else {
         print("Circle Graph View: Timer >>was<< valid and was NOT running")
+        printStatus()
         timer.invalidate()
         let timeGone = totalTime / maxTime
         endArc = CGFloat(timeGone)
         wasStopped = true
       }
-    } else {
+    } else { // IS running
       print("Circle Graph View: >>was<< running")
+
       if !timer.valid {
         print("Circle Graph View: Timer was NOT valid and >>was<< running")
+        printStatus()
         let selector: Selector = "updateCounter"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
           target: self,
@@ -111,6 +116,7 @@ class CircleGraphView: UIView {
         lastInterval = NSDate.timeIntervalSinceReferenceDate()
       } else {
         print("Circle Graph View: Timer >>was<< valid and >>was<< running")
+        printStatus()
         timer.invalidate()
         let timeGone = totalTime / maxTime
         endArc = CGFloat(timeGone)
@@ -119,6 +125,11 @@ class CircleGraphView: UIView {
     }
     
     isRunning = isRunning ? false : true
+  }
+  
+  
+  func printStatus() {
+    print("***Status***\n\tendArc: \(endArc) - totalTime: \(totalTime) - lastInterval: \(lastInterval)")
   }
   
   // TODO: Check reference day as parameter!
