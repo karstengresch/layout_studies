@@ -29,7 +29,7 @@ class CircleGraphViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // circleGraphView?.addGestureRecognizer(<#T##gestureRecognizer: UIGestureRecognizer##UIGestureRecognizer#>)
+        circleGraphView?.addTarget(circleGraphView, action: "buttonPressed:", forControlEvents: .TouchUpInside)
       
         // Do any additional setup after loading the view.
     }
