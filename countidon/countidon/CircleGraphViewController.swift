@@ -21,7 +21,6 @@ class CircleGraphViewController: UIViewController {
 //   var totalTime = NSTimeInterval()
   let maxTime: Double = 12.0
 
-  @IBOutlet weak var percentLabel: UILabel?
   @IBOutlet weak var circleGraphView: CircleGraphView?
   @IBOutlet weak var millisecondsLabel: UILabel?
   @IBOutlet weak var secondsLabel: UILabel?
