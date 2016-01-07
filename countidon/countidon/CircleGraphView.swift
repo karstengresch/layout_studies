@@ -79,7 +79,7 @@ class CircleGraphView: UIControl {
       let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
       let size = timeLabel.sizeWithAttributes((labelFontAttributes as! [String : AnyObject]))
 
-      timeLabel.drawInRect(CGRectMake(center.x,center.y,size.width,size.height), withAttributes: (labelFontAttributes as! [String : AnyObject]))
+      timeLabel.drawInRect(CGRectMake(center.x - size.width/2,center.y - size.height/2,size.width,size.height), withAttributes: (labelFontAttributes as! [String : AnyObject]))
     
       
       
