@@ -66,7 +66,19 @@ class CircleGraphView: UIControl {
       
       CGContextAddArc(context, centerPoint.x, centerPoint.y, radius, start, end, 0)
       CGContextStrokePath(context)
+      
+      
+      let labelFontAttributes: NSDictionary = [ NSForegroundColorAttributeName: labelFontColor,
+        NSParagraphStyleAttributeName: labelFontParagraphStyle,
+        NSObliquenessAttributeName: labelFontObliqueness,
+        NSFontAttributeName: labelFont!
+      ]
+      
+      let delimiter = "\t:\t"
+      let timeLabel: NSString = counterTimeValues.minutes + delimiter + counterTimeValues.seconds + delimiter + counterTimeValues.milliseconds
 
+      timeLabel.drawInRect(rect, withAttributes: (labelFontAttributes as! [String : AnyObject]))
+      
       
     }
  /*
