@@ -76,8 +76,11 @@ class CircleGraphView: UIControl {
       
       let delimiter = "\t:\t"
       let timeLabel: NSString = counterTimeValues.minutes + delimiter + counterTimeValues.seconds + delimiter + counterTimeValues.milliseconds
+      let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
+      let size = timeLabel.sizeWithAttributes((labelFontAttributes as! [String : AnyObject]))
 
-      timeLabel.drawInRect(rect, withAttributes: (labelFontAttributes as! [String : AnyObject]))
+      timeLabel.drawInRect(CGRectMake(center.x,center.y,size.width,size.height), withAttributes: (labelFontAttributes as! [String : AnyObject]))
+    
       
       
     }
