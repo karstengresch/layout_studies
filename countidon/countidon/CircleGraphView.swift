@@ -23,9 +23,15 @@ class CircleGraphView: UIControl {
   @IBInspectable var arcWidth: CGFloat =  10.0
   @IBInspectable var arcColor: UIColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
   @IBInspectable var arcBackgroundColor: UIColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
+  @IBInspectable var minutes: NSString = "Whereof we cannot speak, thereof we must remain silent."
   
   
+  @IBInspectable var labelFontColor: UIColor { return UIColor.whiteColor() }
+  @IBInspectable var labelFont: UIFont? = UIFont(name: "Helvetica Neue", size: 12)
+  @IBInspectable var labelFontParagraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
+  @IBInspectable var labelFontObliqueness = 0.1
   
+ 
   var lastInterval = NSTimeInterval()
   var timer = NSTimer()
   var totalTime = NSTimeInterval()
