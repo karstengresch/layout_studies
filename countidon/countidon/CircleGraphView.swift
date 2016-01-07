@@ -27,7 +27,7 @@ class CircleGraphView: UIControl {
   
   
   @IBInspectable var labelFontColor: UIColor { return UIColor.whiteColor() }
-  @IBInspectable var labelFont: UIFont? = UIFont(name: "Helvetica Neue", size: 12)
+  @IBInspectable var labelFont: UIFont? = UIFont(name: "Helvetica Neue", size: 18)
   @IBInspectable var labelFontParagraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
   @IBInspectable var labelFontObliqueness = 0.1
   
