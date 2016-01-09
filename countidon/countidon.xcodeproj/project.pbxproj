@@ -28,6 +28,7 @@
 		3D7D91EA1C1F710500150709 /* DummyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D91E91C1F710500150709 /* DummyTableViewController.swift */; };
 		3D7D91EC1C20A88600150709 /* CountidonEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D91EB1C20A88600150709 /* CountidonEntry.swift */; };
 		3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */; };
+		3DA249FE1C41836000AF71C9 /* CountidonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */; };
 		3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC41D81BD27BB900297F01 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		3D7D91E91C1F710500150709 /* DummyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyTableViewController.swift; sourceTree = "<group>"; };
 		3D7D91EB1C20A88600150709 /* CountidonEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonEntry.swift; sourceTree = "<group>"; };
 		3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonDataModel.swift; sourceTree = "<group>"; };
 		3DDC41D81BD27BB900297F01 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				3D2694681C2EAD2E00A01402 /* CountidonSettings.swift */,
 				3D26946A1C2EADCF00A01402 /* CountidonItem.swift */,
 				3D26946C1C2EAE6300A01402 /* CountidonGroup.swift */,
+				3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */,
+				3DA249FE1C41836000AF71C9 /* CountidonDataModel.swift in Sources */,
 				3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */,
 				3D26947D1C35CD2C00A01402 /* CircleGraphViewController.swift in Sources */,
 				3D26946D1C2EAE6300A01402 /* CountidonGroup.swift in Sources */,
