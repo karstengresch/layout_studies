@@ -14,6 +14,8 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   let counterViewController = CounterViewController()
   let settingsViewController = SettingsViewController()
   let screenRect: CGRect = UIScreen.mainScreen().bounds
+  
+  var countidonDataModel: CountidonDataModel!
 
 
   override func viewDidLoad() {
