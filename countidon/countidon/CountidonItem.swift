@@ -27,19 +27,19 @@ class CountidonItem: NSObject, NSCoding {
 
   
   required init?(coder aDecoder: NSCoder) {
-    created = aDecoder.decodeObjectForKey("CountidonItemCreated") as! NSDate
-    name = aDecoder.decodeObjectForKey("CountidonItemName") as! String
-    timeToCountdown = aDecoder.decodeIntegerForKey("CountidonItemTimeToCountdown")
-    circleViewBackgroundColor = aDecoder.decodeObjectForKey("CircleViewBackgroundColor") as! UIColor
+    created = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_CREATED) as! NSDate
+    name = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_NAME) as! String
+    timeToCountdown = aDecoder.decodeIntegerForKey(COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
+    circleViewBackgroundColor = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR) as! UIColor
     
     super.init()
   }
   
   func encodeWithCoder(aCoder: NSCoder) {
-    aCoder.encodeObject(created, forKey: "CountidonItemCreated")
-    aCoder.encodeObject(name, forKey: "CountidonItemName")
-    aCoder.encodeObject(timeToCountdown, forKey: "CountidonItemTimeToCountdown")
-    aCoder.encodeObject(circleViewBackgroundColor, forKey: "CircleViewBackgroundColor")
+    aCoder.encodeObject(created, forKey: COUNTIDON_ITEM_CREATED)
+    aCoder.encodeObject(name, forKey: COUNTIDON_ITEM_NAME)
+    aCoder.encodeObject(timeToCountdown, forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
+    aCoder.encodeObject(circleViewBackgroundColor, forKey: COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR)
   }
   
   init(name: String) {
