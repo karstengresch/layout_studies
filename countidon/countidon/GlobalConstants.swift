@@ -10,3 +10,4 @@ import Foundation
 import UIKit
 
 let π: CGFloat = CGFloat(M_PI)
+let COUNTIDON_SETTING_THEME = "CountidonSettingTheme"

@@ -17,7 +17,6 @@
 		3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */; };
 		3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */; };
 		3D45B7EC1BCF9DAC00B6D391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7EA1BCF9DAC00B6D391 /* Main.storyboard */; };
-		3D45B7EF1BCF9DAC00B6D391 /* countidon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7ED1BCF9DAC00B6D391 /* countidon.xcdatamodeld */; };
 		3D45B7F11BCF9DAC00B6D391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7F01BCF9DAC00B6D391 /* Assets.xcassets */; };
 		3D45B7F41BCF9DAC00B6D391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7F21BCF9DAC00B6D391 /* LaunchScreen.storyboard */; };
 		3D45B7FF1BCF9DAC00B6D391 /* countidonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7FE1BCF9DAC00B6D391 /* countidonTests.swift */; };
@@ -26,7 +25,6 @@
 		3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E51BCFD7100028E2EE /* ShapeButton.swift */; };
 		3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E71BD02F780028E2EE /* BackgroundView.swift */; };
 		3D7D91EA1C1F710500150709 /* DummyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D91E91C1F710500150709 /* DummyTableViewController.swift */; };
-		3D7D91EC1C20A88600150709 /* CountidonEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D91EB1C20A88600150709 /* CountidonEntry.swift */; };
 		3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */; };
 		3DA249FE1C41836000AF71C9 /* CountidonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */; };
 		3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC41D81BD27BB900297F01 /* CounterViewController.swift */; };
@@ -61,7 +59,6 @@
 		3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D45B7EB1BCF9DAC00B6D391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D45B7EE1BCF9DAC00B6D391 /* countidon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = countidon.xcdatamodel; sourceTree = "<group>"; };
 		3D45B7F01BCF9DAC00B6D391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D45B7F31BCF9DAC00B6D391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D45B7F51BCF9DAC00B6D391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,7 +72,6 @@
 		3D7177E51BCFD7100028E2EE /* ShapeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeButton.swift; sourceTree = "<group>"; };
 		3D7177E71BD02F780028E2EE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		3D7D91E91C1F710500150709 /* DummyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyTableViewController.swift; sourceTree = "<group>"; };
-		3D7D91EB1C20A88600150709 /* CountidonEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonEntry.swift; sourceTree = "<group>"; };
 		3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonDataModel.swift; sourceTree = "<group>"; };
 		3DDC41D81BD27BB900297F01 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
@@ -165,8 +161,6 @@
 				3D45B8171BCFA33500B6D391 /* Controllers */,
 				3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */,
 				3D45B7F51BCF9DAC00B6D391 /* Info.plist */,
-				3D45B7ED1BCF9DAC00B6D391 /* countidon.xcdatamodeld */,
-				3D7D91EB1C20A88600150709 /* CountidonEntry.swift */,
 			);
 			path = countidon;
 			sourceTree = "<group>";
@@ -361,12 +355,10 @@
 				3D26946F1C2EC23700A01402 /* StartScreenTableViewCell.swift in Sources */,
 				3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */,
 				3D7D91EA1C1F710500150709 /* DummyTableViewController.swift in Sources */,
-				3D45B7EF1BCF9DAC00B6D391 /* countidon.xcdatamodeld in Sources */,
 				3D2694691C2EAD2E00A01402 /* CountidonSettings.swift in Sources */,
 				3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */,
 				3D26946B1C2EADCF00A01402 /* CountidonItem.swift in Sources */,
 				3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */,
-				3D7D91EC1C20A88600150709 /* CountidonEntry.swift in Sources */,
 				3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */,
 				3D26947C1C35CD2C00A01402 /* CircleGraphView.swift in Sources */,
 			);
@@ -620,19 +612,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3D45B7ED1BCF9DAC00B6D391 /* countidon.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3D45B7EE1BCF9DAC00B6D391 /* countidon.xcdatamodel */,
-			);
-			currentVersion = 3D45B7EE1BCF9DAC00B6D391 /* countidon.xcdatamodel */;
-			path = countidon.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3D45B7DB1BCF9DAB00B6D391 /* Project object */;
 }

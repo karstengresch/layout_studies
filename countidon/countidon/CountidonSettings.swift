@@ -18,12 +18,12 @@ class CountidonSettings: NSObject, NSCoding {
   
   required init?(coder aDecoder: NSCoder) {
     // ??? TODO: Check later if this works: theme = aDecoder.decodeObjectForKey("CountidonSettingTheme") as! Theme
-    self.theme = Theme(rawValue: aDecoder.decodeIntegerForKey("CountidonSettingTheme")) ?? .Default
+    self.theme = Theme(rawValue: aDecoder.decodeIntegerForKey(COUNTIDON_SETTING_THEME)) ?? .Default
     super.init()
   }
   
   func encodeWithCoder(aCoder: NSCoder) {
-    aCoder.encodeObject(self.theme.rawValue, forKey: "CountidonSettingTheme")
+    aCoder.encodeObject(self.theme.rawValue, forKey: COUNTIDON_SETTING_THEME)
   }
   
   override init() {
