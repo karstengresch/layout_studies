@@ -11,14 +11,17 @@ import Foundation
 
 class CountidonGroup: NSObject, NSCoding {
   var name = ""
+  var countidonItems = [CountidonItem]()
   
   required init?(coder aDecoder: NSCoder) {
     name = aDecoder.decodeObjectForKey("CountidonGroupName") as! String
+    countidonItems = aDecoder.decodeObjectForKey("CountidonItems") as! [CountidonItem]
     super.init()
   }
   
   func encodeWithCoder(aCoder: NSCoder) {
     aCoder.encodeObject(name, forKey: "CountidonGroupName")
+    aCoder.encodeObject(countidonItems, forKey: "CountidonItems")
   }
   
   init(name: String) {
