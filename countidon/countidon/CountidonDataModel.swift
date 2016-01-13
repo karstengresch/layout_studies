@@ -15,6 +15,7 @@ class CountidonDataModel {
   init() {
     print("Data file path is \(dataFilePath())")
     loadCountidonGroups()
+    registerUserDefaults()
   }
   
   // MARK: File related
@@ -43,6 +44,22 @@ class CountidonDataModel {
         countidonGroups = unarchiver.decodeObjectForKey("CountidonGroups") as! [CountidonGroup]
         unarchiver.finishDecoding()
       }
+    }
+  }
+  
+  func registerUserDefaults() {
+    let defaultsDictionary = ["AppRunsFirstTime": true]
+    NSUserDefaults.standardUserDefaults().registerDefaults(defaultsDictionary)
+  }
+  
+  func handleFirstTimeAppStart() {
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+    let firstTime = userDefaults.boolForKey("AppRunsFirstTime")
+    if firstTime {
+      let firstTimeCountidonGroup = CountidonGroup(name: "First Counters")
+      countidonGroups.append(firstTimeCountidonGroup)
+      userDefaults.setBool(false, forKey: "AppRunsFirstTime")
+      userDefaults.synchronize()
     }
   }
 
