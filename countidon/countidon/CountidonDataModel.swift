@@ -16,6 +16,7 @@ class CountidonDataModel {
     print("Data file path is \(dataFilePath())")
     loadCountidonGroups()
     registerUserDefaults()
+    handleFirstTimeAppStart()
   }
   
   // MARK: File related
