@@ -10,6 +10,7 @@ The start screen contains a UITableView w/ two cells containing a custom button 
 The sub screens allow selecting different timer types (for different games). 
 
 Timers look like this:
+
 ![countidon timer screen](https://github.com/karstengresch/layout_studies/blob/master/countidon_timer.png)
 
 
