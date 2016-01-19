@@ -11,7 +11,6 @@ import UIKit
 /**
  A class for all general settings (e.g. theme, init screen).
  Individual counter settings in class CountidonItem
-
 */
 class CountidonSettings: NSObject, NSCoding {
   var theme = Theme.Default
@@ -19,8 +18,9 @@ class CountidonSettings: NSObject, NSCoding {
   var startScreenLowerButtonText = "Settings"
   
   required init?(coder aDecoder: NSCoder) {
-    // ??? TODO: Check later if this works: theme = aDecoder.decodeObjectForKey("CountidonSettingTheme") as! Theme
     self.theme = Theme(rawValue: aDecoder.decodeIntegerForKey(COUNTIDON_SETTING_THEME)) ?? .Default
+    self.startScreenUpperButtonText = aDecoder.decodeObjectForKey(COUNTIDON_VC_START_SCREEN_UPPER_BUTTON_TEXT) as! String
+    self.startScreenLowerButtonText = aDecoder.decodeObjectForKey(COUNTIDON_VC_START_SCREEN_LOWER_BUTTON_TEXT) as! String
     super.init()
   }
   
