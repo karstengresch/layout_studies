@@ -14,7 +14,9 @@ class CountidonDataModel {
   var countidonSettings = CountidonSettings()
   
   init() {
-    print("Data file path is \(dataFilePath())")
+    print("Data file path for groups is \(dataFilePathGroups())")
+    print("Data file path for settings is \(dataFilePathSettings())")
+    loadCountidonSettings()
     loadCountidonGroups()
     registerUserDefaults()
     handleFirstTimeAppStart()
@@ -26,8 +28,12 @@ class CountidonDataModel {
     return paths[0]
   }
   
-  func dataFilePath() -> String {
+  func dataFilePathGroups() -> String {
     return (documentsDirectory() as NSString).stringByAppendingPathComponent("CountidonGroups.plist")
+  }
+  
+  func dataFilePathSettings() -> String {
+    return (documentsDirectory() as NSString).stringByAppendingPathComponent("CountidonSettings.plist")
   }
   
   // MARK: Groups
@@ -37,11 +43,11 @@ class CountidonDataModel {
     let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
     archiver.encodeObject(countidonGroups, forKey: COUNTIDON_PERSISTENCE_GROUPS)
     archiver.finishEncoding()
-    data.writeToFile(dataFilePath(), atomically: true)
+    data.writeToFile(dataFilePathGroups(), atomically: true)
   }
   
   func loadCountidonGroups() {
-    let path = dataFilePath()
+    let path = dataFilePathGroups()
     if NSFileManager.defaultManager().fileExistsAtPath(path) {
       if let data = NSData(contentsOfFile: path) {
         let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
@@ -57,11 +63,11 @@ class CountidonDataModel {
     let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
     archiver.encodeObject(countidonSettings, forKey: COUNTIDON_PERSISTENCE_SETTINGS)
     archiver.finishEncoding()
-    data.writeToFile(dataFilePath(), atomically: true)
+    data.writeToFile(dataFilePathSettings(), atomically: true)
   }
   
   func loadCountidonSettings() {
-    let path = dataFilePath()
+    let path = dataFilePathSettings()
     if NSFileManager.defaultManager().fileExistsAtPath(path) {
       if let data = NSData(contentsOfFile: path) {
         let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
