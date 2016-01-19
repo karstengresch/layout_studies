@@ -21,3 +21,7 @@ let COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR = "CountidonItemCircleViewBackgr
 let COUNTIDON_VC_START_SCREEN_UPPER_BUTTON_TEXT = "CountidonVcStartScreenUpperButtonText";
 let COUNTIDON_VC_START_SCREEN_LOWER_BUTTON_TEXT = "CountidonVcStartScreenLowerButtonText";
 
+// MARK: PERSISTENCE
+let COUNTIDON_PERSISTENCE_GROUPS = "CountidonPersistenceGroups"
+let COUNTIDON_PERSISTENCE_SETTINGS = "CountidonPersistenceSettings"
+

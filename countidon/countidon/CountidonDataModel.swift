@@ -11,6 +11,7 @@ import Foundation
 class CountidonDataModel {
   
   var countidonGroups = [CountidonGroup]()
+  var countidonSettings = CountidonSettings()
   
   init() {
     print("Data file path is \(dataFilePath())")
@@ -29,10 +30,12 @@ class CountidonDataModel {
     return (documentsDirectory() as NSString).stringByAppendingPathComponent("CountidonGroups.plist")
   }
   
+  // MARK: Groups
+  
   func saveCountidonGroups() {
     let data = NSMutableData()
     let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
-    archiver.encodeObject(countidonGroups, forKey: "CountidonGroups")
+    archiver.encodeObject(countidonGroups, forKey: COUNTIDON_PERSISTENCE_GROUPS)
     archiver.finishEncoding()
     data.writeToFile(dataFilePath(), atomically: true)
   }
@@ -42,11 +45,33 @@ class CountidonDataModel {
     if NSFileManager.defaultManager().fileExistsAtPath(path) {
       if let data = NSData(contentsOfFile: path) {
         let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
-        countidonGroups = unarchiver.decodeObjectForKey("CountidonGroups") as! [CountidonGroup]
+        countidonGroups = unarchiver.decodeObjectForKey(COUNTIDON_PERSISTENCE_GROUPS) as! [CountidonGroup]
         unarchiver.finishDecoding()
       }
     }
   }
+  
+  // MARK: Settings
+  func saveCountidonSettings() {
+    let data = NSMutableData()
+    let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
+    archiver.encodeObject(countidonSettings, forKey: COUNTIDON_PERSISTENCE_SETTINGS)
+    archiver.finishEncoding()
+    data.writeToFile(dataFilePath(), atomically: true)
+  }
+  
+  func loadCountidonSettings() {
+    let path = dataFilePath()
+    if NSFileManager.defaultManager().fileExistsAtPath(path) {
+      if let data = NSData(contentsOfFile: path) {
+        let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
+        countidonSettings = unarchiver.decodeObjectForKey(COUNTIDON_PERSISTENCE_SETTINGS) as! CountidonSettings
+        unarchiver.finishDecoding()
+      }
+    }
+  }
+  
+  // MARK: Defaults and first start
   
   func registerUserDefaults() {
     let defaultsDictionary = ["AppRunsFirstTime": true]
