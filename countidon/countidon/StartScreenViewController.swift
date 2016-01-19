@@ -15,6 +15,9 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   let settingsViewController = SettingsViewController()
   let screenRect: CGRect = UIScreen.mainScreen().bounds
   
+  var buttonUpperLabelText = "New" // for 1st run
+  var buttonLowerLabelText = "Settings"
+  
   var countidonDataModel: CountidonDataModel!
 
 

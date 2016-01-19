@@ -15,6 +15,8 @@ import UIKit
 */
 class CountidonSettings: NSObject, NSCoding {
   var theme = Theme.Default
+  var startScreenUpperButtonText = "New"
+  var startScreenLowerButtonText = "Settings"
   
   required init?(coder aDecoder: NSCoder) {
     // ??? TODO: Check later if this works: theme = aDecoder.decodeObjectForKey("CountidonSettingTheme") as! Theme
@@ -24,6 +26,8 @@ class CountidonSettings: NSObject, NSCoding {
   
   func encodeWithCoder(aCoder: NSCoder) {
     aCoder.encodeObject(self.theme.rawValue, forKey: COUNTIDON_SETTING_THEME)
+    aCoder.encodeObject(startScreenUpperButtonText, forKey: COUNTIDON_VC_START_SCREEN_UPPER_BUTTON_TEXT)
+    aCoder.encodeObject(startScreenLowerButtonText, forKey: COUNTIDON_VC_START_SCREEN_LOWER_BUTTON_TEXT)
   }
   
   override init() {
