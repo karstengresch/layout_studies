@@ -22,6 +22,7 @@
 		3D45B7FF1BCF9DAC00B6D391 /* countidonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7FE1BCF9DAC00B6D391 /* countidonTests.swift */; };
 		3D45B80A1BCF9DAC00B6D391 /* countidonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B8091BCF9DAC00B6D391 /* countidonUITests.swift */; };
 		3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */; };
+		3D5E9D9D1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5E9D9C1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift */; };
 		3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E51BCFD7100028E2EE /* ShapeButton.swift */; };
 		3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E71BD02F780028E2EE /* BackgroundView.swift */; };
 		3D7D91EA1C1F710500150709 /* DummyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D91E91C1F710500150709 /* DummyTableViewController.swift */; };
@@ -69,6 +70,7 @@
 		3D45B8091BCF9DAC00B6D391 /* countidonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countidonUITests.swift; sourceTree = "<group>"; };
 		3D45B80B1BCF9DAC00B6D391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		3D5E9D9C1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualCounterSettingsViewController.swift; sourceTree = "<group>"; };
 		3D7177E51BCFD7100028E2EE /* ShapeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeButton.swift; sourceTree = "<group>"; };
 		3D7177E71BD02F780028E2EE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		3D7D91E91C1F710500150709 /* DummyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyTableViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				3D26947B1C35CD2C00A01402 /* CircleGraphViewController.swift */,
+				3D5E9D9C1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift */,
 				3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */,
 				3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */,
 				3DDC41D81BD27BB900297F01 /* CounterViewController.swift */,
@@ -345,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5E9D9D1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift in Sources */,
 				3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */,
 				3DA249FE1C41836000AF71C9 /* CountidonDataModel.swift in Sources */,
 				3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */,
