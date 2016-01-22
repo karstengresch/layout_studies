@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartScreenViewController: UITableViewController, CounterViewControllerDelegate, SettingsViewControllerDelegate, CircleGraphViewControllerDelegate {
+class StartScreenViewController: UITableViewController, CounterViewControllerDelegate, SettingsViewControllerDelegate, CircleGraphViewControllerDelegate, IndividualCounterSettingsViewControllerDelegate {
   @IBOutlet weak var startScreenNavigationItem: UINavigationItem?
   
   let counterViewController = CounterViewController()

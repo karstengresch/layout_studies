@@ -9,6 +9,10 @@
 import UIKit
 import Foundation
 
+protocol IndividualCounterSettingsViewControllerDelegate: class {
+  
+}
+
 class IndividualCounterSettingsViewController: UITableViewController {
   
   
