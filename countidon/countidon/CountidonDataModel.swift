@@ -88,12 +88,20 @@ class CountidonDataModel {
     let userDefaults = NSUserDefaults.standardUserDefaults()
     let firstTime = userDefaults.boolForKey("AppRunsFirstTime")
     if firstTime {
-      let firstTimeCountidonGroup = CountidonGroup(name: "First Counters")
+      let firstTimeCountidonGroup = CountidonGroup(name: COUNTIDON_DATA_MODEL_FIRST_TIME_GROUP_NAME)
+      let countidonItem = CountidonItem(coder: NSCoder())
+      countidonItem?.name = "First Counter"
+      countidonItem?.timeToCountdown = 60
+      // scary!
+      firstTimeCountidonGroup.countidonItems.append(countidonItem!)
+      
       countidonGroups.append(firstTimeCountidonGroup)
       userDefaults.setBool(false, forKey: "AppRunsFirstTime")
       userDefaults.synchronize()
     }
   }
+  
+  
 
   
   

@@ -25,3 +25,6 @@ let COUNTIDON_VC_START_SCREEN_LOWER_BUTTON_TEXT = "CountidonVcStartScreenLowerBu
 let COUNTIDON_PERSISTENCE_GROUPS = "CountidonPersistenceGroups"
 let COUNTIDON_PERSISTENCE_SETTINGS = "CountidonPersistenceSettings"
 
+// MARK: Data Model
+let COUNTIDON_DATA_MODEL_FIRST_TIME_GROUP_NAME = "First Counters"
+

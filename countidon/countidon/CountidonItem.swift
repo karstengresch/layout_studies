@@ -15,6 +15,9 @@ import Foundation
 class CountidonItem: NSObject, NSCoding {
   let created: NSDate
   var name = ""
+  /**
+      Time to countdown in seconds
+   */
   var timeToCountdown: NSInteger = 0
   var circleForegroundColor = UIColor(hue:1, saturation:1, brightness:0, alpha:1)
   var circleBackgroundColor = UIColor(hue:0, saturation:0, brightness:1, alpha:1)
