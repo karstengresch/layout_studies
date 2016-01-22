@@ -40,15 +40,36 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFw-hp-fic">
+                                <rect key="frame" x="282" y="497" width="37" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="☉">
+                                    <color key="titleColor" red="0.24705882352941178" green="0.42352941176470588" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.039215686274509803" green="0.21568627450980393" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wFw-hp-fic" firstAttribute="centerX" secondItem="QM1-a4-tjc" secondAttribute="centerX" id="1gg-DZ-HdZ"/>
+                            <constraint firstItem="I7D-Yx-qqC" firstAttribute="top" secondItem="wFw-hp-fic" secondAttribute="bottom" constant="2" id="DBm-yP-VyZ"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="centerX" secondItem="QM1-a4-tjc" secondAttribute="centerX" id="G6u-ad-cCH"/>
+                            <constraint firstItem="I7D-Yx-qqC" firstAttribute="top" secondItem="wFw-hp-fic" secondAttribute="bottom" constant="2" id="MvC-d9-jtM"/>
+                            <constraint firstItem="wFw-hp-fic" firstAttribute="centerX" secondItem="QM1-a4-tjc" secondAttribute="centerX" id="TSI-l4-Rn2"/>
+                            <constraint firstItem="wFw-hp-fic" firstAttribute="centerY" secondItem="QM1-a4-tjc" secondAttribute="centerY" id="XjF-k1-4Xp"/>
+                            <constraint firstItem="wFw-hp-fic" firstAttribute="centerX" secondItem="QM1-a4-tjc" secondAttribute="centerX" id="kyY-L3-ac2"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QM1-a4-tjc" secondAttribute="leadingMargin" constant="8" id="mtz-Bx-mgQ"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="width" secondItem="QM1-a4-tjc" secondAttribute="height" multiplier="9:20" id="oF3-kW-4Cg"/>
                             <constraint firstItem="bLy-he-jJ9" firstAttribute="centerY" secondItem="QM1-a4-tjc" secondAttribute="centerY" id="yPm-wd-QDO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TSI-l4-Rn2"/>
+                                <exclude reference="XjF-k1-4Xp"/>
+                                <exclude reference="kyY-L3-ac2"/>
+                                <exclude reference="MvC-d9-jtM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="6Vb-JB-7C0">
