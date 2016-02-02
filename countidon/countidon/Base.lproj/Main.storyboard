@@ -64,10 +64,10 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="MvC-d9-jtM"/>
                                 <exclude reference="TSI-l4-Rn2"/>
                                 <exclude reference="XjF-k1-4Xp"/>
                                 <exclude reference="kyY-L3-ac2"/>
-                                <exclude reference="MvC-d9-jtM"/>
                             </mask>
                         </variation>
                     </view>
