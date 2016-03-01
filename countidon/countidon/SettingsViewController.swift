@@ -12,7 +12,7 @@ protocol SettingsViewControllerDelegate: class {
   
 }
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UITableViewController {
   
     weak var delegate: SettingsViewControllerDelegate?
 
