@@ -89,7 +89,7 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("StartScreenCell", forIndexPath: indexPath) as! StartScreenTableViewCell
     
-      cell.shapeButton.addTarget(self, action: "navigateToSubscreen:", forControlEvents: .TouchUpInside)
+      cell.shapeButton.addTarget(self, action: #selector(StartScreenViewController.navigateToSubscreen(_:)), forControlEvents: .TouchUpInside)
     
     // let circle = cell.viewWithTag(755) as! ShapeButton
     

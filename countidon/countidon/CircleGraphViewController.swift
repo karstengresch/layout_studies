@@ -26,7 +26,7 @@ class CircleGraphViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        circleGraphView?.addTarget(circleGraphView, action: "buttonPressed:", forControlEvents: .TouchDown)
+      circleGraphView?.addTarget(circleGraphView, action: #selector(CircleGraphView.buttonPressed), forControlEvents: .TouchDown)
       
         // Do any additional setup after loading the view.
     }

@@ -110,7 +110,7 @@ class CircleGraphView: UIControl {
         // let selector: Selector = "updateCounter"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
           target: self,
-          selector: "updateCounter",
+          selector: #selector(CircleGraphView.updateCounter),
           userInfo: nil,
           repeats: true)
           lastInterval = NSDate.timeIntervalSinceReferenceDate()
@@ -131,7 +131,7 @@ class CircleGraphView: UIControl {
         // let selector: Selector = "updateCounter"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
           target: self,
-          selector: "updateCounter",
+          selector: #selector(CircleGraphView.updateCounter),
           userInfo: nil,
           repeats: true)
         lastInterval = NSDate.timeIntervalSinceReferenceDate()
