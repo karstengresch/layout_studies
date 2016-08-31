@@ -29,9 +29,13 @@ class CountidonItem: NSObject, NSCoding {
   let maxTime: Double = 12.0
 
   
+  override init() {
+    super.init()
+  }
+  
   required init?(coder aDecoder: NSCoder) {
     print("init?")
-    created = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_CREATED) as! NSDate
+    // created = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_CREATED) as! NSDate
     name = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_NAME) as! String
     timeToCountdown = aDecoder.decodeIntegerForKey(COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
     circleViewBackgroundColor = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR) as! UIColor
@@ -47,7 +51,7 @@ class CountidonItem: NSObject, NSCoding {
   }
   
   init(name: String) {
-    self.created = NSDate()
+    // self.created = NSDate()
     self.name = name
     super.init()
   }
