@@ -13,7 +13,7 @@ import Foundation
  The individual counter item.
 */
 class CountidonItem: NSObject, NSCoding {
-  let created: NSDate
+  var created = NSDate()
   var name = ""
   /**
       Time to countdown in seconds
@@ -30,6 +30,7 @@ class CountidonItem: NSObject, NSCoding {
 
   
   required init?(coder aDecoder: NSCoder) {
+    print("init?")
     created = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_CREATED) as! NSDate
     name = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_NAME) as! String
     timeToCountdown = aDecoder.decodeIntegerForKey(COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
