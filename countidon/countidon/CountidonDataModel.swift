@@ -49,6 +49,7 @@ class CountidonDataModel {
   func loadCountidonGroups() {
     let path = dataFilePathGroups()
     if NSFileManager.defaultManager().fileExistsAtPath(path) {
+      print("CountidonGroups.plist found at \(path)")
       if let data = NSData(contentsOfFile: path) {
         let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
         countidonGroups = unarchiver.decodeObjectForKey(COUNTIDON_PERSISTENCE_GROUPS) as! [CountidonGroup]
@@ -69,6 +70,7 @@ class CountidonDataModel {
   func loadCountidonSettings() {
     let path = dataFilePathSettings()
     if NSFileManager.defaultManager().fileExistsAtPath(path) {
+      print("CountidonSettings.plist found at \(path)")
       if let data = NSData(contentsOfFile: path) {
         let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
         countidonSettings = unarchiver.decodeObjectForKey(COUNTIDON_PERSISTENCE_SETTINGS) as! CountidonSettings
@@ -89,13 +91,15 @@ class CountidonDataModel {
     let firstTime = userDefaults.boolForKey("AppRunsFirstTime")
     if firstTime {
       let firstTimeCountidonGroup = CountidonGroup(name: COUNTIDON_DATA_MODEL_FIRST_TIME_GROUP_NAME)
-      let countidonItem = CountidonItem(coder: NSCoder())
-      countidonItem?.name = "First Counter"
-      countidonItem?.timeToCountdown = 60
+      // let countidonItem = CountidonItem(coder: NSCoder())
+      let countidonItem = CountidonItem()
+      countidonItem.name = "First Counter"
+      countidonItem.timeToCountdown = 60
       // scary!
-      firstTimeCountidonGroup.countidonItems.append(countidonItem!)
+      firstTimeCountidonGroup.countidonItems.append(countidonItem)
       
       countidonGroups.append(firstTimeCountidonGroup)
+      saveCountidonGroups()
       userDefaults.setBool(false, forKey: "AppRunsFirstTime")
       userDefaults.synchronize()
     }
