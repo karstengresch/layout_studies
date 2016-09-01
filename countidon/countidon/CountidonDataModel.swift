@@ -100,6 +100,7 @@ class CountidonDataModel {
       
       countidonGroups.append(firstTimeCountidonGroup)
       saveCountidonGroups()
+      saveCountidonSettings()
       userDefaults.setBool(false, forKey: "AppRunsFirstTime")
       userDefaults.synchronize()
     }

@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func saveData() {
     countidonDataModel.saveCountidonGroups()
+    countidonDataModel.saveCountidonSettings()
   }
 
 }
