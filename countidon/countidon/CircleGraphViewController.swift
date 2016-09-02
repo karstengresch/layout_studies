@@ -12,7 +12,7 @@ protocol CircleGraphViewControllerDelegate: class {
   
 }
 
-class CircleGraphViewController: UIViewController {
+class CircleGraphViewController: UIViewController, IndividualCounterSettingsViewControllerDelegate {
   
   weak var delegate: CircleGraphViewControllerDelegate?
 
@@ -39,6 +39,17 @@ class CircleGraphViewController: UIViewController {
   // MARK: IB related
   @IBAction func cancel() {
     dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  // MARK: Navigation
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+    if segue.identifier == "QuickViewSetupSegue" {
+      let navigationController = segue.destinationViewController as? UINavigationController
+      let controller = navigationController?.topViewController as? IndividualCounterSettingsViewController
+      controller?.delegate = self
+    }
+    
+
   }
   
 

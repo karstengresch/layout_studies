@@ -15,6 +15,7 @@ protocol IndividualCounterSettingsViewControllerDelegate: class {
 
 class IndividualCounterSettingsViewController: UITableViewController {
   
+  weak var delegate: IndividualCounterSettingsViewControllerDelegate?
   
   
 
