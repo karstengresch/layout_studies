@@ -17,6 +17,10 @@ class IndividualCounterSettingsViewController: UITableViewController {
   
   weak var delegate: IndividualCounterSettingsViewControllerDelegate?
   
+  // MARK: IB related
+  @IBAction func cancel() {
+    dismissViewControllerAnimated(true, completion: nil)
+  }
   
 
 }
