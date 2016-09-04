@@ -14,7 +14,7 @@ import UIKit
 */
 class CountidonSettings: NSObject, NSCoding {
   var theme = Theme.Default
-  var startScreenUpperButtonText = "New"
+  var startScreenUpperButtonText = "New" // TODO constant
   var startScreenLowerButtonText = "Settings"
   
   required init?(coder aDecoder: NSCoder) {
