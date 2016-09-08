@@ -48,7 +48,7 @@
                                     <color key="titleColor" red="0.24705882352941178" green="0.42352941176470588" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IpA-Fe-36h" kind="show" id="9fA-xi-LGE"/>
+                                    <segue destination="IpA-Fe-36h" kind="show" identifier="QuickViewSetupSegue" id="9fA-xi-LGE"/>
                                 </connections>
                             </button>
                         </subviews>
