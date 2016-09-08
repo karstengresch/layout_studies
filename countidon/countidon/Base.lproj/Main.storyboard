@@ -47,6 +47,9 @@
                                 <state key="normal" title="☉">
                                     <color key="titleColor" red="0.24705882352941178" green="0.42352941176470588" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="IpA-Fe-36h" kind="show" id="9fA-xi-LGE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.039215686274509803" green="0.21568627450980393" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
@@ -341,10 +344,10 @@
             </objects>
             <point key="canvasLocation" x="3543" y="726"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Individual Counter Settings View Controller-->
         <scene sceneID="3o4-6d-WhB">
             <objects>
-                <tableViewController id="IpA-Fe-36h" customClass="SettingsViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="IpA-Fe-36h" customClass="IndividualCounterSettingsViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QBJ-Nc-rHS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -502,4 +505,7 @@
             <point key="canvasLocation" x="2039" y="2236"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9fA-xi-LGE"/>
+    </inferredMetricsTieBreakers>
 </document>
