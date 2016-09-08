@@ -19,6 +19,7 @@ class IndividualCounterSettingsViewController: UITableViewController {
   
   // MARK: IB related
   @IBAction func cancel() {
+    print("cancel")
     dismissViewControllerAnimated(true, completion: nil)
   }
   
