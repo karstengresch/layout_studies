@@ -20,6 +20,7 @@ class IndividualCounterSettingsViewController: UITableViewController {
   // MARK: IB related
   @IBAction func cancel() {
     print("cancel")
+    // TODO - Try protocoll based approach
     dismissViewControllerAnimated(true, completion: nil)
   }
   
