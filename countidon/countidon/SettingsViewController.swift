@@ -12,7 +12,7 @@ protocol SettingsViewControllerDelegate: class {
   
 }
 
-class SettingsViewController: ViewController {
+class SettingsViewController: UITableViewController {
   
     weak var delegate: SettingsViewControllerDelegate?
 
@@ -41,6 +41,8 @@ class SettingsViewController: ViewController {
   @IBAction func cancel() {
     dismissViewControllerAnimated(true, completion: nil)
   }
+  
+  //MARK: Table related
 
 
 }

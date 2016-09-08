@@ -47,9 +47,6 @@
                                 <state key="normal" title="☉">
                                     <color key="titleColor" red="0.24705882352941178" green="0.42352941176470588" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="F4Y-Tw-SjF" kind="show" identifier="QuickViewSetupSegue" id="904-Xy-ByJ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.039215686274509803" green="0.21568627450980393" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
@@ -505,7 +502,4 @@
             <point key="canvasLocation" x="2039" y="2236"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="904-Xy-ByJ"/>
-    </inferredMetricsTieBreakers>
 </document>
