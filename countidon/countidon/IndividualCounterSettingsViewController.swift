@@ -37,7 +37,7 @@ class IndividualCounterSettingsViewController: UITableViewController {
   }
   
   @IBAction func cancelBarButton(sender: UIBarButtonItem) {
-    
+       dismissViewControllerAnimated(true, completion: nil)
   }
   
   
