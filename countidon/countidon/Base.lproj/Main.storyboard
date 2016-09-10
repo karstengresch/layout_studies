@@ -167,7 +167,7 @@
                         <viewControllerLayoutGuide type="top" id="HOl-yb-oek"/>
                         <viewControllerLayoutGuide type="bottom" id="UTj-UQ-Kcl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gBm-pp-ad1">
+                    <view key="view" contentMode="scaleToFill" id="gBm-pp-ad1" customClass="UITableView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
