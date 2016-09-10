@@ -42,7 +42,7 @@ class IndividualCounterSettingsViewController: UITableViewController {
   
   
   @IBAction func navigationBarButtonLeftClicked(sender: UIBarButtonItem) {
-    
+       dismissViewControllerAnimated(true, completion: nil)
   }
 
 }
