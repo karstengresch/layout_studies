@@ -41,5 +41,8 @@ class IndividualCounterSettingsViewController: UITableViewController {
   }
   
   
+  @IBAction func navigationBarButtonLeftClicked(sender: UIBarButtonItem) {
+    
+  }
 
 }

@@ -460,7 +460,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Ke2-5i-2t1">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="A5D-4A-4H4"/>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="A5D-4A-4H4">
+                            <connections>
+                                <action selector="navigationBarButtonLeftClicked:" destination="IpA-Fe-36h" id="mi7-j8-K2u"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="b3m-S6-rh2">
                             <connections>
                                 <action selector="cancelBarButton:" destination="IpA-Fe-36h" id="GpY-7s-C2M"/>
