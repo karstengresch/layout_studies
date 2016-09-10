@@ -48,7 +48,7 @@
                                     <color key="titleColor" red="0.24705882352941178" green="0.42352941176470588" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IpA-Fe-36h" kind="show" identifier="QuickViewSetupSegue" id="9fA-xi-LGE"/>
+                                    <segue destination="F4Y-Tw-SjF" kind="show" identifier="QuickViewSetupSegue" id="BgQ-e0-zWA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -250,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih9-LG-z7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2851" y="726"/>
+            <point key="canvasLocation" x="4331" y="726"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i0x-az-XBf">
@@ -314,7 +314,7 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKk-FI-1ul" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2851" y="1524"/>
+            <point key="canvasLocation" x="3387" y="1488"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="zkJ-mX-Ilk">
@@ -342,7 +342,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T9S-lp-uZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3543" y="726"/>
+            <point key="canvasLocation" x="4331" y="-158"/>
         </scene>
         <!--Individual Counter Settings View Controller-->
         <scene sceneID="3o4-6d-WhB">
@@ -461,12 +461,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Ke2-5i-2t1">
                         <barButtonItem key="leftBarButtonItem" title="&lt;" id="A5D-4A-4H4"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="b3m-S6-rh2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="b3m-S6-rh2">
+                            <connections>
+                                <action selector="cancelBarButton:" destination="IpA-Fe-36h" id="GpY-7s-C2M"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUy-t1-xpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2851" y="2236"/>
+            <point key="canvasLocation" x="2895" y="2236"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dgA-Vv-GbT">
@@ -506,6 +510,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9fA-xi-LGE"/>
+        <segue reference="BgQ-e0-zWA"/>
     </inferredMetricsTieBreakers>
 </document>

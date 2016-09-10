@@ -71,6 +71,14 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
       let controller = navigationController?.topViewController as? SettingsViewController
       controller?.delegate = self
     }
+    
+    if segue.identifier == "QuickViewSetupSegue" {
+      let navigationController = segue.destinationViewController as? UINavigationController
+      let controller = navigationController?.topViewController as? IndividualCounterSettingsViewController
+      controller?.delegate = self
+    }
+    
+    
   }
   
   
