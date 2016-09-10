@@ -20,7 +20,19 @@ class IndividualCounterSettingsViewController: UITableViewController {
   // MARK: IB related
   @IBAction func cancel() {
     print("cancel")
-    // TODO - Try protocoll based approach
+    // TODO - Try protocol based approach:
+    /*
+     let navigationController = storyboard!.instantiateViewControllerWithIdentifier("ListDetailViewC≤ontroller") as! UINavigationController
+     let controller = navigationController.topViewController as! ListDetailViewController
+     controller.delegate = self
+     
+     let checklist = dataModel.checklists[indexPath.row]
+     controller.checklistToEdit = checklist
+     presentViewController(navigationController, animated: true, completion: nil)
+     
+     */
+    
+    
     dismissViewControllerAnimated(true, completion: nil)
   }
   
