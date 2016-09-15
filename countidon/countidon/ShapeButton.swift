@@ -22,10 +22,10 @@ class ShapeButton: UIControl {
   var segueIdentifier = ""
   
   
-  @available(*, unavailable, message="This property is reserved for Interface Builder. Use 'cornerType' instead.")
+  @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'cornerType' instead.")
   @IBInspectable var cornerTypeName: String? {
     willSet {
-      if let newCornerType = CornerType(rawValue: newValue?.lowercaseString ?? "") {
+      if let newCornerType = CornerType(rawValue: newValue?.lowercased() ?? "") {
         cornerType = newCornerType
       }
     }

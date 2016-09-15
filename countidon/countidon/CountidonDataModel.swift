@@ -24,16 +24,16 @@ class CountidonDataModel {
   
   // MARK: File related
   func documentsDirectory() -> String {
-    let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+    let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
     return paths[0]
   }
   
   func dataFilePathGroups() -> String {
-    return (documentsDirectory() as NSString).stringByAppendingPathComponent("CountidonGroups.plist")
+    return (documentsDirectory() as NSString).appendingPathComponent("CountidonGroups.plist")
   }
   
   func dataFilePathSettings() -> String {
-    return (documentsDirectory() as NSString).stringByAppendingPathComponent("CountidonSettings.plist")
+    return (documentsDirectory() as NSString).appendingPathComponent("CountidonSettings.plist")
   }
   
   // MARK: Groups
