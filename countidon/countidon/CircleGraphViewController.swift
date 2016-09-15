@@ -26,7 +26,7 @@ class CircleGraphViewController: UIViewController, IndividualCounterSettingsView
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      circleGraphView?.addTarget(circleGraphView, action: #selector(CircleGraphView.buttonPressed), forControlEvents: .TouchDown)
+      circleGraphView?.addTarget(circleGraphView, action: #selector(CircleGraphView.buttonPressed), for: .touchDown)
       
         // Do any additional setup after loading the view.
     }
@@ -38,7 +38,7 @@ class CircleGraphViewController: UIViewController, IndividualCounterSettingsView
   
   // MARK: IB related
   @IBAction func cancel() {
-    dismissViewControllerAnimated(true, completion: nil)
+    dismiss(animated: true, completion: nil)
   }
   
   // MARK: Navigation
