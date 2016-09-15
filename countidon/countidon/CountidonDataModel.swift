@@ -61,19 +61,19 @@ class CountidonDataModel {
   // MARK: Settings
   func saveCountidonSettings() {
     let data = NSMutableData()
-    let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
-    archiver.encodeObject(countidonSettings, forKey: COUNTIDON_PERSISTENCE_SETTINGS)
+    let archiver = NSKeyedArchiver(forWritingWith: data)
+    archiver.encode(countidonSettings, forKey: COUNTIDON_PERSISTENCE_SETTINGS)
     archiver.finishEncoding()
-    data.writeToFile(dataFilePathSettings(), atomically: true)
+    data.write(toFile: dataFilePathSettings(), atomically: true)
   }
   
   func loadCountidonSettings() {
     let path = dataFilePathSettings()
-    if NSFileManager.defaultManager().fileExistsAtPath(path) {
+    if FileManager.default.fileExists(atPath: path) {
       print("CountidonSettings.plist found at \(path)")
       if let data = NSData(contentsOfFile: path) {
-        let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
-        countidonSettings = unarchiver.decodeObjectForKey(COUNTIDON_PERSISTENCE_SETTINGS) as! CountidonSettings
+        let unarchiver = NSKeyedUnarchiver(forReadingWith: data as Data)
+        countidonSettings = unarchiver.decodeObject(forKey: COUNTIDON_PERSISTENCE_SETTINGS) as! CountidonSettings
         unarchiver.finishDecoding()
       }
     }
@@ -83,12 +83,12 @@ class CountidonDataModel {
   
   func registerUserDefaults() {
     let defaultsDictionary = ["AppRunsFirstTime": true]
-    NSUserDefaults.standardUserDefaults().registerDefaults(defaultsDictionary)
+    UserDefaults.standard.register(defaults: defaultsDictionary)
   }
   
   func handleFirstTimeAppStart() {
-    let userDefaults = NSUserDefaults.standardUserDefaults()
-    let firstTime = userDefaults.boolForKey("AppRunsFirstTime")
+    let userDefaults = UserDefaults.standard
+    let firstTime = userDefaults.bool(forKey: "AppRunsFirstTime")
     if firstTime {
       let firstTimeCountidonGroup = CountidonGroup(name: COUNTIDON_DATA_MODEL_FIRST_TIME_GROUP_NAME)
       // let countidonItem = CountidonItem(coder: NSCoder())
@@ -101,7 +101,7 @@ class CountidonDataModel {
       countidonGroups.append(firstTimeCountidonGroup)
       saveCountidonGroups()
       saveCountidonSettings()
-      userDefaults.setBool(false, forKey: "AppRunsFirstTime")
+      userDefaults.set(false, forKey: "AppRunsFirstTime")
       userDefaults.synchronize()
     }
   }
