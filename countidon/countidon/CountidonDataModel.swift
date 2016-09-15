@@ -40,19 +40,19 @@ class CountidonDataModel {
   
   func saveCountidonGroups() {
     let data = NSMutableData()
-    let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
-    archiver.encodeObject(countidonGroups, forKey: COUNTIDON_PERSISTENCE_GROUPS)
+    let archiver = NSKeyedArchiver(forWritingWith: data)
+    archiver.encode(countidonGroups, forKey: COUNTIDON_PERSISTENCE_GROUPS)
     archiver.finishEncoding()
-    data.writeToFile(dataFilePathGroups(), atomically: true)
+    data.write(toFile: dataFilePathGroups(), atomically: true)
   }
   
   func loadCountidonGroups() {
     let path = dataFilePathGroups()
-    if NSFileManager.defaultManager().fileExistsAtPath(path) {
+    if FileManager.default.fileExists(atPath: path) {
       print("CountidonGroups.plist found at \(path)")
       if let data = NSData(contentsOfFile: path) {
-        let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
-        countidonGroups = unarchiver.decodeObjectForKey(COUNTIDON_PERSISTENCE_GROUPS) as! [CountidonGroup]
+        let unarchiver = NSKeyedUnarchiver(forReadingWith: data as Data)
+        countidonGroups = unarchiver.decodeObject(forKey: COUNTIDON_PERSISTENCE_GROUPS) as! [CountidonGroup]
         unarchiver.finishDecoding()
       }
     }
