@@ -59,21 +59,21 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   }
   
   // MARK: Navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
     if segue.identifier == "CounterViewSegue" {
-      let navigationController = segue.destinationViewController as? UINavigationController
+      let navigationController = segue.destination as? UINavigationController
       let controller = navigationController?.topViewController as? CircleGraphViewController
       controller?.delegate = self
     }
     
     if segue.identifier == "SettingsViewSegue" {
-      let navigationController = segue.destinationViewController as? UINavigationController
+      let navigationController = segue.destination as? UINavigationController
       let controller = navigationController?.topViewController as? SettingsViewController
       controller?.delegate = self
     }
     
     if segue.identifier == "QuickViewSetupSegue" {
-      let navigationController = segue.destinationViewController as? UINavigationController
+      let navigationController = segue.destination as? UINavigationController
       let controller = navigationController?.topViewController as? IndividualCounterSettingsViewController
       controller?.delegate = self
     }
