@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=uG6AQI0qW4w//
+
 //  CountidonGroup.swift
 //  countidon
 //

@@ -33,16 +33,16 @@ class IndividualCounterSettingsViewController: UITableViewController {
      */
     
     
-    dismissViewControllerAnimated(true, completion: nil)
+    dismiss(animated: true, completion: nil)
   }
   
   @IBAction func cancelBarButton(sender: UIBarButtonItem) {
-       dismissViewControllerAnimated(true, completion: nil)
+       dismiss(animated: true, completion: nil)
   }
   
   
   @IBAction func navigationBarButtonLeftClicked(sender: UIBarButtonItem) {
-       dismissViewControllerAnimated(true, completion: nil)
+       dismiss(animated: true, completion: nil)
   }
 
 }

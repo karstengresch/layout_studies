@@ -42,9 +42,10 @@ class CircleGraphViewController: UIViewController, IndividualCounterSettingsView
   }
   
   // MARK: Navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+  // Swift 3 - no override?
+  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
     if segue.identifier == "QuickViewSetupSegue" {
-      let navigationController = segue.destinationViewController as? UINavigationController
+      let navigationController = segue.destination as? UINavigationController
       let controller = navigationController?.topViewController as? IndividualCounterSettingsViewController
       controller?.delegate = self
     }

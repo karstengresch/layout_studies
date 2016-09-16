@@ -31,7 +31,7 @@ class CounterViewController: UIViewController {
   
   // MARK: IB related
   @IBAction func cancel() {
-    dismissViewControllerAnimated(true, completion: nil)
+    dismiss(animated: true, completion: nil)
   }
 
 }

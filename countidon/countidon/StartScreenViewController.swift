@@ -13,13 +13,13 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   
   let counterViewController = CounterViewController()
   let settingsViewController = SettingsViewController()
-  let screenRect: CGRect = UIScreen.mainScreen().bounds
+  let screenRect: CGRect = UIScreen.mainScreen.bounds
   
   var countidonDataModel: CountidonDataModel!  
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.navigationController?.navigationBar.hidden = true
+    self.navigationController?.navigationBar.isHidden = true
     let screenHeight: CGFloat = screenRect.size.height
     tableView.rowHeight = screenHeight / 2
 
@@ -32,23 +32,23 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   }
   
   
-  override func didRotateFromInterfaceOrientation(fromInterfaceOrientation: UIInterfaceOrientation) {
-    switch UIDevice.currentDevice().orientation{
-    case .Portrait:
+  override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
+    switch UIDevice.current.orientation{
+    case .portrait:
       print("Portrait")
-     changeTableViewDimensions(true)
-    case .PortraitUpsideDown:
+     changeTableViewDimensions(fromLandscape: true)
+    case .portraitUpsideDown:
             print("Portrait Upside Down")
-     changeTableViewDimensions(true)
-    case .LandscapeLeft:
+     changeTableViewDimensions(fromLandscape: true)
+    case .landscapeLeft:
             print("Landscape left")
-           changeTableViewDimensions(false)
-    case .LandscapeRight:
+           changeTableViewDimensions(fromLandscape: false)
+    case .landscapeRight:
                   print("Landscape right")
-           changeTableViewDimensions(false)
+           changeTableViewDimensions(fromLandscape: false)
     default:
       print("Unknown orientation")
-     changeTableViewDimensions(false)
+     changeTableViewDimensions(fromLandscape: false)
     }
     tableView.reloadData()
   }
