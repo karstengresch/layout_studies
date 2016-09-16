@@ -34,7 +34,7 @@ class ShapeButton: UIControl {
  
   @IBInspectable var radiusWidth: CGFloat = 30
   @IBInspectable var radiusHeight: CGFloat = 30
-  @IBInspectable let shapeButtonLabel: UILabel = UILabel(frame: CGRectMake(20.0, 30.0, 300.0, 30.0))
+  @IBInspectable let shapeButtonLabel: UILabel = UILabel(frame: CGRect(x: 20.0, y: 30.0, width: 300.0, height: 30.0))
   
   
   override func layoutSubviews() {
@@ -43,9 +43,9 @@ class ShapeButton: UIControl {
     
     switch cornerType {
     case .Rounded:
-      shapeLayer.path = UIBezierPath(roundedRect: bounds, byRoundingCorners: [UIRectCorner.TopLeft,  UIRectCorner.TopRight, UIRectCorner.BottomLeft, UIRectCorner.BottomRight], cornerRadii: CGSize(width: 30, height: 30)).CGPath
+      shapeLayer.path = UIBezierPath(roundedRect: bounds, byRoundingCorners: [UIRectCorner.topLeft,  UIRectCorner.topRight, UIRectCorner.bottomLeft, UIRectCorner.bottomRight], cornerRadii: CGSize(width: 30, height: 30)).cgPath
     case .Circle:
-      shapeLayer.path = UIBezierPath(ovalInRect: self.bounds).CGPath
+      shapeLayer.path = UIBezierPath(ovalIn: self.bounds).cgPath
     }
     layer.mask = shapeLayer
     setupLabels()
@@ -54,15 +54,15 @@ class ShapeButton: UIControl {
   
   func setupLabels() {
     shapeButtonLabel.numberOfLines = 1;
-    shapeButtonLabel.baselineAdjustment = UIBaselineAdjustment.AlignBaselines
+    shapeButtonLabel.baselineAdjustment = UIBaselineAdjustment.alignBaselines
     shapeButtonLabel.adjustsFontSizeToFitWidth = true
     shapeButtonLabel.frame = self.bounds
-    shapeButtonLabel.backgroundColor = UIColor.clearColor()
+    shapeButtonLabel.backgroundColor = UIColor.clear
     shapeButtonLabel.text = self.labelText
-    shapeButtonLabel.textColor = UIColor.whiteColor()
-    shapeButtonLabel.font = UIFont.systemFontOfSize(28.0)
-    shapeButtonLabel.textAlignment = .Center
-    shapeButtonLabel.drawTextInRect(self.bounds)
+    shapeButtonLabel.textColor = UIColor.white
+    shapeButtonLabel.font = UIFont.systemFont(ofSize: 28.0)
+    shapeButtonLabel.textAlignment = .center
+    shapeButtonLabel.drawText(in: self.bounds)
     self.addSubview(shapeButtonLabel)
     self.setNeedsDisplay()
   }
@@ -76,7 +76,7 @@ private class TapRecognizer: UITapGestureRecognizer {
   
   func handleTap(sender: UITapGestureRecognizer) {
    print("Tapped!")
-   if sender.state == .Ended {
+   if sender.state == .ended {
     // handling code
        print("Tap ended!")
    }
