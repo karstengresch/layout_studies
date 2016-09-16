@@ -21,11 +21,11 @@ class CountidonItem: NSObject, NSCoding {
   var timeToCountdown: NSInteger = 0
   var circleForegroundColor = UIColor(hue:1, saturation:1, brightness:0, alpha:1)
   var circleBackgroundColor = UIColor(hue:0, saturation:0, brightness:1, alpha:1)
-  var circleViewBackgroundColor = UIColor.clearColor()
+  var circleViewBackgroundColor = UIColor.clear
   
-  var lastInterval = NSTimeInterval()
-  var timer = NSTimer()
-  var totalTime = NSTimeInterval()
+  var lastInterval = TimeInterval()
+  var timer = Timer()
+  var totalTime = TimeInterval()
   let maxTime: Double = 12.0
 
   
@@ -35,19 +35,19 @@ class CountidonItem: NSObject, NSCoding {
   
   required init?(coder aDecoder: NSCoder) {
     print("init?")
-    created = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_CREATED) as! NSDate
-    name = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_NAME) as! String
-    timeToCountdown = aDecoder.decodeIntegerForKey(COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
-    circleViewBackgroundColor = aDecoder.decodeObjectForKey(COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR) as! UIColor
+    created = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_CREATED) as! NSDate
+    name = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_NAME) as! String
+    timeToCountdown = aDecoder.decodeInteger(forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
+    circleViewBackgroundColor = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR) as! UIColor
     
     super.init()
   }
   
   func encodeWithCoder(aCoder: NSCoder) {
-    aCoder.encodeObject(created, forKey: COUNTIDON_ITEM_CREATED)
-    aCoder.encodeObject(name, forKey: COUNTIDON_ITEM_NAME)
-    aCoder.encodeObject(timeToCountdown, forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
-    aCoder.encodeObject(circleViewBackgroundColor, forKey: COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR)
+    aCoder.encode(created, forKey: COUNTIDON_ITEM_CREATED)
+    aCoder.encode(name, forKey: COUNTIDON_ITEM_NAME)
+    aCoder.encode(timeToCountdown, forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
+    aCoder.encode(circleViewBackgroundColor, forKey: COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR)
   }
   
   init(name: String) {
