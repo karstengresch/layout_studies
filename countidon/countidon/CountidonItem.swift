@@ -43,7 +43,7 @@ class CountidonItem: NSObject, NSCoding {
     super.init()
   }
   
-  func encodeWithCoder(aCoder: NSCoder) {
+  func encode(with aCoder: NSCoder) {
     aCoder.encode(created, forKey: COUNTIDON_ITEM_CREATED)
     aCoder.encode(name, forKey: COUNTIDON_ITEM_NAME)
     aCoder.encode(timeToCountdown, forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
