@@ -66,7 +66,7 @@ class CircleGraphView: UIControl {
       
       // CGContextAddArc(context, centerPoint.x, centerPoint.y, radius, start, end, 0)
       context?.addArc(center: centerPoint, radius: radius, startAngle: start, endAngle: end, clockwise: true)
-      CGContextStrokePath(context)
+      context!.strokePath()
       
       
       let labelFontAttributes: NSDictionary = [ NSForegroundColorAttributeName: labelFontColor,
@@ -78,9 +78,9 @@ class CircleGraphView: UIControl {
       let delimiter = "\t:\t"
       let timeLabel: NSString = counterTimeValues.minutes + delimiter + counterTimeValues.seconds + delimiter + counterTimeValues.milliseconds
       let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
-      let size = timeLabel.sizeWithAttributes((labelFontAttributes as! [String : AnyObject]))
+      let size = timeLabel.size(attributes: (labelFontAttributes as! [String : AnyObject]))
 
-      timeLabel.drawInRect(CGRectMake(center.x - size.width/2,center.y - size.height/2,size.width,size.height), withAttributes: (labelFontAttributes as! [String : AnyObject]))
+      timeLabel.draw(in: CGRect(center.x - size.width/2,center.y - size.height/2,size.width,size.height), withAttributes: (labelFontAttributes as! [String : AnyObject]))
     
       
       
@@ -102,19 +102,19 @@ class CircleGraphView: UIControl {
       if !wasStopped {
        endArc = 0
       } else {
-       lastInterval = NSDate.timeIntervalSinceReferenceDate()
+       lastInterval = NSDate.timeIntervalSinceReferenceDate
       }
       
-      if !timer.valid {
+      if !timer.isValid {
         print("Circle Graph View: Timer was NOT valid and was NOT running")
         printStatus()
         // let selector: Selector = "updateCounter"
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
+        timer = Timer.scheduledTimer(timeInterval: 0.01,
           target: self,
           selector: #selector(CircleGraphView.updateCounter),
           userInfo: nil,
           repeats: true)
-          lastInterval = NSDate.timeIntervalSinceReferenceDate()
+          lastInterval = NSDate.timeIntervalSinceReferenceDate
       } else {
         print("Circle Graph View: Timer >>was<< valid and was NOT running")
         printStatus()
@@ -126,16 +126,16 @@ class CircleGraphView: UIControl {
     } else { // IS running
       print("Circle Graph View: >>was<< running")
 
-      if !timer.valid {
+      if !timer.isValid {
         print("Circle Graph View: Timer was NOT valid and >>was<< running")
         printStatus()
         // let selector: Selector = "updateCounter"
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
+        timer = Timer.scheduledTimer(timeInterval: 0.01,
           target: self,
           selector: #selector(CircleGraphView.updateCounter),
           userInfo: nil,
           repeats: true)
-        lastInterval = NSDate.timeIntervalSinceReferenceDate()
+        lastInterval = NSDate.timeIntervalSinceReferenceDate
       } else {
         print("Circle Graph View: Timer >>was<< valid and >>was<< running")
         printStatus()
@@ -157,7 +157,7 @@ class CircleGraphView: UIControl {
   // TODO: Check reference day as parameter!
   func updateCounter() {
     
-    let now = NSDate.timeIntervalSinceReferenceDate()
+    let now = NSDate.timeIntervalSinceReferenceDate
     totalTime += now - lastInterval
     lastInterval = now
     
@@ -185,7 +185,7 @@ class CircleGraphView: UIControl {
   
   func getCounterTimeValues() -> (minutes: String, seconds: String, milliseconds: String) {
     
-    let now = NSDate.timeIntervalSinceReferenceDate()
+    let now = NSDate.timeIntervalSinceReferenceDate
     // 10-8 = 2
     totalTime += now - lastInterval
     // 12-10 = 2
@@ -194,11 +194,11 @@ class CircleGraphView: UIControl {
     var counterTime = totalTime
     let minutes = Int(counterTime / 60)
     
-    counterTime -= (NSTimeInterval(minutes) * 60)
+    counterTime -= (TimeInterval(minutes) * 60)
     let minutesValue = String(format: "%02d", minutes)
     
     let seconds = Int(counterTime)
-    counterTime -= (NSTimeInterval(seconds))
+    counterTime -= (TimeInterval(seconds))
     let secondsValue = String(format: "%02d", seconds)
     
     let milliseconds = Int(counterTime * 100)
