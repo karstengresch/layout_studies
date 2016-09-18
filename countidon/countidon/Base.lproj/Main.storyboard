@@ -21,8 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-he-jJ9" customClass="CircleGraphView" customModule="countidon" customModuleProvider="target">
-                                <frame key="frameInset" minX="165" minY="165" width="270" height="270"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-he-jJ9" customClass="CircleGraphView" customModule="countidon" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.039215686274509803" green="0.21176470588235294" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bLy-he-jJ9" secondAttribute="height" multiplier="1:1" id="clO-Vd-Yy2"/>
@@ -109,8 +108,7 @@
                                     <frame key="frameInset" width="375" height="247.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view tag="755" contentMode="scaleAspectFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
-                                            <frame key="frameInset" minX="207" minY="31" width="185.5" height="185.5"/>
+                                        <view tag="755" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dop-Cm-cGV" customClass="ShapeButton" customModule="countidon" customModuleProvider="target">
                                             <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -484,6 +482,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BgQ-e0-zWA"/>
+        <segue reference="Trq-tD-QK7"/>
     </inferredMetricsTieBreakers>
 </document>
