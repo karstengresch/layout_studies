@@ -94,10 +94,10 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     return 2
   }
   
-  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("StartScreenCell", forIndexPath: indexPath) as! StartScreenTableViewCell
+  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "StartScreenCell", for: indexPath as IndexPath) as! StartScreenTableViewCell
     
-      cell.shapeButton.addTarget(self, action: #selector(StartScreenViewController.navigateToSubscreen(_:)), forControlEvents: .TouchUpInside)
+      cell.shapeButton.addTarget(self, action: #selector(StartScreenViewController.navigateToSubscreen), for: .touchUpInside)
     
     // let circle = cell.viewWithTag(755) as! ShapeButton
     
@@ -127,7 +127,7 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   }
   
   // MARK: TableView delegates
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     switch indexPath.row {
     case 0:
       print("didSelectRowAtIndexPath selected: \(indexPath.row)" )
@@ -147,7 +147,7 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     let currentButton = sender
     
     print("ShapeButton tapped: \(currentButton.segueIdentifier)")
-    performSegueWithIdentifier(currentButton.segueIdentifier, sender: sender)
+    performSegue(withIdentifier: currentButton.segueIdentifier, sender: sender)
   }
   
 
