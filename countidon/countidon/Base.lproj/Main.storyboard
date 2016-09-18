@@ -41,8 +41,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFw-hp-fic">
-                                <frame key="frameInset" minX="282" minY="497" width="37" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFw-hp-fic">
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="☉">
                                     <color key="titleColor" red="0.24705882352941178" green="0.42352941176470588" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
