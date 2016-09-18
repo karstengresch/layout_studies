@@ -18,16 +18,16 @@ class CountidonSettings: NSObject, NSCoding {
   var startScreenLowerButtonText = "Settings"
   
   required init?(coder aDecoder: NSCoder) {
-    self.theme = Theme(rawValue: aDecoder.decodeIntegerForKey(COUNTIDON_SETTING_THEME)) ?? .Default
-    self.startScreenUpperButtonText = aDecoder.decodeObjectForKey(COUNTIDON_VC_START_SCREEN_UPPER_BUTTON_TEXT) as! String
-    self.startScreenLowerButtonText = aDecoder.decodeObjectForKey(COUNTIDON_VC_START_SCREEN_LOWER_BUTTON_TEXT) as! String
+    self.theme = Theme(rawValue: aDecoder.decodeInteger(forKey: COUNTIDON_SETTING_THEME)) ?? .Default
+    self.startScreenUpperButtonText = aDecoder.decodeObject(forKey: COUNTIDON_VC_START_SCREEN_UPPER_BUTTON_TEXT) as! String
+    self.startScreenLowerButtonText = aDecoder.decodeObject(forKey: COUNTIDON_VC_START_SCREEN_LOWER_BUTTON_TEXT) as! String
     super.init()
   }
   
-  func encodeWithCoder(aCoder: NSCoder) {
-    aCoder.encodeInteger(self.theme.rawValue, forKey: COUNTIDON_SETTING_THEME)
-    aCoder.encodeObject(startScreenUpperButtonText, forKey: COUNTIDON_VC_START_SCREEN_UPPER_BUTTON_TEXT)
-    aCoder.encodeObject(startScreenLowerButtonText, forKey: COUNTIDON_VC_START_SCREEN_LOWER_BUTTON_TEXT)
+  func encode(with: aCoder: NSCoder) {
+    aCoder.encode(self.theme.rawValue, forKey: COUNTIDON_SETTING_THEME)
+    aCoder.encode(startScreenUpperButtonText, forKey: COUNTIDON_VC_START_SCREEN_UPPER_BUTTON_TEXT)
+    aCoder.encode(startScreenLowerButtonText, forKey: COUNTIDON_VC_START_SCREEN_LOWER_BUTTON_TEXT)
   }
   
   override init() {
