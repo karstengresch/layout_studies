@@ -24,7 +24,7 @@ class CountidonSettings: NSObject, NSCoding {
     super.init()
   }
   
-  func encode(with: aCoder: NSCoder) {
+  func encode(with aCoder: NSCoder) {
     aCoder.encode(self.theme.rawValue, forKey: COUNTIDON_SETTING_THEME)
     aCoder.encode(startScreenUpperButtonText, forKey: COUNTIDON_VC_START_SCREEN_UPPER_BUTTON_TEXT)
     aCoder.encode(startScreenLowerButtonText, forKey: COUNTIDON_VC_START_SCREEN_LOWER_BUTTON_TEXT)
