@@ -95,6 +95,7 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    print("Before cellForRowAtIndexPath selected: \(indexPath.row)" )
     let cell = tableView.dequeueReusableCell(withIdentifier: "StartScreenCell", for: indexPath as IndexPath) as! StartScreenTableViewCell
     
       cell.shapeButton.addTarget(self, action: #selector(StartScreenViewController.navigateToSubscreen), for: .touchUpInside)
