@@ -76,13 +76,11 @@ class CircleGraphView: UIControl {
       ]
       
       let delimiter = "\t:\t"
-      let timeLabel: NSString = counterTimeValues.minutes + delimiter + counterTimeValues.seconds + delimiter + counterTimeValues.milliseconds
+      let timeLabel: NSString = counterTimeValues.minutes + delimiter + counterTimeValues.seconds + delimiter + counterTimeValues.milliseconds as NSString
       let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
       let size = timeLabel.size(attributes: (labelFontAttributes as! [String : AnyObject]))
 
-      timeLabel.draw(in: CGRect(center.x - size.width/2,center.y - size.height/2,size.width,size.height), withAttributes: (labelFontAttributes as! [String : AnyObject]))
-    
-      
+      timeLabel.draw(in: CGRect(x: center.x - size.width/2, y: center.y - size.height/2, width: size.width,height: size.height), withAttributes: (labelFontAttributes as! [String : AnyObject]))
       
     }
  /*
