@@ -26,15 +26,15 @@ class CircleGraphView: UIControl {
   @IBInspectable var minutes: NSString = "Whereof we cannot speak, thereof we must remain silent."
   
   
-  @IBInspectable var labelFontColor: UIColor { return UIColor.whiteColor() }
+  @IBInspectable var labelFontColor: UIColor { return UIColor.white }
   @IBInspectable var labelFont: UIFont? = UIFont(name: "Helvetica Neue", size: 18)
   @IBInspectable var labelFontParagraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
   @IBInspectable var labelFontObliqueness = 0.1
   
  
-  var lastInterval = NSTimeInterval()
-  var timer = NSTimer()
-  var totalTime = NSTimeInterval()
+  var lastInterval = TimeInterval()
+  var timer = Timer()
+  var totalTime = TimeInterval()
   let maxTime: Double = 12.0
   var isRunning = false
   var wasStopped = false
@@ -42,29 +42,30 @@ class CircleGraphView: UIControl {
 
 
   
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
 
       // circle defs
       let fullCircle = 2.0 * π
       let start: CGFloat = -0.25 * fullCircle
       let end: CGFloat = endArc * fullCircle + start
       // "We need a center point, an angle on the circle to start and an angle on the circle to end."
-      let centerPoint = CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect))
+      let centerPoint = CGPoint(x: rect.midX, y: rect.midY)
       var radius: CGFloat = 0.0
       
-      if CGRectGetWidth(rect) > CGRectGetHeight(rect) {
-        radius = (CGRectGetWidth(rect) - arcWidth) / 2.0
+      if rect.width > rect.height {
+        radius = (rect.width - arcWidth) / 2.0
       } else {
-        radius = (CGRectGetHeight(rect) - arcWidth) / 2.0
+        radius = (rect.height - arcWidth) / 2.0
       }
       
       let context = UIGraphicsGetCurrentContext()
       // let colorspace = CGColorSpaceCreateDeviceRGB()
-      CGContextSetLineWidth(context, arcWidth)
-      CGContextSetLineCap(context, .Round)
-      CGContextSetStrokeColorWithColor(context, arcColor.CGColor)
+      context!.setLineWidth(arcWidth)
+      context!.setLineCap(.round)
+      context!.setStrokeColor(arcColor.cgColor)
       
-      CGContextAddArc(context, centerPoint.x, centerPoint.y, radius, start, end, 0)
+      // CGContextAddArc(context, centerPoint.x, centerPoint.y, radius, start, end, 0)
+      context?.addArc(center: centerPoint, radius: radius, startAngle: start, endAngle: end, clockwise: true)
       CGContextStrokePath(context)
       
       
