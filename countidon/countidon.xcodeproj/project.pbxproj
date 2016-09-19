@@ -29,6 +29,7 @@
 		3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */; };
 		3DA249FE1C41836000AF71C9 /* CountidonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */; };
 		3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC41D81BD27BB900297F01 /* CounterViewController.swift */; };
+		3DFF17161D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF17151D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonDataModel.swift; sourceTree = "<group>"; };
 		3DDC41D81BD27BB900297F01 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		3DFF17151D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift3TryoutTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				3DDC41D81BD27BB900297F01 /* CounterViewController.swift */,
 				3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */,
 				3D7D91E91C1F710500150709 /* DummyTableViewController.swift */,
+				3DFF17151D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */,
 				3D26947D1C35CD2C00A01402 /* CircleGraphViewController.swift in Sources */,
 				3D26946D1C2EAE6300A01402 /* CountidonGroup.swift in Sources */,
+				3DFF17161D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift in Sources */,
 				3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */,
 				3D2694771C305EBA00A01402 /* GlobalConstants.swift in Sources */,
 				3D26946F1C2EC23700A01402 /* StartScreenTableViewCell.swift in Sources */,
