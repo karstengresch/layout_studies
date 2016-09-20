@@ -44,7 +44,7 @@ class SettingsViewController: UITableViewController {
   
   //MARK: Table related
   
-  func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+  override func numberOfSections(in tableView: UITableView) -> Int {
     // #warning Incomplete implementation, return the number of sections
     return 0
   }
