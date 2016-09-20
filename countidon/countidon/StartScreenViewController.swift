@@ -94,7 +94,7 @@ class StartScreenViewController: UITableViewController, CounterViewControllerDel
     return 2
   }
   
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     print("Before cellForRowAtIndexPath selected: \(indexPath.row)" )
     let cell = tableView.dequeueReusableCell(withIdentifier: "StartScreenCell", for: indexPath as IndexPath) as! StartScreenTableViewCell
     
