@@ -25,11 +25,9 @@
 		3D5E9D9D1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5E9D9C1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift */; };
 		3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E51BCFD7100028E2EE /* ShapeButton.swift */; };
 		3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E71BD02F780028E2EE /* BackgroundView.swift */; };
-		3D7D91EA1C1F710500150709 /* DummyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D91E91C1F710500150709 /* DummyTableViewController.swift */; };
 		3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */; };
 		3DA249FE1C41836000AF71C9 /* CountidonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */; };
 		3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC41D81BD27BB900297F01 /* CounterViewController.swift */; };
-		3DFF17161D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF17151D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,11 +72,9 @@
 		3D5E9D9C1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualCounterSettingsViewController.swift; sourceTree = "<group>"; };
 		3D7177E51BCFD7100028E2EE /* ShapeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeButton.swift; sourceTree = "<group>"; };
 		3D7177E71BD02F780028E2EE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		3D7D91E91C1F710500150709 /* DummyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyTableViewController.swift; sourceTree = "<group>"; };
 		3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonDataModel.swift; sourceTree = "<group>"; };
 		3DDC41D81BD27BB900297F01 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
-		3DFF17151D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift3TryoutTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +192,6 @@
 				3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */,
 				3DDC41D81BD27BB900297F01 /* CounterViewController.swift */,
 				3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */,
-				3D7D91E91C1F710500150709 /* DummyTableViewController.swift */,
-				3DFF17151D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -360,12 +354,10 @@
 				3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */,
 				3D26947D1C35CD2C00A01402 /* CircleGraphViewController.swift in Sources */,
 				3D26946D1C2EAE6300A01402 /* CountidonGroup.swift in Sources */,
-				3DFF17161D8FCF6C00D49E41 /* Swift3TryoutTableViewController.swift in Sources */,
 				3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */,
 				3D2694771C305EBA00A01402 /* GlobalConstants.swift in Sources */,
 				3D26946F1C2EC23700A01402 /* StartScreenTableViewCell.swift in Sources */,
 				3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */,
-				3D7D91EA1C1F710500150709 /* DummyTableViewController.swift in Sources */,
 				3D2694691C2EAD2E00A01402 /* CountidonSettings.swift in Sources */,
 				3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */,
 				3D26946B1C2EADCF00A01402 /* CountidonItem.swift in Sources */,
