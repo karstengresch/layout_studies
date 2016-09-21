@@ -37,7 +37,6 @@ class CircleGraphViewController: UIViewController, IndividualCounterSettingsView
     }
   
   // MARK: IB related
-  // Leads to crash.
   @IBAction func cancel() {
     dismiss(animated: true, completion: nil)
   }
