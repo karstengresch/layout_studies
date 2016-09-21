@@ -42,11 +42,9 @@ class CircleGraphViewController: UIViewController, IndividualCounterSettingsView
     dismiss(animated: true, completion: nil)
   }
   
-  
-  
   // MARK: Navigation
   // Swift 3 - no override?
-  func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "QuickViewSetupSegue" {
       let navigationController = segue.destination as? UINavigationController
       let controller = navigationController?.topViewController as? IndividualCounterSettingsViewController
