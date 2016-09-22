@@ -150,7 +150,6 @@
                         <segue destination="grk-kw-zCF" kind="presentation" identifier="CounterViewSegue" id="bVJ-57-igc"/>
                         <segue destination="Zgv-3x-H6L" kind="presentation" identifier="SettingsViewSegue" id="PQU-J4-Mw4"/>
                         <segue destination="QLV-fm-KV1" kind="presentation" identifier="SetupCounterSegue" id="vaG-9b-rbW"/>
-                        <segue destination="F4Y-Tw-SjF" kind="presentation" identifier="QuickViewSetup" id="Trq-tD-QK7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ef6-Bg-KWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -237,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih9-LG-z7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4331" y="726"/>
+            <point key="canvasLocation" x="2850" y="725"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i0x-az-XBf">
@@ -301,35 +300,44 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKk-FI-1ul" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3387" y="1488"/>
+            <point key="canvasLocation" x="2850" y="1487"/>
         </scene>
         <!--Individual Counter Settings View Controller-->
         <scene sceneID="3o4-6d-WhB">
             <objects>
                 <tableViewController id="IpA-Fe-36h" customClass="IndividualCounterSettingsViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="p7U-aJ-TJf">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eli-e8-qGg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" axis="vertical" id="7jw-8d-am5">
-                            <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" axis="vertical" id="gzp-o8-vrX">
+                            <rect key="frame" x="0.0" y="64" width="375" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgB-8G-icB">
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOK-AH-u42">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                         </stackView>
-                        <sections/>
+                        <sections>
+                            <tableViewSection id="EJp-ZH-gtG">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Tni-Dw-xob">
+                                        <rect key="frame" x="0.0" y="85" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tni-Dw-xob" id="5BH-1o-2kH">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
-                            <outlet property="dataSource" destination="IpA-Fe-36h" id="ceD-By-fcR"/>
-                            <outlet property="delegate" destination="IpA-Fe-36h" id="0ZI-FG-gzV"/>
+                            <outlet property="dataSource" destination="IpA-Fe-36h" id="gMj-68-jdd"/>
+                            <outlet property="delegate" destination="IpA-Fe-36h" id="vXy-wn-ek5"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Ke2-5i-2t1">
@@ -359,7 +367,7 @@
                     </barButtonItem>
                 </navigationItem>
             </objects>
-            <point key="canvasLocation" x="2895" y="2236"/>
+            <point key="canvasLocation" x="4887" y="-143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dgA-Vv-GbT">
@@ -395,10 +403,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Enq-mU-cqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2039" y="2236"/>
+            <point key="canvasLocation" x="3850" y="-143"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="BgQ-e0-zWA"/>
-    </inferredMetricsTieBreakers>
 </document>
