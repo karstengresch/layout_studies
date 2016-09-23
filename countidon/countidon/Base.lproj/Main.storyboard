@@ -306,7 +306,7 @@
         <scene sceneID="3o4-6d-WhB">
             <objects>
                 <tableViewController id="IpA-Fe-36h" customClass="IndividualCounterSettingsViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eli-e8-qGg">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eli-e8-qGg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -321,20 +321,7 @@
                                 </label>
                             </subviews>
                         </stackView>
-                        <sections>
-                            <tableViewSection id="EJp-ZH-gtG">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Tni-Dw-xob">
-                                        <rect key="frame" x="0.0" y="85" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tni-Dw-xob" id="5BH-1o-2kH">
-                                            <frame key="frameInset" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="IpA-Fe-36h" id="gMj-68-jdd"/>
                             <outlet property="delegate" destination="IpA-Fe-36h" id="vXy-wn-ek5"/>
