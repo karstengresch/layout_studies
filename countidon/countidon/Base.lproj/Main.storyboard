@@ -314,11 +314,18 @@
                             <rect key="frame" x="0.0" y="64" width="375" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
+                                    <frame key="frameInset" width="375"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NPi-fO-Iri">
+                                    <frame key="frameInset" width="375" height="21"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
                             </subviews>
                         </stackView>
                         <sections/>
