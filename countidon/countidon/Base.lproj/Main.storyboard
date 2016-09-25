@@ -346,8 +346,23 @@
                             <rect key="frame" x="0.0" y="85" width="375" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCx-G7-m0u"/>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xil-4E-PHR"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCx-G7-m0u">
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-fN-F2z">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xil-4E-PHR">
+                                    <subviews>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-Q0-GRG"/>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AZk-Q0-GRG" firstAttribute="height" secondItem="Xil-4E-PHR" secondAttribute="height" id="LqL-FX-y56"/>
+                                    </constraints>
+                                </stackView>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="Xil-4E-PHR" firstAttribute="width" secondItem="XCx-G7-m0u" secondAttribute="width" id="LeO-oK-dHy"/>
