@@ -314,34 +314,34 @@
                             <rect key="frame" x="0.0" y="64" width="375" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="left" translatesAutoresizingMaskIntoConstraints="NO" id="Iad-wG-uTt">
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxM-df-mUE">
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="right" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-E9-ziP">
-                                    <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter the Value" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NPi-fO-Iri">
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
+                                        <stackView opaque="NO" contentMode="left" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Iad-wG-uTt">
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="right" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-E9-ziP">
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter the Value" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NPi-fO-Iri">
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="NPi-fO-Iri" firstAttribute="height" secondItem="GMP-E9-ziP" secondAttribute="height" constant="-40" id="2af-VL-7Ng"/>
+                                        <constraint firstItem="GMP-E9-ziP" firstAttribute="height" secondItem="Iad-wG-uTt" secondAttribute="height" id="IVm-Kt-XGo"/>
+                                        <constraint firstItem="GMP-E9-ziP" firstAttribute="width" secondItem="Iad-wG-uTt" secondAttribute="width" id="iio-7p-KGq"/>
                                     </constraints>
                                 </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0qL-TH-XWI"/>
                             </subviews>
-                            <constraints>
-                                <constraint firstItem="Iad-wG-uTt" firstAttribute="leading" secondItem="gzp-o8-vrX" secondAttribute="leading" id="D1z-Ii-FOX"/>
-                                <constraint firstAttribute="trailing" secondItem="GMP-E9-ziP" secondAttribute="trailing" id="enf-La-hK2"/>
-                                <constraint firstItem="GMP-E9-ziP" firstAttribute="height" secondItem="Iad-wG-uTt" secondAttribute="height" id="qR3-m7-2bH"/>
-                                <constraint firstItem="GMP-E9-ziP" firstAttribute="width" secondItem="Iad-wG-uTt" secondAttribute="width" id="sW9-HT-x4h"/>
-                            </constraints>
                         </stackView>
                         <sections/>
                         <connections>
