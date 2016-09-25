@@ -316,7 +316,7 @@
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxM-df-mUE">
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="left" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Iad-wG-uTt">
+                                        <stackView opaque="NO" contentMode="left" translatesAutoresizingMaskIntoConstraints="NO" id="Iad-wG-uTt">
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -325,7 +325,7 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <stackView opaque="NO" contentMode="right" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-E9-ziP">
+                                        <stackView opaque="NO" contentMode="right" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-E9-ziP">
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter the Value" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NPi-fO-Iri">
                                                     <nil key="textColor"/>
@@ -340,8 +340,19 @@
                                         <constraint firstItem="GMP-E9-ziP" firstAttribute="width" secondItem="Iad-wG-uTt" secondAttribute="width" id="iio-7p-KGq"/>
                                     </constraints>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0qL-TH-XWI"/>
                             </subviews>
+                        </stackView>
+                        <stackView key="tableFooterView" opaque="NO" contentMode="scaleToFill" id="MuH-Ru-4t9">
+                            <rect key="frame" x="0.0" y="85" width="375" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCx-G7-m0u"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xil-4E-PHR"/>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Xil-4E-PHR" firstAttribute="width" secondItem="XCx-G7-m0u" secondAttribute="width" id="LeO-oK-dHy"/>
+                                <constraint firstItem="Xil-4E-PHR" firstAttribute="height" secondItem="XCx-G7-m0u" secondAttribute="height" id="YD9-Js-95K"/>
+                            </constraints>
                         </stackView>
                         <sections/>
                         <connections>
