@@ -310,23 +310,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" axis="vertical" id="gzp-o8-vrX">
+                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="gzp-o8-vrX">
                             <rect key="frame" x="0.0" y="64" width="375" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
-                                    <frame key="frameInset" width="375"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NPi-fO-Iri">
-                                    <frame key="frameInset" width="375" height="21"/>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
+                                <stackView opaque="NO" contentMode="left" translatesAutoresizingMaskIntoConstraints="NO" id="Iad-wG-uTt">
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="right" translatesAutoresizingMaskIntoConstraints="NO" id="GMP-E9-ziP">
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter the Value" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NPi-fO-Iri">
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NPi-fO-Iri" firstAttribute="height" secondItem="GMP-E9-ziP" secondAttribute="height" constant="-40" id="2af-VL-7Ng"/>
+                                    </constraints>
+                                </stackView>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="Iad-wG-uTt" firstAttribute="leading" secondItem="gzp-o8-vrX" secondAttribute="leading" id="D1z-Ii-FOX"/>
+                                <constraint firstAttribute="trailing" secondItem="GMP-E9-ziP" secondAttribute="trailing" id="enf-La-hK2"/>
+                                <constraint firstItem="GMP-E9-ziP" firstAttribute="height" secondItem="Iad-wG-uTt" secondAttribute="height" id="qR3-m7-2bH"/>
+                                <constraint firstItem="GMP-E9-ziP" firstAttribute="width" secondItem="Iad-wG-uTt" secondAttribute="width" id="sW9-HT-x4h"/>
+                            </constraints>
                         </stackView>
                         <sections/>
                         <connections>
