@@ -331,18 +331,17 @@
                                             <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rxM-df-mUE">
-                                                    <frame key="frameInset" minY="16" width="316" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rxM-df-mUE">
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Time to Countdown" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
-                                                            <frame key="frameInset" width="150" height="44"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to Countdown" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-ZX-Up0">
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="180" id="NQB-AY-yvO"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="60" borderStyle="roundedRect" placeholder="60" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NPi-fO-Iri">
-                                                            <frame key="frameInset" minX="166" width="150" height="44"/>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="60" borderStyle="roundedRect" placeholder="60" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NPi-fO-Iri">
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
@@ -351,7 +350,11 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="rxM-df-mUE" firstAttribute="width" secondItem="mZG-zC-7iu" secondAttribute="width" id="30C-pK-xTc"/>
                                                 <constraint firstItem="Slq-ZX-Up0" firstAttribute="height" secondItem="mZG-zC-7iu" secondAttribute="height" id="4fU-jY-Yxy"/>
+                                                <constraint firstItem="rxM-df-mUE" firstAttribute="height" secondItem="mZG-zC-7iu" secondAttribute="height" id="5ME-2M-NW2"/>
+                                                <constraint firstItem="rxM-df-mUE" firstAttribute="top" secondItem="mZG-zC-7iu" secondAttribute="topMargin" constant="8" id="QNb-Ne-Eir"/>
+                                                <constraint firstItem="rxM-df-mUE" firstAttribute="leading" secondItem="mZG-zC-7iu" secondAttribute="leading" id="ksr-q2-k5I"/>
                                                 <constraint firstItem="NPi-fO-Iri" firstAttribute="height" secondItem="mZG-zC-7iu" secondAttribute="height" id="mcN-So-bAP"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -360,25 +363,26 @@
                                         <rect key="frame" x="0.0" y="129" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9cB-YT-8XK" id="Hhh-yb-cJV">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="118" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-Sc-O5D">
-                                                    <frame key="frameInset" minY="11" width="216" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-Sc-O5D">
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-fN-F2z">
-                                                            <frame key="frameInset" width="49" height="31"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-fN-F2z">
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-Q0-GRG">
-                                                            <frame key="frameInset" minX="167" width="51" height="31"/>
-                                                        </switch>
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-Q0-GRG"/>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HIg-Sc-O5D" firstAttribute="top" secondItem="Hhh-yb-cJV" secondAttribute="topMargin" constant="3" id="6g7-u6-4rZ"/>
+                                                <constraint firstItem="HIg-Sc-O5D" firstAttribute="leading" secondItem="Hhh-yb-cJV" secondAttribute="leading" id="Gzn-ZX-ZyM"/>
+                                                <constraint firstItem="HIg-Sc-O5D" firstAttribute="height" secondItem="Hhh-yb-cJV" secondAttribute="height" id="P5V-3i-D5o"/>
+                                                <constraint firstItem="HIg-Sc-O5D" firstAttribute="width" secondItem="Hhh-yb-cJV" secondAttribute="width" id="u5v-AS-obW"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DXE-ku-iof">
