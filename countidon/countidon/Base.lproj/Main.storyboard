@@ -310,7 +310,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="gzp-o8-vrX">
+                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" id="gzp-o8-vrX">
                             <rect key="frame" x="0.0" y="64" width="375" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -340,34 +340,32 @@
                                         <constraint firstItem="GMP-E9-ziP" firstAttribute="width" secondItem="Iad-wG-uTt" secondAttribute="width" id="iio-7p-KGq"/>
                                     </constraints>
                                 </stackView>
-                            </subviews>
-                        </stackView>
-                        <stackView key="tableFooterView" opaque="NO" contentMode="scaleToFill" id="MuH-Ru-4t9">
-                            <rect key="frame" x="0.0" y="85" width="375" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCx-G7-m0u">
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-Sc-O5D">
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-fN-F2z">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xil-4E-PHR">
-                                    <subviews>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-Q0-GRG"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCx-G7-m0u">
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvh-fN-F2z">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xil-4E-PHR">
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-Q0-GRG"/>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AZk-Q0-GRG" firstAttribute="height" secondItem="Xil-4E-PHR" secondAttribute="height" id="LqL-FX-y56"/>
+                                            </constraints>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="AZk-Q0-GRG" firstAttribute="height" secondItem="Xil-4E-PHR" secondAttribute="height" id="LqL-FX-y56"/>
+                                        <constraint firstItem="Xil-4E-PHR" firstAttribute="height" secondItem="XCx-G7-m0u" secondAttribute="height" id="E59-Tn-XTY"/>
+                                        <constraint firstItem="Xil-4E-PHR" firstAttribute="width" secondItem="XCx-G7-m0u" secondAttribute="width" id="EKM-HW-eTJ"/>
                                     </constraints>
                                 </stackView>
                             </subviews>
-                            <constraints>
-                                <constraint firstItem="Xil-4E-PHR" firstAttribute="width" secondItem="XCx-G7-m0u" secondAttribute="width" id="LeO-oK-dHy"/>
-                                <constraint firstItem="Xil-4E-PHR" firstAttribute="height" secondItem="XCx-G7-m0u" secondAttribute="height" id="YD9-Js-95K"/>
-                            </constraints>
                         </stackView>
                         <sections/>
                         <connections>
