@@ -94,7 +94,7 @@ class CountidonDataModel {
       // let countidonItem = CountidonItem(coder: NSCoder())
       let countidonItem = CountidonItem()
       countidonItem.name = "First Counter"
-      countidonItem.timeToCountdown = 60
+      countidonItem.timeToCountdown = 15
       // scary!
       firstTimeCountidonGroup.countidonItems.append(countidonItem)
       
