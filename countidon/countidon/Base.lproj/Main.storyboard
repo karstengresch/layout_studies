@@ -159,16 +159,16 @@
         <!--Settings View Controller-->
         <scene sceneID="7xD-Oe-6DW">
             <objects>
-                <viewController storyboardIdentifier="SettingsViewController" id="nb3-gY-OAW" customClass="SettingsViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SettingsViewController" id="nb3-gY-OAW" customClass="SettingsViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ol1-1g-hB6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="a47-yt-Q1w">
+                            <tableViewSection headerTitle="Startup Behaviour" id="a47-yt-Q1w">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="StartWithLatestCell" editingAccessoryType="checkmark" textLabel="DXV-6A-ixb" style="IBUITableViewCellStyleDefault" id="fSq-MV-3YH">
-                                        <rect key="frame" x="0.0" y="99" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="fSq-MV-3YH" id="JEj-s9-eRM">
                                             <frame key="frameInset" width="336" height="43"/>
@@ -186,10 +186,10 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="mKM-ez-gPz">
+                            <tableViewSection headerTitle="General Look and Feel" id="mKM-ez-gPz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="DarkThemeCell" editingAccessoryType="checkmark" textLabel="KoL-fy-mIX" style="IBUITableViewCellStyleDefault" id="2OR-if-IUs">
-                                        <rect key="frame" x="0.0" y="179" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="221" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="2OR-if-IUs" id="r3v-qv-CrF">
                                             <frame key="frameInset" width="336" height="43"/>
@@ -216,7 +216,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
+                </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih9-LG-z7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2850" y="725"/>
@@ -334,7 +334,6 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="rxM-df-mUE" firstAttribute="width" secondItem="mZG-zC-7iu" secondAttribute="width" id="30C-pK-xTc"/>
-                                                <constraint firstItem="Slq-ZX-Up0" firstAttribute="height" secondItem="mZG-zC-7iu" secondAttribute="height" id="4fU-jY-Yxy"/>
                                                 <constraint firstItem="rxM-df-mUE" firstAttribute="height" secondItem="mZG-zC-7iu" secondAttribute="height" id="5ME-2M-NW2"/>
                                                 <constraint firstItem="rxM-df-mUE" firstAttribute="top" secondItem="mZG-zC-7iu" secondAttribute="topMargin" constant="8" id="QNb-Ne-Eir"/>
                                                 <constraint firstItem="rxM-df-mUE" firstAttribute="leading" secondItem="mZG-zC-7iu" secondAttribute="leading" id="ksr-q2-k5I"/>
