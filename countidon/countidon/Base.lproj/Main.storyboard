@@ -293,22 +293,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <stackView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" axis="vertical" id="gzp-o8-vrX">
-                            <rect key="frame" x="0.0" y="64" width="375" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LcB-h2-xb7"/>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="LcB-h2-xb7" firstAttribute="width" secondItem="gzp-o8-vrX" secondAttribute="width" id="X0m-bT-1Or"/>
-                                <constraint firstItem="LcB-h2-xb7" firstAttribute="height" secondItem="gzp-o8-vrX" secondAttribute="height" id="fB8-lI-ds6"/>
-                            </constraints>
-                        </stackView>
                         <sections>
                             <tableViewSection id="PJa-TI-RqY">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ilK-BG-f1u">
-                                        <rect key="frame" x="0.0" y="85" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ilK-BG-f1u" id="mZG-zC-7iu">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -341,7 +330,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="9cB-YT-8XK">
-                                        <rect key="frame" x="0.0" y="129" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="108" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9cB-YT-8XK" id="Hhh-yb-cJV">
                                             <frame key="frameInset" width="375" height="43"/>
