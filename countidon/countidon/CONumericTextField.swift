@@ -7,6 +7,8 @@
 import UIKit
 
 private var numberTextMaxLength = [UITextField: Int]()
+// TODO only allow numbers. wondering if this'll work w/o a UITextField delegate
+private var allowedChars = "0123456789"
 
 extension UITextField {
   
