@@ -303,23 +303,22 @@
                                             <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100" textAlignment="justified" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Wcp-oh-1ao">
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
-                                                </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to Countdown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBS-1M-m2r">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Wcp-oh-1ao">
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Wcp-oh-1ao" firstAttribute="centerY" secondItem="rGb-jS-rGF" secondAttribute="centerY" id="Hhh-MD-L7U"/>
-                                                <constraint firstItem="Wcp-oh-1ao" firstAttribute="centerY" secondItem="rGb-jS-rGF" secondAttribute="centerY" id="SR7-zC-ZT8"/>
                                                 <constraint firstItem="nBS-1M-m2r" firstAttribute="centerY" secondItem="rGb-jS-rGF" secondAttribute="centerY" id="U9U-Pb-JD9"/>
                                                 <constraint firstItem="nBS-1M-m2r" firstAttribute="centerY" secondItem="rGb-jS-rGF" secondAttribute="centerY" id="Vza-nJ-m8T"/>
                                                 <constraint firstItem="nBS-1M-m2r" firstAttribute="height" secondItem="Wcp-oh-1ao" secondAttribute="height" id="aDG-ce-taB"/>
+                                                <constraint firstItem="Wcp-oh-1ao" firstAttribute="leading" relation="lessThanOrEqual" secondItem="nBS-1M-m2r" secondAttribute="trailing" constant="50" id="asq-72-d3u"/>
                                                 <constraint firstAttribute="trailing" secondItem="Wcp-oh-1ao" secondAttribute="trailing" constant="20" symbolic="YES" id="ded-G4-rBu"/>
                                                 <constraint firstItem="nBS-1M-m2r" firstAttribute="leading" secondItem="rGb-jS-rGF" secondAttribute="leading" constant="20" symbolic="YES" id="klQ-SC-puf"/>
                                                 <constraint firstItem="Wcp-oh-1ao" firstAttribute="centerY" secondItem="rGb-jS-rGF" secondAttribute="centerY" id="vsP-G6-LdF"/>
@@ -433,7 +432,7 @@
                     </barButtonItem>
                 </navigationItem>
             </objects>
-            <point key="canvasLocation" x="4887" y="-143"/>
+            <point key="canvasLocation" x="4885.6000000000004" y="-143.47826086956522"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dgA-Vv-GbT">
