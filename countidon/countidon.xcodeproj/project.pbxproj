@@ -27,6 +27,7 @@
 		3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E71BD02F780028E2EE /* BackgroundView.swift */; };
 		3D850B901BEBF1C300D12FD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */; };
 		3DA249FE1C41836000AF71C9 /* CountidonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */; };
+		3DAD8DB91DA589DA0096CE7C /* CONumericTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD8DB81DA589DA0096CE7C /* CONumericTextField.swift */; };
 		3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC41D81BD27BB900297F01 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		3D7177E71BD02F780028E2EE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3DA249FD1C41836000AF71C9 /* CountidonDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonDataModel.swift; sourceTree = "<group>"; };
+		3DAD8DB81DA589DA0096CE7C /* CONumericTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CONumericTextField.swift; sourceTree = "<group>"; };
 		3DDC41D81BD27BB900297F01 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +221,7 @@
 		3DAD8DB71DA5898A0096CE7C /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				3DAD8DB81DA589DA0096CE7C /* CONumericTextField.swift */,
 			);
 			name = UIComponents;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DAD8DB91DA589DA0096CE7C /* CONumericTextField.swift in Sources */,
 				3D5E9D9D1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift in Sources */,
 				3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */,
 				3DA249FE1C41836000AF71C9 /* CountidonDataModel.swift in Sources */,
