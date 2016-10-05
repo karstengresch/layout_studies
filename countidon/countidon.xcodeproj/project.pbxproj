@@ -199,6 +199,7 @@
 		3D45B8181BCFA34400B6D391 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3DAD8DB71DA5898A0096CE7C /* UIComponents */,
 				3D2694741C305E3100A01402 /* StartScreen */,
 				3D2694751C305E3A00A01402 /* CounterScreens */,
 			);
@@ -213,6 +214,13 @@
 				3D45B7F21BCF9DAC00B6D391 /* LaunchScreen.storyboard */,
 			);
 			name = Layout;
+			sourceTree = "<group>";
+		};
+		3DAD8DB71DA5898A0096CE7C /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
