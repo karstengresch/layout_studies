@@ -363,9 +363,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Wcp-oh-1ao">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="left" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Wcp-oh-1ao">
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
