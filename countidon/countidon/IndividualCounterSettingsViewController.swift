@@ -13,7 +13,7 @@ protocol IndividualCounterSettingsViewControllerDelegate: class {
   
 }
 
-class IndividualCounterSettingsViewController: UITableViewController, UITextFieldDelegate {
+class IndividualCounterSettingsViewController: UITableViewController {
   
   weak var delegate: IndividualCounterSettingsViewControllerDelegate?
   
@@ -53,27 +53,6 @@ class IndividualCounterSettingsViewController: UITableViewController, UITextFiel
   
   // MARK: UITextField related.
   @IBOutlet weak var countdownTextField: UITextField!
-  
-  func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-    
-    
-    
-    return true
-    
-  }
-  
-  func textField(textFieldToChange: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-    let characterSetAllowed = NSCharacterSet.punctuationCharacterSet()
-    if let rangeOfCharactersAllowed = string.rangeOfCharacterFromSet(characterSetAllowed, options: .CaseInsensitiveSearch) {
-      // make sure it's all of them
-      return rangeOfCharactersAllowed.count == string.characters.count
-    } else  {
-      // none of the characters are from the allowed set
-      return false
-    }
-  }
-  
-  
   
   // MARK: Table View related.
   
