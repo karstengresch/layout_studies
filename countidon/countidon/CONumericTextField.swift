@@ -29,6 +29,15 @@ class NumericTextField: UITextField, UITextFieldDelegate {
         )
       }
     }
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    delegate = self
+    autocorrectionType = .no
+  }
+  
+  
+  
     // TODO
     func limitLengthAction(textField: UITextField) {
       guard let numberText = textField.text,
