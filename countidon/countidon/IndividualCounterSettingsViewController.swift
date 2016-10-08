@@ -51,7 +51,13 @@ class IndividualCounterSettingsViewController: UITableViewController, UITextFiel
     return 3
   }
   
+  // MARK: UITextField related.
   @IBOutlet weak var countdownTextField: UITextField!
+  
+  func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+    
+  }
+  
   
   
   // MARK: Table View related.
