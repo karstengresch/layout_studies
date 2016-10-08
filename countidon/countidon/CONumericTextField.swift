@@ -36,6 +36,13 @@ class NumericTextField: UITextField, UITextFieldDelegate {
     autocorrectionType = .no
   }
   
+  // Delegate function
+  func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    let currentText = textField.text ?? ""
+    let numberText = (currentText as NSString).replacingCharacters(in: range, with: string)
+    return numberText.containsOnlyCharactersIn(allowedCharacters)
+  }
+  
   
   
     // TODO
@@ -53,3 +60,14 @@ class NumericTextField: UITextField, UITextFieldDelegate {
     }
     
   }
+
+
+extension String {
+  
+  
+  func containsOnlyCharactersIn(_ matchCharacters: String) -> Bool {
+    let disallowedCharacterSet = CharacterSet(charactersIn: matchCharacters).inverted
+    return self.rangeOfCharacter(from: disallowedCharacterSet) == nil
+  }
+  
+}
