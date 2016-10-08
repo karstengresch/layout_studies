@@ -531,6 +531,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="countdownTextField" destination="Wcp-oh-1ao" id="b4Y-cv-hV4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUy-t1-xpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem id="TnB-1F-hhi">

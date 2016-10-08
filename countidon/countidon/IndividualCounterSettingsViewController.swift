@@ -13,7 +13,7 @@ protocol IndividualCounterSettingsViewControllerDelegate: class {
   
 }
 
-class IndividualCounterSettingsViewController: UITableViewController {
+class IndividualCounterSettingsViewController: UITableViewController, UITextFieldDelegate {
   
   weak var delegate: IndividualCounterSettingsViewControllerDelegate?
   
@@ -50,6 +50,12 @@ class IndividualCounterSettingsViewController: UITableViewController {
     // #warning Incomplete implementation, return the number of sections
     return 3
   }
+  
+  @IBOutlet weak var countdownTextField: UITextField!
+  
+  
+  // MARK: Table View related.
+  
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
