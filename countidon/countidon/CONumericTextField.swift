@@ -10,8 +10,7 @@ import UIKit
 class NumericTextField: UITextField, UITextFieldDelegate {
   
   private var numberTextMaxLength = [UITextField: Int]()
-  // TODO only allow numbers. wondering if this'll work w/o a UITextField delegate
-  private var allowedChars = "0123456789"
+  private var allowedCharacters = "0123456789"
   
     
     @IBInspectable var maxNumberLength: Int {
