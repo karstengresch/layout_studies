@@ -392,16 +392,12 @@
                                             <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beep every" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msz-Pw-xrq">
-                                                    <frame key="frameInset" minX="20" minY="12" width="86" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beep every" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msz-Pw-xrq">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="000" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-Qh-8cU" customClass="NumericTextField" customModule="countidon" customModuleProvider="target">
-                                                    <frame key="frameInset" minX="220" minY="7" width="136" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="000" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-Qh-8cU" customClass="NumericTextField" customModule="countidon" customModuleProvider="target">
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -412,6 +408,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="nR8-Qh-8cU" secondAttribute="trailing" constant="20" symbolic="YES" id="0s8-0y-qHx"/>
+                                                <constraint firstItem="nR8-Qh-8cU" firstAttribute="leading" secondItem="msz-Pw-xrq" secondAttribute="trailing" constant="114" id="ESo-ov-FFA"/>
+                                                <constraint firstItem="msz-Pw-xrq" firstAttribute="centerY" secondItem="nR8-Qh-8cU" secondAttribute="centerY" id="QOR-LD-2BD"/>
+                                                <constraint firstItem="msz-Pw-xrq" firstAttribute="leading" secondItem="SzT-cA-ukt" secondAttribute="leading" constant="20" symbolic="YES" id="TQX-4Y-kJD"/>
+                                                <constraint firstItem="nR8-Qh-8cU" firstAttribute="centerY" secondItem="SzT-cA-ukt" secondAttribute="centerY" id="ZWS-Xs-ykH"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SelectIntervallBeepCell" id="nLE-6w-NQi">
