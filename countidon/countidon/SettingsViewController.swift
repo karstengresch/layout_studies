@@ -54,6 +54,18 @@ class SettingsViewController: UITableViewController, UITextFieldDelegate {
     return 1
   }
   
+  override func tableView(_ tableView: UITableView,
+                          didSelectRowAt indexPath: IndexPath) {
+    if let cell = tableView.cellForRow(at: indexPath) {
+      if cell.accessoryType == .none {
+        cell.accessoryType = .checkmark
+      } else {
+        cell.accessoryType = .none
+      }
+    }
+    tableView.deselectRow(at: indexPath, animated: true)
+  }
+  
   /*
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
    let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
