@@ -19,15 +19,17 @@ class CountidonItem: NSObject, NSCoding {
       Time to countdown in seconds
    */
   var timeToCountdown: NSInteger = 0
+  let maxTime: Double = 12.0
+  var lastInterval = TimeInterval()
+  var timer = Timer()
+  var totalTime = TimeInterval()
+  var beepEvery: NSInteger = 0
+
+  
   var circleForegroundColor = UIColor(hue:1, saturation:1, brightness:0, alpha:1)
   var circleBackgroundColor = UIColor(hue:0, saturation:0, brightness:1, alpha:1)
   var circleViewBackgroundColor = UIColor.clear
   
-  var lastInterval = TimeInterval()
-  var timer = Timer()
-  var totalTime = TimeInterval()
-  let maxTime: Double = 12.0
-
   
   override init() {
     super.init()
@@ -38,6 +40,7 @@ class CountidonItem: NSObject, NSCoding {
     created = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_CREATED) as! NSDate
     name = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_NAME) as! String
     timeToCountdown = aDecoder.decodeInteger(forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
+    beepEvery = aDecoder.decodeInteger(forKey: COUNTIDON_BEEP_EVERY)
     circleViewBackgroundColor = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR) as! UIColor
     
     super.init()
