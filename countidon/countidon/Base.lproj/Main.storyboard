@@ -582,10 +582,10 @@
             </objects>
             <point key="canvasLocation" x="4885.6000000000004" y="-143.47826086956522"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Sounds View Controller-->
         <scene sceneID="n6U-xF-B5k">
             <objects>
-                <tableViewController id="lAC-GS-FJh" sceneMemberID="viewController">
+                <tableViewController id="lAC-GS-FJh" customClass="SoundsViewController" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ih6-2U-ZNd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
