@@ -15,7 +15,7 @@ protocol IndividualCounterSettingsViewControllerDelegate: class {
 
 class IndividualCounterSettingsViewController: UITableViewController {
   
-  var countidonSettings = CountidonSettings()
+  var coutidonItem = CountidonItem()
   
   weak var delegate: IndividualCounterSettingsViewControllerDelegate?
   
