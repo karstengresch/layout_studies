@@ -41,7 +41,7 @@ class CountidonItem: NSObject, NSCoding {
     created = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_CREATED) as! NSDate
     name = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_NAME) as! String
     timeToCountdown = aDecoder.decodeInteger(forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
-    beepEvery = aDecoder.decodeInteger(forKey: COUNTIDON_BEEP_EVERY)
+    beepEvery = aDecoder.decodeInteger(forKey: COUNTIDON_ITEM BEEP_EVERY)
     circleViewBackgroundColor = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR) as! UIColor
     isFavorite = aDecoder.decodeBool(forKey: COUNTIDON_ITEM_IS_FAVORITE)
     
@@ -53,6 +53,7 @@ class CountidonItem: NSObject, NSCoding {
     aCoder.encode(name, forKey: COUNTIDON_ITEM_NAME)
     aCoder.encode(isFavorite, forKey: COUNTIDON_ITEM_IS_FAVORITE)
     aCoder.encode(timeToCountdown, forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
+    aCoder.encode(beepEvery, forKey: COUNTIDON_ITEM BEEP_EVERY)
     aCoder.encode(circleViewBackgroundColor, forKey: COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR)
   }
   
