@@ -39,7 +39,9 @@ class IndividualCounterSettingsViewController: UITableViewController {
   }
   
   // MARK: UITextField related.
-  @IBOutlet weak var countdownTextField: UITextField!
+  @IBOutlet weak var countdownTextField: NumericTextField!
+  @IBOutlet weak var beepEveryTextField: NumericTextField!
+  @IBOutlet weak var counterNameTextField: UITextField!
   
   // MARK: Table View related.
   

@@ -561,7 +561,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="beepEveryTextField" destination="nR8-Qh-8cU" id="Q9D-Xt-YUC"/>
                         <outlet property="countdownTextField" destination="Wcp-oh-1ao" id="b4Y-cv-hV4"/>
+                        <outlet property="counterNameTextField" destination="BOB-NK-AIX" id="w1U-tS-0fM"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUy-t1-xpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
