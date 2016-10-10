@@ -14,6 +14,7 @@ let COUNTIDON_SETTING_THEME = "CountidonSettingTheme"
 
 let COUNTIDON_ITEM_CREATED = "CountidonItemCreated"
 let COUNTIDON_ITEM_NAME = "CountidonItemName"
+let COUNTIDON_ITEM_IS_FAVORITE = "CountidonItemIsFavorite"
 let COUNTIDON_ITEM_TIME_TO_COUNTDOWN = "CountidonItemTimeToCountdown"
 let COUNTIDON_BEEP_EVERY = "CountidonItemBeepEvery"
 let COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR = "CountidonItemCircleViewBackgroundColor"

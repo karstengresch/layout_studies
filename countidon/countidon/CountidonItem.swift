@@ -15,6 +15,7 @@ import Foundation
 class CountidonItem: NSObject, NSCoding {
   var created = NSDate()
   var name = ""
+  var isFavorite = false
   /**
       Time to countdown in seconds
    */
@@ -42,6 +43,7 @@ class CountidonItem: NSObject, NSCoding {
     timeToCountdown = aDecoder.decodeInteger(forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
     beepEvery = aDecoder.decodeInteger(forKey: COUNTIDON_BEEP_EVERY)
     circleViewBackgroundColor = aDecoder.decodeObject(forKey: COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR) as! UIColor
+    isFavorite = aDecoder.decodeBool(forKey: COUNTIDON_ITEM_IS_FAVORITE)
     
     super.init()
   }
@@ -49,6 +51,7 @@ class CountidonItem: NSObject, NSCoding {
   func encode(with aCoder: NSCoder) {
     aCoder.encode(created, forKey: COUNTIDON_ITEM_CREATED)
     aCoder.encode(name, forKey: COUNTIDON_ITEM_NAME)
+    aCoder.encode(isFavorite, forKey: COUNTIDON_ITEM_IS_FAVORITE)
     aCoder.encode(timeToCountdown, forKey: COUNTIDON_ITEM_TIME_TO_COUNTDOWN)
     aCoder.encode(circleViewBackgroundColor, forKey: COUNTIDON_ITEM_CIRCLE_VIEW_BACKGROUND_COLOR)
   }
