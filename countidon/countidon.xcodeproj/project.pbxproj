@@ -15,6 +15,20 @@
 		3D26947C1C35CD2C00A01402 /* CircleGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26947A1C35CD2C00A01402 /* CircleGraphView.swift */; };
 		3D26947D1C35CD2C00A01402 /* CircleGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26947B1C35CD2C00A01402 /* CircleGraphViewController.swift */; };
 		3D39AA021DAC304900B9AD72 /* SoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39AA011DAC304900B9AD72 /* SoundsViewController.swift */; };
+		3D39AA121DAC314F00B9AD72 /* Drib - Notification1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA041DAC314F00B9AD72 /* Drib - Notification1.wav */; };
+		3D39AA131DAC314F00B9AD72 /* Drib - Notification2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA051DAC314F00B9AD72 /* Drib - Notification2.wav */; };
+		3D39AA141DAC314F00B9AD72 /* Fireworks - Notification1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA061DAC314F00B9AD72 /* Fireworks - Notification1.wav */; };
+		3D39AA151DAC314F00B9AD72 /* Fireworks - Notification2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA071DAC314F00B9AD72 /* Fireworks - Notification2.wav */; };
+		3D39AA161DAC314F00B9AD72 /* Fireworks - Notification3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA081DAC314F00B9AD72 /* Fireworks - Notification3.wav */; };
+		3D39AA171DAC314F00B9AD72 /* Pop - Notification1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA091DAC314F00B9AD72 /* Pop - Notification1.wav */; };
+		3D39AA181DAC314F00B9AD72 /* Pop - Notification2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA0A1DAC314F00B9AD72 /* Pop - Notification2.wav */; };
+		3D39AA191DAC314F00B9AD72 /* Pop - Notification3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA0B1DAC314F00B9AD72 /* Pop - Notification3.wav */; };
+		3D39AA1A1DAC314F00B9AD72 /* Pop - Notification4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA0C1DAC314F00B9AD72 /* Pop - Notification4.wav */; };
+		3D39AA1B1DAC314F00B9AD72 /* Pop - Notification5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA0D1DAC314F00B9AD72 /* Pop - Notification5.wav */; };
+		3D39AA1C1DAC314F00B9AD72 /* Pop - Notification6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA0E1DAC314F00B9AD72 /* Pop - Notification6.wav */; };
+		3D39AA1D1DAC314F00B9AD72 /* Pop - Notification7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA0F1DAC314F00B9AD72 /* Pop - Notification7.wav */; };
+		3D39AA1E1DAC314F00B9AD72 /* Pop - Notification8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA101DAC314F00B9AD72 /* Pop - Notification8.wav */; };
+		3D39AA1F1DAC314F00B9AD72 /* Pop - Notification9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D39AA111DAC314F00B9AD72 /* Pop - Notification9.wav */; };
 		3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */; };
 		3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */; };
 		3D45B7EC1BCF9DAC00B6D391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7EA1BCF9DAC00B6D391 /* Main.storyboard */; };
@@ -58,6 +72,20 @@
 		3D26947A1C35CD2C00A01402 /* CircleGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphView.swift; sourceTree = "<group>"; };
 		3D26947B1C35CD2C00A01402 /* CircleGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphViewController.swift; sourceTree = "<group>"; };
 		3D39AA011DAC304900B9AD72 /* SoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsViewController.swift; sourceTree = "<group>"; };
+		3D39AA041DAC314F00B9AD72 /* Drib - Notification1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Drib - Notification1.wav"; sourceTree = "<group>"; };
+		3D39AA051DAC314F00B9AD72 /* Drib - Notification2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Drib - Notification2.wav"; sourceTree = "<group>"; };
+		3D39AA061DAC314F00B9AD72 /* Fireworks - Notification1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Fireworks - Notification1.wav"; sourceTree = "<group>"; };
+		3D39AA071DAC314F00B9AD72 /* Fireworks - Notification2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Fireworks - Notification2.wav"; sourceTree = "<group>"; };
+		3D39AA081DAC314F00B9AD72 /* Fireworks - Notification3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Fireworks - Notification3.wav"; sourceTree = "<group>"; };
+		3D39AA091DAC314F00B9AD72 /* Pop - Notification1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pop - Notification1.wav"; sourceTree = "<group>"; };
+		3D39AA0A1DAC314F00B9AD72 /* Pop - Notification2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pop - Notification2.wav"; sourceTree = "<group>"; };
+		3D39AA0B1DAC314F00B9AD72 /* Pop - Notification3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pop - Notification3.wav"; sourceTree = "<group>"; };
+		3D39AA0C1DAC314F00B9AD72 /* Pop - Notification4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pop - Notification4.wav"; sourceTree = "<group>"; };
+		3D39AA0D1DAC314F00B9AD72 /* Pop - Notification5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pop - Notification5.wav"; sourceTree = "<group>"; };
+		3D39AA0E1DAC314F00B9AD72 /* Pop - Notification6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pop - Notification6.wav"; sourceTree = "<group>"; };
+		3D39AA0F1DAC314F00B9AD72 /* Pop - Notification7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pop - Notification7.wav"; sourceTree = "<group>"; };
+		3D39AA101DAC314F00B9AD72 /* Pop - Notification8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pop - Notification8.wav"; sourceTree = "<group>"; };
+		3D39AA111DAC314F00B9AD72 /* Pop - Notification9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Pop - Notification9.wav"; sourceTree = "<group>"; };
 		3D45B7E31BCF9DAB00B6D391 /* countidon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = countidon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +167,20 @@
 		3D39AA031DAC309100B9AD72 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				3D39AA041DAC314F00B9AD72 /* Drib - Notification1.wav */,
+				3D39AA051DAC314F00B9AD72 /* Drib - Notification2.wav */,
+				3D39AA061DAC314F00B9AD72 /* Fireworks - Notification1.wav */,
+				3D39AA071DAC314F00B9AD72 /* Fireworks - Notification2.wav */,
+				3D39AA081DAC314F00B9AD72 /* Fireworks - Notification3.wav */,
+				3D39AA091DAC314F00B9AD72 /* Pop - Notification1.wav */,
+				3D39AA0A1DAC314F00B9AD72 /* Pop - Notification2.wav */,
+				3D39AA0B1DAC314F00B9AD72 /* Pop - Notification3.wav */,
+				3D39AA0C1DAC314F00B9AD72 /* Pop - Notification4.wav */,
+				3D39AA0D1DAC314F00B9AD72 /* Pop - Notification5.wav */,
+				3D39AA0E1DAC314F00B9AD72 /* Pop - Notification6.wav */,
+				3D39AA0F1DAC314F00B9AD72 /* Pop - Notification7.wav */,
+				3D39AA101DAC314F00B9AD72 /* Pop - Notification8.wav */,
+				3D39AA111DAC314F00B9AD72 /* Pop - Notification9.wav */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -343,9 +385,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D39AA1B1DAC314F00B9AD72 /* Pop - Notification5.wav in Resources */,
+				3D39AA141DAC314F00B9AD72 /* Fireworks - Notification1.wav in Resources */,
+				3D39AA171DAC314F00B9AD72 /* Pop - Notification1.wav in Resources */,
 				3D45B7F41BCF9DAC00B6D391 /* LaunchScreen.storyboard in Resources */,
+				3D39AA1D1DAC314F00B9AD72 /* Pop - Notification7.wav in Resources */,
 				3D45B7F11BCF9DAC00B6D391 /* Assets.xcassets in Resources */,
+				3D39AA181DAC314F00B9AD72 /* Pop - Notification2.wav in Resources */,
+				3D39AA1C1DAC314F00B9AD72 /* Pop - Notification6.wav in Resources */,
+				3D39AA121DAC314F00B9AD72 /* Drib - Notification1.wav in Resources */,
+				3D39AA161DAC314F00B9AD72 /* Fireworks - Notification3.wav in Resources */,
+				3D39AA151DAC314F00B9AD72 /* Fireworks - Notification2.wav in Resources */,
+				3D39AA1F1DAC314F00B9AD72 /* Pop - Notification9.wav in Resources */,
 				3D45B7EC1BCF9DAC00B6D391 /* Main.storyboard in Resources */,
+				3D39AA131DAC314F00B9AD72 /* Drib - Notification2.wav in Resources */,
+				3D39AA1A1DAC314F00B9AD72 /* Pop - Notification4.wav in Resources */,
+				3D39AA1E1DAC314F00B9AD72 /* Pop - Notification8.wav in Resources */,
+				3D39AA191DAC314F00B9AD72 /* Pop - Notification3.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
