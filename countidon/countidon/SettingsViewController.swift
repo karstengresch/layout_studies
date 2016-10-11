@@ -66,6 +66,11 @@ class SettingsViewController: UITableViewController, UITextFieldDelegate {
     tableView.deselectRow(at: indexPath, animated: true)
   }
   
+  override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+    return nil
+  }
+
+  
   /*
    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
    let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
