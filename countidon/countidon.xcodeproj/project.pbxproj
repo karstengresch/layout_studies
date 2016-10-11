@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D107C931DAD7A8000AC3A87 /* GroupSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D107C921DAD7A8000AC3A87 /* GroupSelection.swift */; };
 		3D2694691C2EAD2E00A01402 /* CountidonSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2694681C2EAD2E00A01402 /* CountidonSettings.swift */; };
 		3D26946B1C2EADCF00A01402 /* CountidonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26946A1C2EADCF00A01402 /* CountidonItem.swift */; };
 		3D26946D1C2EAE6300A01402 /* CountidonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26946C1C2EAE6300A01402 /* CountidonGroup.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D107C921DAD7A8000AC3A87 /* GroupSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupSelection.swift; sourceTree = "<group>"; };
 		3D2694681C2EAD2E00A01402 /* CountidonSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonSettings.swift; sourceTree = "<group>"; };
 		3D26946A1C2EADCF00A01402 /* CountidonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonItem.swift; sourceTree = "<group>"; };
 		3D26946C1C2EAE6300A01402 /* CountidonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountidonGroup.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				3DDC41D81BD27BB900297F01 /* CounterViewController.swift */,
 				3D850B8F1BEBF1C300D12FD3 /* SettingsViewController.swift */,
 				3D39AA011DAC304900B9AD72 /* SoundsViewController.swift */,
+				3D107C921DAD7A8000AC3A87 /* GroupSelection.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				3DDC41D91BD27BB900297F01 /* CounterViewController.swift in Sources */,
 				3D2694771C305EBA00A01402 /* GlobalConstants.swift in Sources */,
 				3D26946F1C2EC23700A01402 /* StartScreenTableViewCell.swift in Sources */,
+				3D107C931DAD7A8000AC3A87 /* GroupSelection.swift in Sources */,
 				3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */,
 				3D2694691C2EAD2E00A01402 /* CountidonSettings.swift in Sources */,
 				3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */,
