@@ -351,7 +351,7 @@
                         <sections>
                             <tableViewSection headerTitle="Countdown Settings" id="pC2-LT-UoQ">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeToCountdownCell" id="J4K-It-djY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TimeToCountdownCell" id="J4K-It-djY">
                                         <rect key="frame" x="0.0" y="120" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J4K-It-djY" id="rGb-jS-rGF">
@@ -385,7 +385,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IntervallBeepCell" id="ERH-Xb-GAD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IntervallBeepCell" id="ERH-Xb-GAD">
                                         <rect key="frame" x="0.0" y="164" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ERH-Xb-GAD" id="SzT-cA-ukt">
@@ -437,7 +437,7 @@
                                             <segue destination="bAI-4Z-L8e" kind="show" id="WKY-nC-1L4"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlarmSignalYesNoCell" id="4eb-ed-XBB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlarmSignalYesNoCell" id="4eb-ed-XBB">
                                         <rect key="frame" x="0.0" y="252" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4eb-ed-XBB" id="DY0-IX-yOa">
@@ -461,7 +461,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Style Settings" id="WBh-tr-UgQ">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SelectColorSchemeCell" id="K2k-IP-g6P">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SelectColorSchemeCell" id="K2k-IP-g6P">
                                         <rect key="frame" x="0.0" y="353" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K2k-IP-g6P" id="6yw-KC-3XV">
@@ -478,7 +478,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SelectCounterTypeCell" id="W5y-O4-wOH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SelectCounterTypeCell" id="W5y-O4-wOH">
                                         <rect key="frame" x="0.0" y="397" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W5y-O4-wOH" id="etj-xC-ydg">
@@ -499,7 +499,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="General Settings" id="cCA-WJ-3LP">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IndividualNameCell" id="Xg4-82-kBP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IndividualNameCell" id="Xg4-82-kBP">
                                         <rect key="frame" x="0.0" y="498" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xg4-82-kBP" id="pis-co-QLY">
@@ -529,7 +529,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="GroupSelectionCell" id="6w8-S6-9K4">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="GroupSelectionCell" id="6w8-S6-9K4">
                                         <rect key="frame" x="0.0" y="542" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6w8-S6-9K4" id="USh-0V-FTg">
@@ -546,7 +546,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="CheckIsFavoriteCell" id="eDd-Tb-d1L">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="CheckIsFavoriteCell" id="eDd-Tb-d1L">
                                         <rect key="frame" x="0.0" y="586" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eDd-Tb-d1L" id="94n-8E-sPQ">
