@@ -51,6 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     countidonDataModel.saveCountidonGroups()
     countidonDataModel.saveCountidonSettings()
   }
+  
+  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+    print("Notification received. User Info: \(userInfo)")
+  }
 
 }
 
