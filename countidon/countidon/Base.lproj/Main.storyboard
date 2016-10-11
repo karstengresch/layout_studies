@@ -545,6 +545,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="twi-S4-E0B" kind="show" identifier="GroupSelectionSegue" id="gsn-xL-9wZ"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="CheckIsFavoriteCell" id="eDd-Tb-d1L">
                                         <rect key="frame" x="0.0" y="586" width="375" height="44"/>
