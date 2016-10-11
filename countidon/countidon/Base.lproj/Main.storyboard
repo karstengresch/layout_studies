@@ -637,10 +637,10 @@
             </objects>
             <point key="canvasLocation" x="7388" y="-260.41979010494754"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Group Selection-->
         <scene sceneID="1JB-mf-1bF">
             <objects>
-                <tableViewController id="HR1-HT-0QX" sceneMemberID="viewController">
+                <tableViewController id="HR1-HT-0QX" customClass="GroupSelection" customModule="countidon" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="j9i-dV-7PU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
