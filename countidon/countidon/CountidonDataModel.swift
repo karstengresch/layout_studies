@@ -91,7 +91,6 @@ class CountidonDataModel {
     let firstTime = userDefaults.bool(forKey: "AppRunsFirstTime")
     if firstTime {
       let firstTimeCountidonGroup = CountidonGroup(name: COUNTIDON_DATA_MODEL_FIRST_TIME_GROUP_NAME)
-      // let countidonItem = CountidonItem(coder: NSCoder())
       let countidonItem = CountidonItem()
       countidonItem.name = "First Counter"
       countidonItem.timeToCountdown = 15
