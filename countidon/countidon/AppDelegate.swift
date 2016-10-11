@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func applicationDidEnterBackground(_ application: UIApplication) {
+    print("saveData from applicationDidEnterBackground")
     saveData()
   }
   
@@ -42,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func applicationWillTerminate(_ application: UIApplication) {
+    print("saveData from applicationWillTerminate")
     saveData()
   }
   
