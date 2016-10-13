@@ -92,7 +92,7 @@ class CountidonDataModel {
     if firstTime {
       let firstTimeCountidonGroup = CountidonGroup(name: COUNTIDON_DATA_MODEL_FIRST_TIME_GROUP_NAME)
       let countidonItem = CountidonItem()
-      countidonItem.name = "First Counter"
+      countidonItem.name = COUNTIDON_ITEM_FIRST_ITEM_NAME
       countidonItem.timeToCountdown = 15
       // scary!
       firstTimeCountidonGroup.countidonItems.append(countidonItem)
