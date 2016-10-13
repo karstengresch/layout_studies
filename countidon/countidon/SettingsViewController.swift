@@ -29,7 +29,7 @@ class SettingsViewController: UITableViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        datePicker.countDownDuration = 15.0
+        datePicker.countDownDuration = 0.15
       
         // Do any additional setup after loading the view.
     }
