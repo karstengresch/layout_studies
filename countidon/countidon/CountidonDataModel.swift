@@ -90,9 +90,11 @@ class CountidonDataModel {
     let userDefaults = UserDefaults.standard
     let firstTime = userDefaults.bool(forKey: "AppRunsFirstTime")
     if firstTime {
+      // TODO initialise default settings
       let firstTimeCountidonGroup = CountidonGroup(name: COUNTIDON_DATA_MODEL_FIRST_TIME_GROUP_NAME)
       let countidonItem = CountidonItem()
       countidonItem.name = COUNTIDON_ITEM_FIRST_ITEM_NAME
+      // TODO move value to default setting
       countidonItem.timeToCountdown = 15
       // scary!
       firstTimeCountidonGroup.countidonItems.append(countidonItem)
