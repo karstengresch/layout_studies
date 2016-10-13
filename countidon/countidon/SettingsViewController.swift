@@ -15,6 +15,16 @@ protocol SettingsViewControllerDelegate: class {
 class SettingsViewController: UITableViewController, UITextFieldDelegate {
   
     weak var delegate: SettingsViewControllerDelegate?
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
