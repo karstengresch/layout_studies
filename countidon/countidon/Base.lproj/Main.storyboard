@@ -223,13 +223,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Kf-jO-2zA">
-                                                    <frame key="frameInset" minX="146" minY="-87" height="216" maxX="-1"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                    <date key="date" timeIntervalSinceReferenceDate="498081495.25675398">
-                                                        <!--2016-10-13 19:58:15 +0000-->
-                                                    </date>
-                                                </datePicker>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -278,9 +271,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="datePicker" destination="9Kf-jO-2zA" id="LNP-eW-v7R"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih9-LG-z7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
