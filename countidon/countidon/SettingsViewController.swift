@@ -14,23 +14,10 @@ protocol SettingsViewControllerDelegate: class {
 
 class SettingsViewController: UITableViewController, UITextFieldDelegate {
   
-    weak var delegate: SettingsViewControllerDelegate?
-  
-  
-  @IBOutlet weak var datePicker: UIDatePicker!
-  
-  
-  
-  
-  
-  
-  
-  
+    weak var delegate: SettingsViewControllerDelegate?  
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        datePicker.countDownDuration = 0.15
-      
         // Do any additional setup after loading the view.
     }
 
