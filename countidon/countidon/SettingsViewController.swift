@@ -17,6 +17,7 @@ class SettingsViewController: UITableViewController, UITextFieldDelegate {
     weak var delegate: SettingsViewControllerDelegate?
   
   
+  @IBOutlet weak var datePicker: UIDatePicker!
   
   
   
