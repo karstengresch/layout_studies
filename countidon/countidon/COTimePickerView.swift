@@ -59,7 +59,7 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-      return 2
+      return pickerData.count
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
