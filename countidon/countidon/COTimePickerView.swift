@@ -43,7 +43,7 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     func setup(){
       self.delegate = self
       self.dataSource = self
-      self.selectRow(1, inComponent: seconds, animated: false)
+      // self.selectRow(1, inComponent: seconds, animated: false)
     }
     
     func getDate() -> NSDate{
@@ -73,11 +73,6 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
       return pickerData[component].count
-    }
-  
-    // TODO not sure if this is a good approach
-    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-      return 30
     }
 
   
