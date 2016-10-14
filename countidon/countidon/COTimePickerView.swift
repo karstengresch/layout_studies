@@ -13,12 +13,13 @@ import UIKit
 class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
 
     // Only allowing hours so far.
-    var hour:Int = 0
-    var minute:Int = 0
-  
+    var hour: Int = 0
+    var minute: Int = 0
+    var second: Int = 0
   
   let pickerData = [
     Array(0...99),
+    Array(0...59),
     Array(0...59)
     ]
   
