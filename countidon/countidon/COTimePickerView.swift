@@ -36,20 +36,6 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     func setup(){
       self.delegate = self
       self.dataSource = self
-      
-      /*let height = CGFloat(20)
-       let offsetX = self.frame.size.width / 3
-       let offsetY = self.frame.size.height/2 - height/2
-       let marginX = CGFloat(42)
-       let width = offsetX - marginX
-       
-       let hourLabel = UILabel(frame: CGRectMake(marginX, offsetY, width, height))
-       hourLabel.text = "hour"
-       self.addSubview(hourLabel)
-       
-       let minsLabel = UILabel(frame: CGRectMake(marginX + offsetX, offsetY, width, height))
-       minsLabel.text = "min"
-       self.addSubview(minsLabel)*/
     }
     
     func getDate() -> NSDate{
