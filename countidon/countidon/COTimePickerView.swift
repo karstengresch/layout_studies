@@ -46,13 +46,6 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
       // self.selectRow(1, inComponent: seconds, animated: false)
     }
     
-    func getDate() -> NSDate{
-      let dateFormatter = DateFormatter()
-      dateFormatter.dateFormat = "HH:mm"
-      let date = dateFormatter.date(from: String(format: "%02d", self.hour) + ":" + String(format: "%02d", self.minute))
-      return date! as NSDate
-    }
-    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
       return pickerData.count
     }
@@ -74,6 +67,10 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
       return pickerData[component].count
     }
+  
+  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    return pickerData[component][row]
+  }
 
   
 }
