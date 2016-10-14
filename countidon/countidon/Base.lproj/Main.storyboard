@@ -168,7 +168,7 @@
                             <tableViewSection headerTitle="Startup Behaviour" id="a47-yt-Q1w">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="StartWithLatestCell" editingAccessoryType="checkmark" textLabel="DXV-6A-ixb" style="IBUITableViewCellStyleDefault" id="fSq-MV-3YH">
-                                        <rect key="frame" x="0.0" y="120" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="119.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="fSq-MV-3YH" id="JEj-s9-eRM">
                                             <frame key="frameInset" width="336" height="43.5"/>
@@ -189,7 +189,7 @@
                             <tableViewSection headerTitle="General Look and Feel" id="mKM-ez-gPz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="DarkThemeCell" editingAccessoryType="checkmark" textLabel="KoL-fy-mIX" style="IBUITableViewCellStyleDefault" id="2OR-if-IUs">
-                                        <rect key="frame" x="0.0" y="221" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="219.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="2OR-if-IUs" id="r3v-qv-CrF">
                                             <frame key="frameInset" width="336" height="43.5"/>
@@ -210,14 +210,14 @@
                             <tableViewSection headerTitle="Default Counter Settings" id="nqt-2Q-NCf">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DefaultTimeCell" textLabel="R2L-rN-TxP" style="IBUITableViewCellStyleDefault" id="a9q-7N-aZT">
-                                        <rect key="frame" x="0.0" y="322" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="319.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="a9q-7N-aZT" id="clA-cE-eIe">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Default Countdown Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R2L-rN-TxP">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
+                                                    <frame key="frameInset" minX="15" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -231,7 +231,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DefaultTypeCell" textLabel="0y4-xC-ofG" style="IBUITableViewCellStyleDefault" id="ABK-Rf-KFr">
-                                        <rect key="frame" x="0.0" y="366" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="363.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="ABK-Rf-KFr" id="QuD-3x-jTa">
                                             <frame key="frameInset" width="342" height="43.5"/>
@@ -248,7 +248,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DefaultColorSchemeCell" textLabel="BKp-gv-w6m" style="IBUITableViewCellStyleDefault" id="EOX-7u-xW0">
-                                        <rect key="frame" x="0.0" y="410" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="407.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="EOX-7u-xW0" id="aB5-42-PO0">
                                             <frame key="frameInset" width="342" height="43.5"/>

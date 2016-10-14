@@ -12,9 +12,16 @@ import UIKit
 
 class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    
     var hour:Int = 0
     var minute:Int = 0
-    
+  
+  
+  let pickerData = [
+    Array(0...99),
+    Array(0...59)
+    ]
+  
     required internal init?(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
       self.setup()
