@@ -74,17 +74,8 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-      var returnValue = 0
       
-      if component == 0 {
-        returnValue = 24
-      }
-      
-      if component == 1 {
-        returnValue = 60
-      }
-      // only one exit rule
-      return returnValue
+      return pickerData[component].count
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
