@@ -82,17 +82,5 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
       return 30
     }
     
-  // looks dangerous now
-  func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-      if (view != nil) {
-        (view as! UILabel).text = String(format:"%02lu", row)
-        return view!
-      }
-      let columnView = UILabel(frame: CGRect(x: 35, y: 0, width: self.frame.size.width/3 - 35, height: 30))
-      columnView.text = String(format:"%02lu", row)
-      columnView.textAlignment = NSTextAlignment.center
-      
-      return columnView
-    }
-    
+  
 }
