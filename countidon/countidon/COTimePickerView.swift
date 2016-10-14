@@ -55,16 +55,19 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
         self.hour = row
       case 1:
         self.minute = row
+      case 2:
+        self.second = row
+        
       default:
         print("No component with number \(component)")
       }
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-      
       return pickerData[component].count
     }
-    
+  
+    // TODO not sure if this is a good approach
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
       return 30
     }
