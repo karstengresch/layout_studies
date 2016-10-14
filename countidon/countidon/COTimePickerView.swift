@@ -12,7 +12,7 @@ import UIKit
 
 class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    
+    // Only allowing hours so far.
     var hour:Int = 0
     var minute:Int = 0
   
@@ -74,11 +74,17 @@ class COTimePickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+      var returnValue = 0
+      
       if component == 0 {
-        return 24
+        returnValue = 24
       }
       
-      return 60
+      if component == 1 {
+        returnValue = 60
+      }
+      // only one exit rule
+      return returnValue
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
