@@ -34,7 +34,7 @@
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="arcColor">
-                                        <color key="value" red="0.30395817756652832" green="0.50442302227020264" blue="0.69505554437637329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.28264880900572614" green="0.67433281698681491" blue="0.88739218322801794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="arcBackgroundColor">
                                         <color key="value" red="0.19493237137794495" green="0.45279449224472046" blue="0.67764568328857422" alpha="0.77000000000000002" colorSpace="custom" customColorSpace="sRGB"/>

@@ -20,12 +20,13 @@ class CircleGraphView: UIControl {
     }
   }
   // TODO should be based on the surrounding bounds
+  // TODO all from external in setup
   @IBInspectable var arcWidth: CGFloat =  10.0
   @IBInspectable var arcColor: UIColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
   @IBInspectable var arcBackgroundColor: UIColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
   @IBInspectable var minutes: NSString = "Whereof we cannot speak, thereof we must remain silent."
   
-  
+  // Labels
   @IBInspectable var labelFontColor: UIColor { return UIColor.white }
   @IBInspectable var labelFont: UIFont? = UIFont(name: "Helvetica Neue", size: 18)
   @IBInspectable var labelFontParagraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
@@ -43,6 +44,8 @@ class CircleGraphView: UIControl {
 
   
     override func draw(_ rect: CGRect) {
+      print("arcWidth: \(arcWidth)")
+      print("arcWidth: \(self.arcWidth)")
 
       // circle defs
       let fullCircle = 2.0 * π
