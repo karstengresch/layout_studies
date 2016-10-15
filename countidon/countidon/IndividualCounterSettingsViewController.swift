@@ -64,7 +64,7 @@ class IndividualCounterSettingsViewController: UITableViewController {
     }
     tableView.deselectRow(at: indexPath, animated: true)
   }
-  
+  /*
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     print("indexPath.row: \((indexPath as NSIndexPath).row)" )
     // TODO
@@ -79,6 +79,7 @@ class IndividualCounterSettingsViewController: UITableViewController {
 
     return cell
   }
+  */
   
   override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
     return nil
