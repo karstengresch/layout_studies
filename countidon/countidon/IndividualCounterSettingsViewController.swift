@@ -65,11 +65,20 @@ class IndividualCounterSettingsViewController: UITableViewController {
     tableView.deselectRow(at: indexPath, animated: true)
   }
   
-  override func tableView(_ tableView: UITableView,
-                          cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "+++TODO!!!", for: indexPath)
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    print("indexPath.row: \((indexPath as NSIndexPath).row)" )
+    // TODO
+    let row = (indexPath as NSIndexPath).row
+    switch row {
+    case 0 :
+      let cell = tableView.dequeueReusableCell(withIdentifier: "TimeToCountdownCell", for: indexPath)
+    default:
+      let cell = UITableViewCell()
+    }
+    
 
-    return cell }
+    return cell
+  }
   
   override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
     return nil
