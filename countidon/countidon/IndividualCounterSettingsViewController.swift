@@ -68,14 +68,14 @@ class IndividualCounterSettingsViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     print("indexPath.row: \((indexPath as NSIndexPath).row)" )
     // TODO
+    var cell: UITableViewCell
     let row = (indexPath as NSIndexPath).row
     switch row {
     case 0 :
-      let cell = tableView.dequeueReusableCell(withIdentifier: "TimeToCountdownCell", for: indexPath)
+      cell = tableView.dequeueReusableCell(withIdentifier: "TimeToCountdownCell", for: indexPath)
     default:
-      let cell = UITableViewCell()
+      cell = tableView.dequeueReusableCell(withIdentifier: "TimeToCountdownCell", for: indexPath)
     }
-    
 
     return cell
   }
