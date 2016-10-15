@@ -26,6 +26,7 @@ class CircleGraphViewController: UIViewController, IndividualCounterSettingsView
   
     override func viewDidLoad() {
         super.viewDidLoad()
+      circleGraphView?.arcWidth = 12.0
       circleGraphView?.addTarget(circleGraphView, action: #selector(CircleGraphView.buttonPressed), for: .touchDown)
       
         // Do any additional setup after loading the view.
