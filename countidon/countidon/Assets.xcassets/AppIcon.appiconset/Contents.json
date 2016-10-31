@@ -1,9 +1,8 @@
 {
   "images" : [
     {
-      "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "Icon-20@2x.png",
+      "size" : "20x20",
       "scale" : "2x"
     },
     {
@@ -23,14 +22,14 @@
       "scale" : "2x"
     },
     {
-      "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "Icon-29@3x.png",
+      "size" : "29x29",
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "Icon-40@2x.png",
       "scale" : "2x"
     },
     {
@@ -70,8 +69,9 @@
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "Icon-20@2x.png",
       "scale" : "2x"
     },
     {
@@ -81,9 +81,8 @@
       "scale" : "1x"
     },
     {
-      "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "Icon-29@2x.png",
+      "size" : "29x29",
       "scale" : "2x"
     },
     {
@@ -92,9 +91,8 @@
       "scale" : "1x"
     },
     {
-      "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "Icon-40@2x.png",
+      "size" : "40x40",
       "scale" : "2x"
     },
     {
@@ -156,12 +154,14 @@
     {
       "size" : "29x29",
       "idiom" : "watch",
+      "filename" : "Icon-29@2x.png",
       "role" : "companionSettings",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "watch",
+      "filename" : "Icon-29@3x.png",
       "role" : "companionSettings",
       "scale" : "3x"
     },
@@ -224,14 +224,14 @@
       "scale" : "1x"
     },
     {
-      "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "Icon-512.png",
+      "size" : "256x256",
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "Icon-512.png",
       "scale" : "1x"
     },
     {
@@ -243,16 +243,16 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "Icon-40.png",
-      "unassigned" : true,
-      "scale" : "2x"
-    },
-    {
-      "size" : "20x20",
-      "idiom" : "iphone",
       "filename" : "Icon-60.png",
       "unassigned" : true,
       "scale" : "3x"
+    },
+    {
+      "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "Icon-40.png",
+      "unassigned" : true,
+      "scale" : "2x"
     },
     {
       "filename" : "Icon-24.png",

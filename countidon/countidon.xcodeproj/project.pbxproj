@@ -33,11 +33,11 @@
 		3D45B7E71BCF9DAB00B6D391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */; };
 		3D45B7E91BCF9DAB00B6D391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */; };
 		3D45B7EC1BCF9DAC00B6D391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7EA1BCF9DAC00B6D391 /* Main.storyboard */; };
-		3D45B7F11BCF9DAC00B6D391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7F01BCF9DAC00B6D391 /* Assets.xcassets */; };
 		3D45B7F41BCF9DAC00B6D391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D45B7F21BCF9DAC00B6D391 /* LaunchScreen.storyboard */; };
 		3D45B7FF1BCF9DAC00B6D391 /* countidonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B7FE1BCF9DAC00B6D391 /* countidonTests.swift */; };
 		3D45B80A1BCF9DAC00B6D391 /* countidonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B8091BCF9DAC00B6D391 /* countidonUITests.swift */; };
 		3D45B81B1BCFA39E00B6D391 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */; };
+		3D53198A1DC786110042F831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5319891DC786110042F831 /* Assets.xcassets */; };
 		3D5E9D9D1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5E9D9C1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift */; };
 		3D7177E61BCFD7100028E2EE /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E51BCFD7100028E2EE /* ShapeButton.swift */; };
 		3D7177E81BD02F780028E2EE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7177E71BD02F780028E2EE /* BackgroundView.swift */; };
@@ -93,7 +93,6 @@
 		3D45B7E61BCF9DAB00B6D391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D45B7E81BCF9DAB00B6D391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D45B7EB1BCF9DAC00B6D391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D45B7F01BCF9DAC00B6D391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D45B7F31BCF9DAC00B6D391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D45B7F51BCF9DAC00B6D391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D45B7FA1BCF9DAC00B6D391 /* countidonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = countidonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +102,7 @@
 		3D45B8091BCF9DAC00B6D391 /* countidonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countidonUITests.swift; sourceTree = "<group>"; };
 		3D45B80B1BCF9DAC00B6D391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D45B81A1BCFA39E00B6D391 /* StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		3D5319891DC786110042F831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5E9D9C1C517BFD001093D9 /* IndividualCounterSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualCounterSettingsViewController.swift; sourceTree = "<group>"; };
 		3D7177E51BCFD7100028E2EE /* ShapeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeButton.swift; sourceTree = "<group>"; };
 		3D7177E71BD02F780028E2EE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
@@ -259,6 +259,7 @@
 		3D45B8181BCFA34400B6D391 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D5319891DC786110042F831 /* Assets.xcassets */,
 				3DAD8DB71DA5898A0096CE7C /* UIComponents */,
 				3D2694741C305E3100A01402 /* StartScreen */,
 				3D2694751C305E3A00A01402 /* CounterScreens */,
@@ -270,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				3D45B7EA1BCF9DAC00B6D391 /* Main.storyboard */,
-				3D45B7F01BCF9DAC00B6D391 /* Assets.xcassets */,
 				3D45B7F21BCF9DAC00B6D391 /* LaunchScreen.storyboard */,
 			);
 			name = Layout;
@@ -396,8 +396,8 @@
 				3D39AA171DAC314F00B9AD72 /* Pop - Notification1.wav in Resources */,
 				3D45B7F41BCF9DAC00B6D391 /* LaunchScreen.storyboard in Resources */,
 				3D39AA1D1DAC314F00B9AD72 /* Pop - Notification7.wav in Resources */,
-				3D45B7F11BCF9DAC00B6D391 /* Assets.xcassets in Resources */,
 				3D39AA181DAC314F00B9AD72 /* Pop - Notification2.wav in Resources */,
+				3D53198A1DC786110042F831 /* Assets.xcassets in Resources */,
 				3D39AA1C1DAC314F00B9AD72 /* Pop - Notification6.wav in Resources */,
 				3D39AA121DAC314F00B9AD72 /* Drib - Notification1.wav in Resources */,
 				3D39AA161DAC314F00B9AD72 /* Fireworks - Notification3.wav in Resources */,
