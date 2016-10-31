@@ -168,6 +168,7 @@
     {
       "size" : "40x40",
       "idiom" : "watch",
+      "filename" : "Icon-40.png",
       "scale" : "2x",
       "role" : "appLauncher",
       "subtype" : "38mm"
@@ -246,13 +247,6 @@
       "filename" : "Icon-60.png",
       "unassigned" : true,
       "scale" : "3x"
-    },
-    {
-      "size" : "20x20",
-      "idiom" : "ipad",
-      "filename" : "Icon-40.png",
-      "unassigned" : true,
-      "scale" : "2x"
     },
     {
       "filename" : "Icon-24.png",
