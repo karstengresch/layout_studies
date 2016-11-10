@@ -229,9 +229,9 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oll-uC-Adc" customClass="COTimePickerView" customModule="countidon" customModuleProvider="target">
-                                                    <rect key="frame" x="27" y="-87" width="100" height="216"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <pickerView contentMode="scaleToFill" ambiguous="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oll-uC-Adc" customClass="COTimePickerView" customModule="countidon" customModuleProvider="target">
+                                                    <rect key="frame" x="62" y="-65" width="415" height="173"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </pickerView>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -284,7 +284,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih9-LG-z7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2849.5" y="724.5"/>
+            <point key="canvasLocation" x="2848.8000000000002" y="723.68815592203907"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i0x-az-XBf">
@@ -413,8 +413,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="000" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-Qh-8cU" customClass="NumericTextField" customModule="countidon" customModuleProvider="target">
-                                                    <rect key="frame" x="220" y="13.5" width="135" height="20"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="000" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-Qh-8cU" customClass="NumericTextField" customModule="countidon" customModuleProvider="target">
+                                                    <rect key="frame" x="220" y="13.5" width="135" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="2Uy-zj-NxX"/>
                                                     </constraints>
