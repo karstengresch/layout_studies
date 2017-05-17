@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let π: CGFloat = CGFloat(M_PI)
+let π: CGFloat = CGFloat(Double.pi)
 let COUNTIDON_SETTING_THEME = "CountidonSettingTheme"
 
 let COUNTIDON_ITEM_CREATED = "CountidonItemCreated"
