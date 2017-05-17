@@ -28,7 +28,7 @@ class CircleGraphView: UIControl {
   
   // Labels
   @IBInspectable var labelFontColor: UIColor { return UIColor.white }
-  @IBInspectable var labelFont: UIFont? = UIFont(name: "Helvetica Neue", size: 18)
+  @IBInspectable var labelFont: UIFont? = UIFont(name: "Avenir Next", size: 18)
   @IBInspectable var labelFontParagraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
   @IBInspectable var labelFontObliqueness = 0.1
   
@@ -81,7 +81,14 @@ class CircleGraphView: UIControl {
       let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
       let size = timeLabel.size(attributes: (labelFontAttributes as! [String : AnyObject]))
 
-      timeLabel.draw(in: CGRect(x: center.x - size.width/2, y: center.y - size.height/2, width: size.width,height: size.height), withAttributes: (labelFontAttributes as! [String : AnyObject]))
+      timeLabel.draw(in: CGRect(x: center.x - size.width/2, y: center.y - size.height/2, width: size.width*1.2,height: size.height*1.2), withAttributes: (labelFontAttributes as! [String : AnyObject]))
+      
+      let dummyLabel = UILabel()
+      dummyLabel.text = "Harr harr, Dingo"
+      dummyLabel.font = UIFont.systemFont(ofSize: 22)
+      
+      
+      self.inputView?.addSubview(dummyLabel)
       
     }
  /*
