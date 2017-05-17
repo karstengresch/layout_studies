@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6ow-sD-KWc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6ow-sD-KWc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -43,6 +43,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="arcBackgroundColor">
                                         <color key="value" red="0.19493237137794495" green="0.45279449224472046" blue="0.67764568328857422" alpha="0.77000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="minutes" value="00:10:00"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFw-hp-fic">
@@ -81,7 +82,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="6Vb-JB-7C0">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="d0b-4k-deK">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="d0b-4k-deK">
                             <connections>
                                 <action selector="cancel" destination="4nt-ZA-GKb" id="dLm-bJ-tO8"/>
                             </connections>
@@ -183,7 +184,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Start with latest counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DXV-6A-ixb">
                                                     <rect key="frame" x="15" y="0.0" width="321" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -204,7 +205,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Dark Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KoL-fy-mIX">
                                                     <rect key="frame" x="15" y="0.0" width="321" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -275,7 +276,7 @@
                         </sections>
                     </tableView>
                     <navigationItem key="navigationItem" id="DAC-R1-1Qr">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mUH-k7-xEe">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="mUH-k7-xEe">
                             <connections>
                                 <action selector="cancel" destination="nb3-gY-OAW" id="Izm-bq-CiV"/>
                             </connections>
