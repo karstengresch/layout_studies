@@ -42,12 +42,16 @@ class IndividualCounterSettingsViewController: UITableViewController {
   
   
   @IBAction func timeToCountdownTextFieldEditingEnded(_ sender: NumericTextField) {
-    
+    print("Text of timeToCountdownTextField: \(timeToCountdownTextField.text ?? "EMPTY!")")
   }
   
   
   @IBAction func beepEveryTextFieldEditingEnded(_ sender: NumericTextField) {
-    
+    print("Text of beepEveryTextField: \(beepEveryTextField.text ?? "EMPTY!")")
+  }
+
+  @IBAction func counterNameEditingEnded(_ sender: UITextField) {
+    print("Text of counterNameTextField: \(counterNameTextField.text ?? "EMPTY!")")
   }
   
   override func numberOfSections(in tableView: UITableView) -> Int {
@@ -55,9 +59,7 @@ class IndividualCounterSettingsViewController: UITableViewController {
     return 3
   }
   
-  @IBAction func counterNameEditingEnded(_ sender: UITextField) {
-    
-  }
+
   // MARK: Table View related.
   
   
