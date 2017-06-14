@@ -31,17 +31,33 @@ class IndividualCounterSettingsViewController: UITableViewController {
        dismiss(animated: true, completion: nil)
   }
   
+
+
+  
+  // MARK: UITextField related.
+  @IBOutlet weak var timeToCountdownTextField: NumericTextField!
+  @IBOutlet weak var beepEveryTextField: NumericTextField!
+  @IBOutlet weak var counterNameTextField: UITextField!
+  
+  
+  
+  @IBAction func timeToCountdownTextFieldEditingEnded(_ sender: NumericTextField) {
+    
+  }
+  
+  
+  @IBAction func beepEveryTextFieldEditingEnded(_ sender: NumericTextField) {
+    
+  }
   
   override func numberOfSections(in tableView: UITableView) -> Int {
     // #warning Incomplete implementation, return the number of sections
     return 3
   }
   
-  // MARK: UITextField related.
-  @IBOutlet weak var countdownTextField: NumericTextField!
-  @IBOutlet weak var beepEveryTextField: NumericTextField!
-  @IBOutlet weak var counterNameTextField: UITextField!
-  
+  @IBAction func counterNameEditingEnded(_ sender: UITextField) {
+    
+  }
   // MARK: Table View related.
   
   
