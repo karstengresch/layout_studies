@@ -389,7 +389,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <action selector="countdownTextFieldEndEditing:" destination="IpA-Fe-36h" eventType="editingDidEnd" id="EGS-A3-ITl"/>
+                                                        <action selector="timeToCountdownTextFieldEditingEnded:" destination="IpA-Fe-36h" eventType="editingDidEnd" id="LLi-Fc-qcJ"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -431,8 +431,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
-                                                        <action selector="beepEveryTextFieldEditingEnded:" destination="IpA-Fe-36h" eventType="editingDidEnd" id="EwC-FN-8fI"/>
-                                                        <action selector="timeToCountdownTextFieldEditingEnded:" destination="IpA-Fe-36h" eventType="editingDidEnd" id="QB8-jU-HnH"/>
+                                                        <action selector="beepEveryTextFieldEditingEnded:" destination="IpA-Fe-36h" eventType="editingDidEnd" id="wGI-gD-MEg"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -543,7 +542,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="counterNameEditingEnded:" destination="IpA-Fe-36h" eventType="editingDidEnd" id="sCR-pn-ruH"/>
+                                                        <action selector="counterNameEditingEnded:" destination="IpA-Fe-36h" eventType="editingDidEnd" id="Xhd-Bk-HFo"/>
                                                     </connections>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6v-Yo-P8g">
@@ -620,18 +619,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="beepEveryTextField" destination="nR8-Qh-8cU" id="Q9D-Xt-YUC"/>
-                        <outlet property="countdownTextField" destination="Wcp-oh-1ao" id="b4Y-cv-hV4"/>
-                        <outlet property="counterNameTextField" destination="BOB-NK-AIX" id="w1U-tS-0fM"/>
+                        <outlet property="beepEveryTextField" destination="nR8-Qh-8cU" id="fC3-HS-poB"/>
+                        <outlet property="counterNameTextField" destination="BOB-NK-AIX" id="7kl-WU-R5Q"/>
+                        <outlet property="timeToCountdownTextField" destination="Wcp-oh-1ao" id="fWv-r0-Y7p"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUy-t1-xpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem id="TnB-1F-hhi">
-                    <barButtonItem key="leftBarButtonItem" title="&lt;" id="YKc-Sq-0SX">
-                        <connections>
-                            <action selector="navigationBarButtonLeftClickedWithSender:" destination="IpA-Fe-36h" id="yR9-he-5pm"/>
-                        </connections>
-                    </barButtonItem>
+                    <barButtonItem key="leftBarButtonItem" title="&lt;" id="YKc-Sq-0SX"/>
                     <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="UQg-LW-fui">
                         <connections>
                             <action selector="cancelBarButtonWithSender:" destination="IpA-Fe-36h" id="kJU-pt-2Cp"/>
