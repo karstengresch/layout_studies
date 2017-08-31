@@ -36,6 +36,6 @@ class CountidonSettings: NSObject, NSCoding {
   
 }
 
-enum Theme: NSInteger {
+enum Theme: Int {
   case Dark = 1, Light, Mixed, Custom, Default
 }

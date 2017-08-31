@@ -8,7 +8,10 @@
 
 import UIKit
 
-
+protocol CircleGraphViewDelegate: class {
+  func set(maxTime xMaxTime: Double)
+  func setArcColor(_ color: UIColor)
+}
 
 @IBDesignable
 class CircleGraphView: UIControl {
@@ -68,7 +71,6 @@ class CircleGraphView: UIControl {
       // CGContextAddArc(context, centerPoint.x, centerPoint.y, radius, start, end, 0)
       context?.addArc(center: centerPoint, radius: radius, startAngle: start, endAngle: end, clockwise: true)
       context!.strokePath()
-      
       
       let labelFontAttributes: NSDictionary = [ NSForegroundColorAttributeName: labelFontColor,
         NSParagraphStyleAttributeName: labelFontParagraphStyle,
@@ -146,8 +148,8 @@ class CircleGraphView: UIControl {
         print("Circle Graph View: Timer >>was<< valid and >>was<< running")
         printStatus()
         timer.invalidate()
-        let timeGone = totalTime / maxTime
-        endArc = CGFloat(timeGone)
+        
+        endArc = CGFloat(maxTime)
         wasStopped = true
       }
     }
@@ -186,6 +188,12 @@ class CircleGraphView: UIControl {
       totalTime = 0
       timer.invalidate()
     }
+    
+    let timeGone = totalTime / maxTime
+    if (totalTime > maxTime) {
+      print("timeGone: \(timeGone)")
+    }
+
     
   }
   

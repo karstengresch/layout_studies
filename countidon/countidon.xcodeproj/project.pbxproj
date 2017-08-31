@@ -352,6 +352,7 @@
 				TargetAttributes = {
 					3D45B7E21BCF9DAB00B6D391 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = BD2TPDQG5D;
 						LastSwiftMigration = 0800;
 					};
 					3D45B7F91BCF9DAC00B6D391 = {
@@ -601,7 +602,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BD2TPDQG5D;
 				INFOPLIST_FILE = countidon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.closureone.countidon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -613,7 +616,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BD2TPDQG5D;
 				INFOPLIST_FILE = countidon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.closureone.countidon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
