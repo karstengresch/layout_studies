@@ -46,9 +46,9 @@ class NumericTextField: UITextField, UITextFieldDelegate {
   
   
     // TODO
-    func limitLengthAction(textField: UITextField) {
+    @objc func limitLengthAction(textField: UITextField) {
       guard let numberText = textField.text,
-        numberText.characters.count > maxNumberLength
+        numberText.count > maxNumberLength
         else {
           return
       }

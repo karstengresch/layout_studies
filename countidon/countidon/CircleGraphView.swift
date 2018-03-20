@@ -72,18 +72,18 @@ class CircleGraphView: UIControl {
       context?.addArc(center: centerPoint, radius: radius, startAngle: start, endAngle: end, clockwise: true)
       context!.strokePath()
       
-      let labelFontAttributes: NSDictionary = [ NSForegroundColorAttributeName: labelFontColor,
-        NSParagraphStyleAttributeName: labelFontParagraphStyle,
-        NSObliquenessAttributeName: labelFontObliqueness,
-        NSFontAttributeName: labelFont!
+      let labelFontAttributes: NSDictionary = [ NSAttributedStringKey.foregroundColor: labelFontColor,
+        NSAttributedStringKey.paragraphStyle: labelFontParagraphStyle,
+        NSAttributedStringKey.obliqueness: labelFontObliqueness,
+        NSAttributedStringKey.font: labelFont!
       ]
       
       let delimiter = "\t:\t"
       let timeLabel: NSString = counterTimeValues.minutes + delimiter + counterTimeValues.seconds + delimiter + counterTimeValues.milliseconds as NSString
       let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
-      let size = timeLabel.size(attributes: (labelFontAttributes as! [String : AnyObject]))
-
-      timeLabel.draw(in: CGRect(x: center.x - size.width/2, y: center.y - size.height/2, width: size.width*1.2,height: size.height*1.2), withAttributes: (labelFontAttributes as! [String : AnyObject]))
+      // let size = timeLabel.size(withAttributes: (labelFontAttributes as! [String : AnyObject]))
+      let size = timeLabel.size(withAttributes: (labelFontAttributes as! [NSAttributedStringKey : Any]))
+      timeLabel.draw(in: CGRect(x: center.x - size.width/2, y: center.y - size.height/2, width: size.width*1.2,height: size.height*1.2), withAttributes: (labelFontAttributes as! [NSAttributedStringKey : Any]))
       
       let dummyLabel = UILabel()
       dummyLabel.text = "Harr harr, Dingo"
@@ -163,7 +163,7 @@ class CircleGraphView: UIControl {
   }
   
   // TODO: Check reference day as parameter!
-  func updateCounter() {
+  @objc func updateCounter() {
     
     let now = NSDate.timeIntervalSinceReferenceDate
     totalTime += now - lastInterval
